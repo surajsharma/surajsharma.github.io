@@ -11,7 +11,7 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 	<script is:inline src="/scripts/counter.js"></script>
 	<script define:vars={{ exp_url }} type="module">
 		const exp = document.getElementById("exp");
-		const old = createFormattedNumberArray(exp.innerText);
+		let old = createFormattedNumberArray(exp.innerText);
 		const res = animateNumber(old, exp, old).then(async(res)=>{
 			if (res && res === 1) {
 				await update();
@@ -27,11 +27,12 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 				cache: "no-cache",
 			}).then((data) => data.json());
 			
-
 			const newExp = new Intl.NumberFormat("en-GB").format(experience);
 			const value = createFormattedNumberArray(newExp);
 
-			if (value != old) await animateNumber(value, exp, old);
+			if (value.join("") == old.join("")) return;
+			await animateNumber(value, exp, old);
+			old = createFormattedNumberArray(exp.innerText);
 		}
 	</script>
 	<section class="flex-col" client:load>
