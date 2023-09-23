@@ -11,7 +11,7 @@ jobs:
     env:
       FB_API_KEY: ${{ secrets.FB_API_KEY }}
       FB_EXP_RTDB_URL: ${{ secrets.FB_EXP_RTDB }}
-      FB_EXP_UPDATE_URL: ${{ vars.FB_UPDATE_EXP_URL }}
+      FB_EXP_UPDATE_URL: ${{ secrets.FB_UPDATE_EXP_URL }}
     steps:
       - name: update experience
         run: |
