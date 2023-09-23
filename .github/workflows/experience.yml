@@ -1,0 +1,22 @@
+name: experience
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    env:
+      FB_API_KEY: ${{ secrets.FB_API_KEY }}
+      FB_EXP_RTDB_URL: ${{ secrets.FB_EXP_RTDB }}
+      FB_EXP_UPDATE_URL: ${{ vars.FB_UPDATE_EXP_URL }}
+    steps:
+      - name: update experience
+        run: |
+          EXPERIENCE_NUMBER=$(curl -s $FB_EXP_RTDB_URL)
+          NEW_EXPERIENCE_NUMBER=$((EXPERIENCE_NUMBER + 1))
+          AUTH_TOKEN=$(curl https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$FB_API_KEY -H 'Content-Type: application/json' --data-binary '{"returnSecureToken":true}' | sed -n '/idToken/p' | sed -E 's/.*"(.*)".*/\1/')
+          curl -X PATCH -d '{"experience":'"$NEW_EXPERIENCE_NUMBER"'}' -H "Content-Type: application/json" $FB_EXP_UPDATE_URL?auth=$AUTH_TOKEN
+        shell: bash

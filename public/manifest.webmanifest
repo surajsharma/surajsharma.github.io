@@ -1,0 +1,16 @@
+{
+	"name": "evenzero",
+	"short_name": "eo",
+	"description": "evenzero.in",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"sizes": "64x64",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#1d1f21",
+	"theme_color": "#2bbc8a",
+	"display": "standalone"
+}

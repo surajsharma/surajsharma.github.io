@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		color-scheme: light;
+		--theme-bg: #e0e0e0;
+		--theme-link: #f2780c;
+		--theme-text: #262406;
+		--theme-accent: #f2a663;
+		--theme-accent-2: #111;
+		--theme-quote: #f2780c;
+		--theme-menu-bg: rgb(250 250 250 / 0.85);
+		--theme-link-hover-bg: #da503e;
+		--shadow-color: 0deg 0% 54%;
+		--shadow-elevation-low: 0px 0.1px 0.1px hsl(var(--shadow-color) / 0.52),
+			0px 0.1px 0.1px -1.5px hsl(var(--shadow-color) / 0.46),
+			0px 0.3px 0.3px -3px hsl(var(--shadow-color) / 0.4);
+		--shadow-elevation-medium: 0px 0.1px 0.1px hsl(var(--shadow-color) / 0.54),
+			0px 0.2px 0.2px -1px hsl(var(--shadow-color) / 0.5),
+			0px 0.7px 0.7px -2px hsl(var(--shadow-color) / 0.45),
+			0.1px 1.7px 1.8px -3px hsl(var(--shadow-color) / 0.41);
+		--shadow-elevation-high: 0px 0.1px 0.1px hsl(var(--shadow-color) / 0.51),
+			0px 0.4px 0.4px -0.4px hsl(var(--shadow-color) / 0.48),
+			0px 0.9px 0.9px -0.9px hsl(var(--shadow-color) / 0.46),
+			0.1px 1.5px 1.6px -1.3px hsl(var(--shadow-color) / 0.44),
+			0.1px 2.5px 2.6px -1.7px hsl(var(--shadow-color) / 0.42),
+			0.2px 4.1px 4.3px -2.1px hsl(var(--shadow-color) / 0.4),
+			0.3px 6.4px 6.7px -2.6px hsl(var(--shadow-color) / 0.38),
+			0.4px 9.5px 10px -3px hsl(var(--shadow-color) / 0.36);
+	}
+
+	:root.dark {
+		color-scheme: dark;
+		--theme-bg: #0e0e0e;
+		--theme-link: #d480aa;
+		--theme-text: #c9cacc;
+		--theme-accent: #2bbc89;
+		--theme-accent-2: #eee;
+		--theme-quote: #ccffb6;
+		--theme-menu-bg: rgb(29 31 33 / 0.85);
+		--theme-link-hover-bg: #cd3724;
+	}
+
+	html {
+		@apply h-full scroll-smooth border-t-2 border-textColor;
+		font-family: "bm", sans-serif;
+	}
+
+	html body {
+		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+		font-family: "bm", sans-serif;
+	}
+
+	.tpl {
+		filter: drop-shadow(1px 1px 1px #787887);
+	}
+
+	.logo {
+		background-position: center;
+		background-clip: text;
+		background-image: url("/images/email.webp");
+		color: transparent;
+		animation: hmh 20s infinite;
+		cursor: pointer;
+	}
+
+	.about {
+		background-position: center;
+		background-image: url("/images/om.png");
+	}
+
+	.email {
+		background-position: center;
+		background-clip: text;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.email:hover {
+		background-size: 100%;
+		border-bottom: 2px solid #b91c1c;
+	}
+
+	@keyframes hmh {
+		0%,
+		20% {
+			background-size: 80%;
+			background-position: 0% 0%;
+		}
+		50% {
+			background-size: 5%;
+			background-position: 100% 100%;
+		}
+		100% {
+			background-size: 80%;
+			background-position: 0% 0%;
+		}
+	}
+
+	@font-face {
+		font-family: "bm";
+		src: url("/fonts/bm.woff") format("woff");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	.exp-counter {
+		@apply flex overflow-hidden h-8;
+	}
+
+
+	.exp {
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		overflow: hidden;
+		align-items: center;
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+	}
+
+	.exp span {
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		transition: all 2s ease;
+		transform: translateY(0);
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+	}
+
+
+	.exp span span {
+		flex: 0 0 100%;
+		height: 100%;
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+	}
+
+
+	.tooltip {
+		@apply invisible absolute;
+	  }
+	  
+	  .has-tooltip:hover .tooltip {
+		@apply visible z-50;
+	  }	
+}

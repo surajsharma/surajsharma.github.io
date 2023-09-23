@@ -1,0 +1,117 @@
+---
+import PageLayout from "@/layouts/Base";
+import { Image } from "@astrojs/image/components";
+import { clients } from "@/data/clients";
+
+const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
+
+---
+
+<PageLayout meta={{ title: "Home" }}>
+	<script is:inline src="/scripts/counter.js"></script>
+	<script define:vars={{ exp_url }} type="module">
+		const exp = document.getElementById("exp");
+		const old = createFormattedNumberArray(exp.innerText);
+		const res = animateNumber(old, exp, old).then(async(res)=>{
+			if (res && res === 1) {
+				await update();
+				setInterval(update, 10000);
+			}
+		});
+
+
+		async function update() {
+			const ss = Date.now();
+
+			let experience = await fetch(exp_url + "?ss=" + ss, {
+				cache: "no-cache",
+			}).then((data) => data.json());
+			
+
+			const newExp = new Intl.NumberFormat("en-GB").format(experience);
+			const value = createFormattedNumberArray(newExp);
+
+			if (value != old) await animateNumber(value, exp, old);
+		}
+	</script>
+	<section class="flex-col" client:load>
+		<div class="mb-14 text-xl lowercase leading-relaxed">
+			<span class="inline-block">
+				<span class="exp-counter">
+					<span onClick={()=>update()} class="exp cursor-pointer" id="exp">10,000</span>
+				</span>
+			</span>
+
+			<sup class="cursor-pointer font-semibold">+</sup> man-hours of experience in delivering excellent
+			frontends, highly available <span class="text-xl font-semibold uppercase">API</span>s,
+			scalable <span class="text-xl font-semibold">services</span>, and <span
+				class="text-xl font-semibold">operations</span
+			> on the <span class="text-xl font-semibold">edge</span>, <span class="text-xl font-semibold"
+				>cloud</span
+			>, and <span class="text-xl font-semibold">downstream</span>.
+			<br /><br />
+			<p class="mb-10 text-xl lowercase leading-relaxed">
+				Email
+				<a class="email font-semibold underline underline-offset-2" href="mailto:suraj@evenzero.in"
+					>suraj@evenzero.in</a
+				>
+				for incredible, domain-agnostic, agile adventures in shipping quality software.
+			</p>
+			<br />
+		</div>
+
+		<p class="mb-14 text-lg lowercase">Global teams / governments served:</p>
+		<div class="showcase rounded-xl p-2 sm:scale-100 md:scale-110">
+			<section
+				class="grid grid-cols-2 place-items-center items-center gap-12 p-2 text-center lg:grid-cols-3"
+			>
+				{
+					clients.map((client) => {
+						if (!client.agency) {
+							return (
+								<a href={client.url} target="_blank">
+									<Image
+										class="tpl"
+										height={client.img.height}
+										width={client.img.width}
+										src={client.img.import}
+										alt={client.name}
+									/>
+								</a>
+							);
+						} else {
+							if (client.clients?.length) {
+								return (
+									<>
+										<a href={client.url} target="_blank">
+											<Image
+												class="tpl"
+												height={client.img.height}
+												width={client.img.width}
+												src={client.img.import}
+												alt={client.name}
+											/>
+										</a>
+										{client.clients?.map((c) => {
+											return (
+												<a href={c.url} target="_blank">
+													<Image
+														class="tpl"
+														height={c.img.height}
+														width={client.img.width}
+														src={c.img.import}
+														alt={c.name}
+													/>
+												</a>
+											);
+										})}
+									</>
+								);
+							}
+						}
+					})
+				}
+			</section>
+		</div>
+	</section>
+</PageLayout>
