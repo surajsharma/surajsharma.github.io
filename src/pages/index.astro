@@ -29,10 +29,11 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 			
 			const newExp = new Intl.NumberFormat("en-GB").format(experience);
 			const value = createFormattedNumberArray(newExp);
-
+			
 			if (value.join("") == old.join("")) return;
+
 			await animateNumber(value, exp, old);
-			old = createFormattedNumberArray(exp.innerText);
+			old = createFormattedNumberArray(newExp);
 		}
 	</script>
 	<section class="flex-col" client:load>
