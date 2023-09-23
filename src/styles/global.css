@@ -148,6 +148,6 @@
 	  }
 	  
 	  .has-tooltip:hover .tooltip {
-		@apply visible z-50;
+		@apply visible z-50 mt-[20px] -ml-[100px] shadow;
 	  }	
 }
