@@ -20,6 +20,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				bgColor2: "var(--theme-menu-bg)",
 				bgColor: "var(--theme-bg)",
 				linkHover: "var(--theme-link-hover-bg)",
 				textColor: "var(--theme-text)",

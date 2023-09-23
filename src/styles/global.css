@@ -53,6 +53,10 @@
 		font-family: "bm", sans-serif;
 	}
 
+	.showcase{
+		@apply bg-bgColor2
+	}
+
 	.tpl {
 		filter: drop-shadow(1px 1px 1px #787887);
 	}

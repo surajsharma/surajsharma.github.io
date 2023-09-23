@@ -12,7 +12,8 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 	<script define:vars={{ exp_url }} type="module">
 		const exp = document.getElementById("exp");
 		let old = createFormattedNumberArray(exp.innerText);
-		const res = animateNumber(old, exp, old).then(async(res)=>{
+		
+		animateNumber(old, exp, old).then(async(res)=>{
 			if (res && res === 1) {
 				await update();
 				setInterval(update, 10000);
@@ -37,7 +38,7 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 		}
 	</script>
 	<section class="flex-col" client:load>
-		<div class="mb-14 text-xl lowercase leading-relaxed">
+		<div class="text-xl lowercase leading-relaxed">
 			<span class="inline-block">
 				<span class="exp-counter">
 					<span class="exp cursor-pointer" id="exp">10,000</span>
@@ -52,7 +53,7 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 				>cloud</span
 			>, and <span class="text-xl font-semibold">downstream</span>.
 			<br /><br />
-			<p class="mb-10 text-xl lowercase leading-relaxed">
+			<p class="mt-10 text-xl lowercase leading-relaxed">
 				Email
 				<a class="email font-semibold underline underline-offset-2" href="mailto:suraj@evenzero.in"
 					>suraj@evenzero.in</a
@@ -61,11 +62,10 @@ const exp_url =  import.meta.env.FB_EXP_RTDB_URL;
 			</p>
 			<br />
 		</div>
-
-		<p class="mb-14 text-lg lowercase">Global teams / governments served:</p>
-		<div class="showcase rounded-xl p-2 sm:scale-100 md:scale-110">
+		<p class="mt-10 text-lg lowercase">Global teams / governments served:</p>
+		<div class="mt-10  rounded-xl p-2 sm:scale-100 md:scale-110">
 			<section
-				class="grid grid-cols-2 place-items-center items-center gap-12 p-2 text-center lg:grid-cols-3"
+				class="grid grid-cols-2 place-items-center items-center gap-12 p-4 text-center lg:grid-cols-3"
 			>
 				{
 					clients.map((client) => {

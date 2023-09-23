@@ -73,28 +73,6 @@ export const clients: client[] = [
 		remote: true,
 	},
 	{
-		name: "Socratease / Autoproctor",
-		hq: "IN",
-		img: {
-			import: apr,
-			height: 40,
-		},
-		url: "https://www.autoproctor.co/",
-		agency: false,
-		remote: false,
-	},
-	{
-		name: "Employees' State Insurance Corporation",
-		hq: "IN",
-		img: {
-			import: ESICBlack,
-			height: 42,
-		},
-		url: "https://esic.gov.in/",
-		agency: false,
-		remote: false,
-	},
-	{
 		name: "Able",
 		hq: "IN",
 		img: {
@@ -118,30 +96,6 @@ export const clients: client[] = [
 			},
 		],
 	},
-
-	{
-		name: "Bombay Shirts Company",
-		hq: "IN",
-		img: {
-			import: bsc,
-			height: 36,
-		},
-		url: "https://www.bombayshirts.com",
-		agency: false,
-		remote: false,
-	},
-
-	{
-		name: "SalesBeat",
-		hq: "UK",
-		img: {
-			import: sb,
-			height: 48,
-		},
-		url: "https://www.salesbeat.co/",
-		agency: false,
-		remote: true,
-	},
 	{
 		name: "NSE Cogencis",
 		hq: "IN",
@@ -163,5 +117,50 @@ export const clients: client[] = [
 		url: "https://tattle.co.in/",
 		agency: false,
 		remote: true,
+	},
+	{
+		name: "SalesBeat",
+		hq: "UK",
+		img: {
+			import: sb,
+			height: 48,
+		},
+		url: "https://www.salesbeat.co/",
+		agency: false,
+		remote: true,
+	},
+	{
+		name: "Bombay Shirts Company",
+		hq: "IN",
+		img: {
+			import: bsc,
+			height: 36,
+		},
+		url: "https://www.bombayshirts.com",
+		agency: false,
+		remote: false,
+	},
+
+	{
+		name: "Socratease / Autoproctor",
+		hq: "IN",
+		img: {
+			import: apr,
+			height: 40,
+		},
+		url: "https://www.autoproctor.co/",
+		agency: false,
+		remote: false,
+	},
+	{
+		name: "Employees' State Insurance Corporation",
+		hq: "IN",
+		img: {
+			import: ESICBlack,
+			height: 42,
+		},
+		url: "https://esic.gov.in/",
+		agency: false,
+		remote: false,
 	},
 ];
