@@ -30,6 +30,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions: write-all
+    environment:
+      name: github-pages
     steps:
       - name: 🗑 Delete deployment
         uses: strumwolf/delete-deployment-environment@v2
