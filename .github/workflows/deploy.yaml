@@ -25,6 +25,28 @@ jobs:
         # path: . # The root location of your Astro project inside the repository. (optional)
         # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
         # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Points to a recent commit instead of `main` to avoid supply chain attacks. (The latest tag is very old.)
+      - name: 🎟 Get GitHub App token
+        uses: navikt/github-app-token-generator@a3831f44404199df32d8f39f7c0ad9bb8fa18b1c
+        id: get-token
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
+      - name: 🗑 Delete deployment environment
+        uses: strumwolf/delete-deployment-environment@v2.2.3
+        with:
+          # Use a JWT created with your GitHub App's private key
+          token: ${{ steps.get-token.outputs.token }}
+          environment: pr-${{ github.event.number }}
+          ref: ${{ github.ref_name }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
