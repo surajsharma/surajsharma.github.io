@@ -53,10 +53,6 @@
 		font-family: "bm", sans-serif;
 	}
 
-	.showcase{
-		@apply bg-bgColor2
-	}
-
 	.tpl {
 		filter: drop-shadow(1px 1px 1px #787887);
 	}
@@ -112,9 +108,8 @@
 	}
 
 	.exp-counter {
-		@apply flex overflow-hidden h-8;
+		@apply flex h-8 overflow-hidden;
 	}
-
 
 	.exp {
 		position: relative;
@@ -122,7 +117,7 @@
 		align-items: flex-end;
 		overflow: hidden;
 		align-items: center;
-		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
 	}
 
 	.exp span {
@@ -132,22 +127,20 @@
 		height: 100%;
 		transition: all 2s ease;
 		transform: translateY(0);
-		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
 	}
-
 
 	.exp span span {
 		flex: 0 0 100%;
 		height: 100%;
-		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent
+		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
 	}
-
 
 	.tooltip {
 		@apply invisible absolute;
-	  }
-	  
-	  .has-tooltip:hover .tooltip {
-		@apply visible z-50 mt-[20px] -ml-[100px] shadow;
-	  }	
+	}
+
+	.has-tooltip:hover .tooltip {
+		@apply visible z-50 mt-6 shadow;
+	}
 }
