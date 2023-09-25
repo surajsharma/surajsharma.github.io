@@ -68,7 +68,7 @@ export const clients: client[] = [
 			import: sn,
 			height: 32,
 		},
-		url: "https://www.cybrilla.com/",
+		url: "https://www.starknet.io/en",
 		agency: false,
 		remote: true,
 	},
