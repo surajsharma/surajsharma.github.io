@@ -36,15 +36,26 @@ jobs:
           AUTH_TOKEN=$(curl https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$FB_API_KEY -H 'Content-Type: application/json' --data-binary '{"returnSecureToken":true}' | sed -n '/idToken/p' | sed -E 's/.*"(.*)".*/\1/')
           curl -X PATCH -d '{"experience":'"$NEW_EXPERIENCE_NUMBER"'}' -H "Content-Type: application/json" $FB_EXP_UPDATE_URL?auth=$AUTH_TOKEN
         shell: bash
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    needs: cron
+  cleanup:
     runs-on: ubuntu-latest
-    name: Deploy
+    permissions: write-all
+
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - uses: actions/checkout@v3
+
+      # Points to a recent commit instead of `main` to avoid supply chain attacks. (The latest tag is very old.)
+      - name: 🎟 Get GitHub App token
+        uses: navikt/github-app-token-generator@a3831f44404199df32d8f39f7c0ad9bb8fa18b1c
+        id: get-token
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
+      - name: 🗑 Delete deployment environment
+        uses: strumwolf/delete-deployment-environment@v2.2.3
+        with:
+          # Use a JWT created with your GitHub App's private key
+          token: ${{ steps.get-token.outputs.token }}
+          environment: github-pages
+          ref: ${{ github.ref_name }}
+          onlyRemoveDeployments: true
