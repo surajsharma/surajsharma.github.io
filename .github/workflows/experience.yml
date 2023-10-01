@@ -15,6 +15,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *"
+
+env:
+  BUILD_PATH: "."
+
 jobs:
   cron:
     runs-on: ubuntu-latest
