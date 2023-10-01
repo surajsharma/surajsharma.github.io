@@ -20,3 +20,15 @@ jobs:
           AUTH_TOKEN=$(curl https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$FB_API_KEY -H 'Content-Type: application/json' --data-binary '{"returnSecureToken":true}' | sed -n '/idToken/p' | sed -E 's/.*"(.*)".*/\1/')
           curl -X PATCH -d '{"experience":'"$NEW_EXPERIENCE_NUMBER"'}' -H "Content-Type: application/json" $FB_EXP_UPDATE_URL?auth=$AUTH_TOKEN
         shell: bash
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    needs: cron
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
