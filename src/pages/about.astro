@@ -1,6 +1,7 @@
 ---
 import PageLayout from "@/layouts/Base";
-import f from "../assets/ip.png";
+import f from "../assets/eo_2.png";
+import e from "../assets/e0.png";
 
 import { Image } from "@astrojs/image/components";
 
@@ -15,7 +16,14 @@ const meta = {
 		<div class="space-y-6 bg-bgColor p-2 opacity-90 shadow">
 			<div class="items-top flex flex-col gap-3 rounded-lg border border-bgColor p-0">
 				<div class="flex items-center justify-between">
-					<Image class="rounded-lg p-4" src={f} alt="me" width={100} />
+					<div class="flex gap-0">
+						<a href="/">
+							<Image class="rounded-lg p-1" src={f} alt="me" width={100} />
+						</a>
+						<a href="https://ip.evenzero.in/">
+							<Image class="rounded-lg p-1" src={e} alt="me" width={50} />
+						</a>
+					</div>
 					<h1 class="p-4 text-lg font-semibold uppercase">evenzero</h1>
 				</div>
 				<span class="grid grid-cols-2 gap-3 p-4 sm:grid-cols-1">
