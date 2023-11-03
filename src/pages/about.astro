@@ -1,9 +1,6 @@
 ---
 import PageLayout from "@/layouts/Base";
-import f from "../assets/e0_4.png";
-import e from "../assets/e0.png";
 
-import { Image } from "@astrojs/image/components";
 
 const meta = {
 	title: "About",
@@ -17,22 +14,10 @@ const meta = {
 			<div class="items-top flex flex-col gap-3 rounded-lg border border-bgColor p-0">
 				<div class="flex items-center justify-between">
 					<div class="flex gap-0">
-						<a href="/">
-							<Image class="rounded-lg p-1" src={f} alt="evenzero" width={92} />
-						</a>
-						<a href="https://ip.evenzero.in/">
-							<Image class="rounded-lg p-1" src={e} alt="inversepolarity" width={32} />
-						</a>
 					</div>
 					<h1 class="p-4 text-lg font-semibold uppercase">evenzero</h1>
 				</div>
 				<span class="grid grid-cols-2 gap-3 p-4 sm:grid-cols-1">
-					<p
-						class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
-					>
-						Estd. 2018, by Suraj Sharma, a guy who shipped his first piece of commercial software at
-						the turn of the milennium. We excel in balancing precision and redundancy.
-					</p>
 					<p class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold">
 						<span class="has-tooltip cursor-pointer text-teal-600">
 							<span
@@ -132,6 +117,12 @@ const meta = {
 							Weapons-grade
 						</span> software and distributed systems pushing the envelope for institutional investors,
 						fintech, fashion, academia, ed-tech, e-commerce, and saas businesses.
+					</p>
+					<p
+						class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
+					>
+						Estd. 2018, by Suraj Sharma, a guy who shipped his first piece of commercial software at
+						the turn of the milennium. We excel in balancing precision and redundancy.
 					</p>
 				</span>
 			</div>
