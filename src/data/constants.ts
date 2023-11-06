@@ -39,8 +39,8 @@ export const FOOOTER_LINKS = [
 		path: "https://github.com/surajsharma/",
 	},
 	{
-		title: "StackOverflow",
-		path: "https://stackoverflow.com/users/11857517/suraj",
+		title: "inversepolarity",
+		path: "https://ip.evenzero.in",
 	},
 	{
 		title: "LinkedIn",
