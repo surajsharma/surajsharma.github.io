@@ -44,7 +44,7 @@ The open source scraper built for [Tattle](tattle.co.in) takes in the `.zip/.txt
 
 ## [SVG Crossword](https://github.com/surajsharma/Crossword)
 A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. Here's a [video demo](https://www.youtube.com/watch?v=pkqtAVJ-olc). 
- [![URL Shortener](../../assets/CW.gif)](https://github.com/surajsharma/Crossword "svg crossword")
+ [![crossword](/images/CW.gif)](https://github.com/surajsharma/Crossword "svg crossword")
 
 
 
@@ -52,7 +52,7 @@ A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. In
 
 ## [Match The Following](https://codepen.io/surajs1/pen/mYXeWJ)
 A match-the-following game written in [p5js](https://p5js.org). Later at [Socratease](socratease.in), this evolved into a purely React-based project using Atlassian's [React-Beautiful-DnD](https://github.com/atlassian/react-beautiful-dnd). A similar implementation of this turned into a Classification puzzle for [Socratease](socratease.co), here, instead of matching columns, the user must drag the choices into appropriate "buckets". Features included a randomized color-colding scheme which informs the user of the correct bucket. Click on images for respective demos/videos.
- [![Match The Following](../../assets/mtf.png)](https://codepen.io/surajs1/pen/mYXeWJ) 
+ [![Match The Following](/images/mtf.png)](https://codepen.io/surajs1/pen/mYXeWJ) 
 
 ---
 
