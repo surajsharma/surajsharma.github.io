@@ -1,4 +1,5 @@
 const yyyy: number = new Date().getFullYear();
+// the page is served pre-rendered, forcing yearly rebuilds here
 
 export const ALLY = [
 	"evenzero",
