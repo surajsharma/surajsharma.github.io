@@ -28,34 +28,32 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-		<div class="mb-24 flex w-full justify-between">
-				
-				<span class="font-bold text-xl">
-					<p class="logo">evenzero</p>
+			<div class="mb-24 flex w-full justify-between">
+				<span class="text-xl font-bold">
+					<p>even</p>
+					<p class="-mt-4">zero</p>
 				</span>
 				<nav
-				id="navigation-menu"
-				class="text-[12px] mt-16 my-6 mx-[-7px] absolute"
-				aria-label="Main menu"
-			>
-				{
-					MENU_LINKS.map((link) => (
-						<a
-							href={link.path}
-							class=" px-2 py-2 underline underline-offset-2 uppercase sm:py-0 hover:text-accent-2 hover:bg-linkHover hover:text-white hover:no-underline"
-							aria-current={url.pathname === link.path ? "page" : false}
-							rel="prefetch"
-						>
-							{link.title}
-						</a>
-					))
-				}
-			</nav>
-			<div class="xl:invisible xl:hidden relative">
-				
-			</div>
-			<ThemeToggle />
-			<!-- <SocialList /> -->
+					id="navigation-menu"
+					class="absolute mx-[-7px] my-6 mt-16 text-[12px]"
+					aria-label="Main menu"
+				>
+					{
+						MENU_LINKS.map((link) => (
+							<a
+								href={link.path}
+								class=" px-2 py-2 uppercase underline underline-offset-2 hover:bg-linkHover hover:text-accent-2 hover:text-white hover:no-underline sm:py-0"
+								aria-current={url.pathname === link.path ? "page" : false}
+								rel="prefetch"
+							>
+								{link.title}
+							</a>
+						))
+					}
+				</nav>
+				<div class="relative xl:invisible xl:hidden"></div>
+				<ThemeToggle />
+				<!-- <SocialList /> -->
 				<!-- <button
 					id="toggle-navigation-menu"
 					class="group mt-1 ms-8 h-10 w-10 sm:invisible sm:hidden relative mr-0"
