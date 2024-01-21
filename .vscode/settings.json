@@ -16,5 +16,6 @@
 		"astro", // Enable .astro
 		"typescript", // Enable .ts
 		"typescriptreact"
-	]
+	],
+	"GitHooks.hooksDirectory": "/root/surajsharma.github.io/.git/hooks"
 }
