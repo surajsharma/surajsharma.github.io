@@ -86,15 +86,15 @@
 	@keyframes hmh {
 		0%,
 		20% {
-			background-size: 80%;
+			background-size: 200%;
 			background-position: 0% 0%;
 		}
 		50% {
-			background-size: 5%;
+			background-size: 100%;
 			background-position: 100% 100%;
 		}
 		100% {
-			background-size: 80%;
+			background-size: 200%;
 			background-position: 0% 0%;
 		}
 	}

@@ -28,25 +28,28 @@ const url = new URL(Astro.request.url);
 			class="inline-flex items-center hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<div class="mb-24 flex w-full justify-between">
-				<span class="text-xl font-bold">
-					<p>even</p>
-					<p class="-mt-4">zero</p>
+			<div class="mb-12 flex w-full justify-between align-middle">
+				<span class="text-xl font-bold leading-none">
+					<p class="">ev</p>
+					<p class="">en</p>
+					<p class="">ze</p>
+					<p class="">ro</p>
 				</span>
 				<nav
 					id="navigation-menu"
-					class="absolute mx-[-7px] my-6 mt-16 text-[12px]"
+					class="text-[12px] ml-2 border-l border-linkHover"
 					aria-label="Main menu"
 				>
 					{
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class=" px-2 py-2 uppercase underline underline-offset-2 hover:bg-linkHover hover:text-accent-2 hover:text-white hover:no-underline sm:py-0"
+								class="px-2 uppercase  underline-offset-2  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0  leading-none hover:border-l-4 hover:border-linkHover"
 								aria-current={url.pathname === link.path ? "page" : false}
 								rel="prefetch"
 							>
 								{link.title}
+								<br/>
 							</a>
 						))
 					}
