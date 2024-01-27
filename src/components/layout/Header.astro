@@ -6,6 +6,8 @@ import ThemeToggle from "../ThemeToggle.astro";
 const url = new URL(Astro.request.url);
 ---
 
+<script is:inline src="/scripts/baffle.js"></script>
+
 <script>
 	// import { toggleClass } from "@/utils";
 	// document.addEventListener("DOMContentLoaded", () => {
@@ -19,37 +21,44 @@ const url = new URL(Astro.request.url);
 	// 		toggleMenuButton.setAttribute("aria-expanded", menuOpen.toString());
 	// 	});
 	// });
+	// With options
+	let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
+	b.reveal(9999);
+
+	setInterval(() => {
+		let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
+		b.start();
+		b.reveal(1000);
+		b.stop();
+	}, 5000);
 </script>
 
-<header id="main-header" class="w-full">
+<header id="main-header" class="mb-12 h-20 w-full">
 	<div class="flex sm:flex-col">
 		<a
 			href="/"
 			class="inline-flex items-center hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<div class="mb-12 flex w-full justify-between align-middle">
-				<span class="text-xl font-bold leading-none">
-					<p class="">ev</p>
-					<p class="">en</p>
-					<p class="">ze</p>
-					<p class="">ro</p>
-				</span>
+			<div class="flex h-20 w-full justify-between overflow-hidden align-middle">
+				<div class="text-wrap w-6 items-center break-words text-xl font-bold leading-none">
+					<p class="evenzero h-full">evenzero</p>
+				</div>
 				<nav
 					id="navigation-menu"
-					class="text-[12px] ml-2 border-l border-linkHover"
+					class="ml-2 border-l border-linkHover text-[12px]"
 					aria-label="Main menu"
 				>
 					{
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class="px-2 uppercase  underline-offset-2  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0  leading-none hover:border-l-4 hover:border-linkHover"
+								class="hover:evenzero px-2  uppercase  leading-4	 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
 								aria-current={url.pathname === link.path ? "page" : false}
 								rel="prefetch"
 							>
 								{link.title}
-								<br/>
+								<br />
 							</a>
 						))
 					}
