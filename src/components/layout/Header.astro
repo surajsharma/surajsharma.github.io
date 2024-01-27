@@ -8,30 +8,24 @@ const url = new URL(Astro.request.url);
 <script is:inline src="/scripts/baffle.js"></script>
 
 <script>
-	let i: NodeJS.Timer | undefined;
-	let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
-	b.reveal(5000);
-	b.stop();
+	let titleAnimationInterval: NodeJS.Timer | undefined;
+	let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" }).reveal(5000).stop();
 
 	window.addEventListener("load", () => {
-		i = setInterval(() => {
-			let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
-			b.reveal(5000);
-			b.stop();
+		titleAnimationInterval = setInterval(() => {
+			b.reveal(5000).stop();
 		}, 5000);
 	});
 
 	window.addEventListener("focus", () => {
-		i = setInterval(() => {
-			let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
-			b.reveal(5000);
-			b.stop();
+		b.reveal(5000).stop();
+		titleAnimationInterval = setInterval(() => {
+			b.reveal(5000).stop();
 		}, 5000);
 	});
 
 	window.addEventListener("blur", () => {
-		clearInterval(i);
-		let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
+		clearInterval(titleAnimationInterval);
 		b.stop();
 	});
 </script>

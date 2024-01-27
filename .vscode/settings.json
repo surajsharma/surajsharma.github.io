@@ -17,5 +17,5 @@
 		"typescript", // Enable .ts
 		"typescriptreact"
 	],
-	"GitHooks.hooksDirectory": "/root/surajsharma.github.io/.git/hooks"
+	"GitHooks.hooksDirectory": "/root/portfolios/surajsharma.github.io/.git/hooks"
 }
