@@ -1,5 +1,4 @@
 ---
-// import SocialList from "../SocialList.astro";
 import { MENU_LINKS } from "@/data/constants";
 import ThemeToggle from "../ThemeToggle.astro";
 
@@ -9,28 +8,32 @@ const url = new URL(Astro.request.url);
 <script is:inline src="/scripts/baffle.js"></script>
 
 <script>
-	// import { toggleClass } from "@/utils";
-	// document.addEventListener("DOMContentLoaded", () => {
-	// 	const header = document.getElementById("main-header") as HTMLElement;
-	// 	const toggleMenuButton = document.getElementById("toggle-navigation-menu") as HTMLButtonElement;
-	// 	let menuOpen = false;
-
-	// 	toggleMenuButton.addEventListener("click", () => {
-	// 		toggleClass(header, "menu-open");
-	// 		menuOpen = !menuOpen;
-	// 		toggleMenuButton.setAttribute("aria-expanded", menuOpen.toString());
-	// 	});
-	// });
-	// With options
+	let i: NodeJS.Timer | undefined;
 	let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
-	b.reveal(9999);
+	b.reveal(5000);
+	b.stop();
 
-	setInterval(() => {
+	window.addEventListener("load", () => {
+		i = setInterval(() => {
+			let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
+			b.reveal(5000);
+			b.stop();
+		}, 5000);
+	});
+
+	window.addEventListener("focus", () => {
+		i = setInterval(() => {
+			let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
+			b.reveal(5000);
+			b.stop();
+		}, 5000);
+	});
+
+	window.addEventListener("blur", () => {
+		clearInterval(i);
 		let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" });
-		b.start();
-		b.reveal(1000);
 		b.stop();
-	}, 5000);
+	});
 </script>
 
 <header id="main-header" class="mb-12 h-20 w-full">
@@ -53,7 +56,7 @@ const url = new URL(Astro.request.url);
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class="hover:evenzero px-2  uppercase  leading-4	 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
+								class="px-2  uppercase  leading-4	 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
 								aria-current={url.pathname === link.path ? "page" : false}
 								rel="prefetch"
 							>
@@ -65,44 +68,6 @@ const url = new URL(Astro.request.url);
 				</nav>
 				<div class="relative xl:invisible xl:hidden"></div>
 				<ThemeToggle />
-				<!-- <SocialList /> -->
-				<!-- <button
-					id="toggle-navigation-menu"
-					class="group mt-1 ms-8 h-10 w-10 sm:invisible sm:hidden relative mr-0"
-					type="button"
-					aria-label="Open main menu"
-					aria-expanded="false"
-					aria-haspopup="menu"
-				>
-					<svg
-						id="line-svg"
-						class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
-						aria-hidden="true"
-						focusable="false"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-					>
-						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"
-						></path>
-					</svg>
-					<svg
-						id="cross-svg"
-						class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
-						class="text-accent"
-						aria-hidden="true"
-						focusable="false"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-					>
-						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
-				</button>  -->
 			</div>
 		</a>
 	</div>
