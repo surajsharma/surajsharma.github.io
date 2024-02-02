@@ -1,0 +1,61 @@
+---
+const { fe, be, de, qa } = Astro.props;
+import Badge from "./Badge.astro";
+---
+
+<div class="flex w-96">
+	<div class="flex w-full justify-between">
+		<div class="flex-col">
+			<div class="mb-4 text-xs">Frontend</div>
+			<div class="flex-col">
+				{
+					fe &&
+						fe.map((f: string) => (
+							<div class="mb-2">
+								<Badge badge={f} />
+							</div>
+						))
+				}
+			</div>
+		</div>
+		<div class="flex-col">
+			<div class="mb-4 text-xs">Backend</div>
+			<div class="flex-col">
+				{
+					be &&
+						be.map((f: string) => (
+							<div class="mb-2">
+								<Badge badge={f} />
+							</div>
+						))
+				}
+			</div>
+		</div>
+		<div class="flex-col">
+			<div class="mb-4 text-xs">Devops</div>
+			<div class="flex-col">
+				{
+					de &&
+						de.map((f: string) => (
+							<div class="mb-2">
+								<Badge badge={f} />
+							</div>
+						))
+				}
+			</div>
+		</div>
+		<div class="flex-col">
+			<div class="mb-4 text-xs">QA/Other</div>
+			<div class="flex-col">
+				{
+					qa &&
+						qa.map((f: string) => (
+							<div class="mb-2">
+								<Badge badge={f} />
+							</div>
+						))
+				}
+			</div>
+		</div>
+	</div>
+</div>

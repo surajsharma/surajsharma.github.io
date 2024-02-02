@@ -1,15 +1,6 @@
 const yyyy: number = new Date().getFullYear();
 // the page is served pre-rendered, forcing yearly rebuilds here
 
-export const ALLY = [
-	"evenzero",
-	"பூஜ்ஜியம்",
-	"даженоль",
-	"偶数ゼロ",
-	"이븐제로",
-	"אפילאפס",
-	"ਈਵਨਜ਼ੀਰੋ",
-];
 
 export const MENU_LINKS = [
 	{
@@ -52,11 +43,3 @@ export const FOOOTER_LINKS = [
 		path: "https://t.ly/FOrl6",
 	},
 ];
-
-// ! Remember to add your own socials
-export const SOCIAL_LINKS = {
-	github: "https://github.com/chrismwilliams/astro-cactus",
-	twitter: "https://github.com/chrismwilliams/astro-cactus",
-	discord: "https://github.com/chrismwilliams/astro-cactus",
-	email: "me@example.com",
-};

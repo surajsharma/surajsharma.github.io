@@ -1,0 +1,33 @@
+---
+const { name, desc, skills } = Astro.props;
+import SkillTable from "./SkillTable.astro";
+
+// const { fe, be, de, qa } = skills;
+---
+
+<div class="flex flex-row justify-between p-2 md:flex-col">
+	<div class="flex-col">
+		<p class="mb-2 text-lg">{name}</p>
+		<p class="mr-4 text-justify text-sm">{desc}</p>
+	</div>
+
+	<div class="flex-col p-2">
+		<SkillTable
+			fe={["svelte", "pug", "figma", "tailwind", "sass"]}
+			be={["ethereum", "appologql", "typescript", "solidity", "openzeppelin"]}
+			de={["vercel"]}
+			qa={["chai", "postcss", "vite"]}
+		/>
+		<br /><hr /><br />
+		<div>
+			<script is:inline src="/scripts/cg.js"></script>
+			<coingecko-coin-price-chart-widget
+				currency="usd"
+				coin-id="clearpool"
+				locale="en"
+				height="200"
+			>
+			</coingecko-coin-price-chart-widget>
+		</div>
+	</div>
+</div>

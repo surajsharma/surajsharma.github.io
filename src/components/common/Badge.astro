@@ -1,0 +1,7 @@
+---
+import { badges } from "@/data/badges";
+const { badge } = Astro.props;
+const ref = badges[badge];
+---
+
+<img src={ref} alt={badge} />
