@@ -142,7 +142,7 @@ export const clients: client[] = [
 	},
 
 	{
-		name: "Socratease / Autoproctor",
+		name: "Socratease Autoproctor Equip",
 		hq: "IN",
 		img: {
 			import: apr,
