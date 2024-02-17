@@ -30,8 +30,8 @@ const url = new URL(Astro.request.url);
 	});
 </script>
 
-<header id="main-header" class="mb-12 h-20 w-full">
-	<div class="flex sm:flex-col">
+<header id="main-header" class="-ml-4 mb-12 h-20 w-full flex justify-between">
+	<div class="flex sm:flex-col justify-between">
 		<a
 			href="/"
 			class="inline-flex items-center hover:filter-none"
@@ -61,9 +61,10 @@ const url = new URL(Astro.request.url);
 						))
 					}
 				</nav>
-				<div class="relative xl:invisible xl:hidden"></div>
-				<ThemeToggle />
+
 			</div>
 		</a>
 	</div>
+	<div class="relative xl:invisible xl:hidden"></div>
+	<ThemeToggle />
 </header>
