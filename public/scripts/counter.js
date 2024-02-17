@@ -11,15 +11,17 @@ function createFormattedNumberArray(fnumber) {
 
 async function animateNumber(numberArray, element, oldArray) {
 	element.innerHTML = null;
+
 	const ele = await createNumberHTML(numberArray, oldArray, element);
 	if (!ele) return;
+
 	const ticks = [...ele.querySelectorAll("span[data-counter]")];
 	if (!ticks.length) return;
 	return new Promise(async (resolve, reject) => {
 		for (const tick of ticks) {
 			const dist = parseInt(tick.getAttribute("data-counter") - 1);
 			tick.style.transform = `translateY(-${dist * 100}%)`;
-			await sleep(10);
+			await sleep(20);
 			resolve(1);
 		}
 	});
