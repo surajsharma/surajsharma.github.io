@@ -4,6 +4,21 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
+
+
+## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
+![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
+
+basic cellular automata demo using wasm-pack. [[launch](https://evenzero.in/wasm-game-of-life/)]
+
+![Rust Badge](https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square)
+![WebAssembly Badge](https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square)
+![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square)
+
+
+
+---
+
 ## [starknet-erc721](https://github.com/surajsharma/starknet-erc721) 
 an exercise erc721 standard implemented for the zk-snark company Starknet's own blockchain network. the smart contracts are written in a solidity-like language called cairo.
 
