@@ -9,11 +9,9 @@ import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const AssetDir = resolve("src", "assets");
-const RobotoMonoPath = join(AssetDir, "roboto-mono-regular.ttf");
-const RobotoMonoBoldPath = join(AssetDir, "roboto-mono-700.ttf");
+const FontPath = join(AssetDir, "bm.woff");
 
-const RobotoMonoReg = readFileSync(RobotoMonoPath);
-const RobotoMonoBold = readFileSync(RobotoMonoBoldPath);
+const Font = readFileSync(FontPath);
 
 const ogOptions: SatoriOptions = {
 	width: 1200,
@@ -22,13 +20,13 @@ const ogOptions: SatoriOptions = {
 	fonts: [
 		{
 			name: "Roboto Mono",
-			data: RobotoMonoReg,
+			data: Font,
 			weight: 400,
 			style: "normal",
 		},
 		{
 			name: "Roboto Mono",
-			data: RobotoMonoBold,
+			data: Font,
 			weight: 700,
 			style: "normal",
 		},
