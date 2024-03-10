@@ -9,14 +9,12 @@ publishDate: "7 Jun 2023"
 
 basic cellular automata demo using wasm-pack. [launch↗️](https://evenzero.in/wasm-game-of-life/)
 
-<div style="gap:3px; display:flex">
-    <img align="left" src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square">
-    <img align="left" src="https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square">
-    <img align="left" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square">
-    <img align="left" src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat-square">
-    <img align="left" src="https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat-square">
-
-
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat-square" style="margin: 0">
 </div>
 
 
