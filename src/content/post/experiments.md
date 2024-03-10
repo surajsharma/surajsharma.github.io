@@ -4,17 +4,20 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
-
-
 ## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
-basic cellular automata demo using wasm-pack. [[launch](https://evenzero.in/wasm-game-of-life/)]
+basic cellular automata demo using wasm-pack. [launch↗️](https://evenzero.in/wasm-game-of-life/)
 
-![Rust Badge](https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square)
-![WebAssembly Badge](https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square)
-![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square)
+<div style="gap:3px; display:flex">
+    <img align="left" src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square">
+    <img align="left" src="https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square">
+    <img align="left" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square">
+    <img align="left" src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat-square">
+    <img align="left" src="https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat-square">
 
+
+</div>
 
 
 ---
@@ -39,20 +42,25 @@ a babel plugin for more convenient JSX syntax when passing props to components.
 ## [ZYT](https://github.com/inversepolarity/ZYT)
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
 
-<a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip"><img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a> 
-<a href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=Firefox-Browser&amp;logoColor=white" alt="Firefox"></a> 
-<a href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a> 
-<a href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a> <a href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a>
+<div>
+    <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
+    <img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a> 
+    <a class="no-underline" href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=Firefox-Browser&amp;logoColor=white" alt="Firefox"></a>
+    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a>
+    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a>
+    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a>
+</div>
+
 
 ---
 
 ## [Nextrix](https://github.com/surajsharma/nextris)
-My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [start playing](https://nextris.vercel.app/)! [![selectris](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
+My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [start playing↗️](https://nextris.vercel.app/)! [![selectris](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
 
 ---
 
 ## [Whatsapp Scraper](https://koshwapp.netlify.app/)
-The open source scraper built for [Tattle](tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. 
+The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. 
 
 
 ---
@@ -66,7 +74,7 @@ A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. In
 ---
 
 ## [Match The Following](https://codepen.io/surajs1/pen/mYXeWJ)
-A match-the-following game written in [p5js](https://p5js.org). Later at [Socratease](socratease.in), this evolved into a purely React-based project using Atlassian's [React-Beautiful-DnD](https://github.com/atlassian/react-beautiful-dnd). A similar implementation of this turned into a Classification puzzle for [Socratease](socratease.co), here, instead of matching columns, the user must drag the choices into appropriate "buckets". Features included a randomized color-colding scheme which informs the user of the correct bucket. Click on images for respective demos/videos.
+A match-the-following game written in [p5js](https://p5js.org). Later at [Socratease](https://socratease.co), this evolved into a purely React-based project using Atlassian's [React-Beautiful-DnD](https://github.com/atlassian/react-beautiful-dnd). A similar implementation of this turned into a Classification puzzle for [Socratease](https://socratease.co), here, instead of matching columns, the user must drag the choices into appropriate "buckets". Features included a randomized color-colding scheme which informs the user of the correct bucket. Click on images for respective demos/videos.
  [![Match The Following](/images/mtf.png)](https://codepen.io/surajs1/pen/mYXeWJ) 
 
 ---
