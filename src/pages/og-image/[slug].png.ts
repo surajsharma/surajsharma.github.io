@@ -8,7 +8,7 @@ import { Resvg } from "@resvg/resvg-js";
 import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
-const AssetDir = resolve("src", "assets");
+const AssetDir = resolve("public", "fonts");
 const FontPath = join(AssetDir, "bm.woff");
 
 const Font = readFileSync(FontPath);
