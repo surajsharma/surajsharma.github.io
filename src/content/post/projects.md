@@ -3,7 +3,7 @@ title: "Projects"
 description: "Projects I have worked on in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
-<base target="_blank">
+
 
 
 ## [Holdex](https://holdex.io)
@@ -70,7 +70,7 @@ A full-fledged React/Redux/Ruby based factory-to-store e-commerce solution for B
 ---
 
 ## [Salesbeat](https://www.salesbeat.co)
-An AWS Amplify based full-stack solution for collecting sales related data and storing it in a single-table **DynamoDb** database queried via Amplify's Graphql interface. Product [video demo ↗️](https://www.youtube.com/watch?v=TfMYcRGHvcY&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=12).
+An AWS Amplify based full-stack solution for collecting sales related data and storing it in a single-table **DynamoDb** database queried via Amplify's Graphql interface. [Video demo↗️](https://www.youtube.com/watch?v=TfMYcRGHvcY&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=12).
 
 | Frontend                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                               Backend                                                                                                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -79,7 +79,7 @@ An AWS Amplify based full-stack solution for collecting sales related data and s
 ---
 
 ## [Tattle](http://tattle.co.in)
-A FOSS project, and One of the winners of the [AI and the News Open Challenge](https://aiethicsinitiative.org/news/2019/3/12/announcing-the-winners-of-the-ai-and-the-news-open-challenge), Tattle is a civic tech project that aims to build tools and datasets to understand and respond to misinformation in India, in Indian languages. Read more on Tattle [here↗️](https://tattle.co.in/). And [here↗️](https://www.youtube.com/watch?v=Mf93uIUOTts&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=9) is a demo of Ithe solution I built.
+A FOSS project, and One of the winners of the [AI and the News Open Challenge](https://aiethicsinitiative.org/news/2019/3/12/announcing-the-winners-of-the-ai-and-the-news-open-challenge), Tattle is a civic tech project that aims to build tools and datasets to understand and respond to misinformation in India, in Indian languages. [Here↗️](https://www.youtube.com/watch?v=Mf93uIUOTts&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1) is a demo of Ithe solution I built.
 
 | Frontend                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                               Backend                                                                                                                                                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |

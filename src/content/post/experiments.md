@@ -4,8 +4,6 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
-<base target="_blank">
-
 ## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
@@ -27,7 +25,7 @@ an exercise erc721 standard implemented for the zk-snark company Starknet's own 
 
 ---
 
-## [fiber-fullstack-3D-carousel](https://www.youtube.com/watch?v=9YEBQj7bmd8)
+## [fiber-fullstack-3D-carousel](https://github.com/surajsharma/strapi-threejs-fullstack-showcase)
 full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [demo video↗️](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
 
 ---
@@ -55,7 +53,7 @@ Zen mode for youtube - A featured Cross-browser plugin to remove addictive featu
 ---
 
 ## [Nextrix](https://github.com/surajsharma/nextris)
-My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [play now↗️](https://nextris.vercel.app/)! [![selectris](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
+My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [play now↗️](https://nextris.vercel.app/)! [![Nextrix](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
 
 ---
 
@@ -66,7 +64,7 @@ The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.
 ---
 
 ## [SVG Crossword](https://github.com/surajsharma/Crossword)
-A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. Here's a [video demo↗️](https://www.youtube.com/watch?v=pkqtAVJ-olc). 
+A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. 
  [![crossword](/images/CW.gif)](https://github.com/surajsharma/Crossword "svg crossword")
 
 
@@ -94,7 +92,7 @@ A simple CLI-based ray-tracer with basic lighting and **multiprocessing** writte
 ---
 
 ## [URL Shortener](https://github.com/surajsharma/url-shortener)
-Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo](https://www.youtube.com/watch?v=w75OT1gX_uA). 
+Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo↗️](https://www.youtube.com/watch?v=w75OT1gX_uA). 
 
 
 ---
@@ -106,7 +104,7 @@ A simple React/D3/[D3FC](https://d3fc.io/) based toy app I built to teach myself
 ---
 
 ## [React-Table Dashboard](https://github.com/surajsharma/react-table-with-charts)
-A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment. Click [here](https://quirky-poitras-eb3484.netlify.app/ ) to use. 
+A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment. Click [here↗️](https://quirky-poitras-eb3484.netlify.app/ ) to use. 
 
 ---
 
@@ -116,11 +114,41 @@ A simple calendar written from scratch in React.
 
 ---
 
+## [*fullstack-templates*](https://github.com/surajsharma/fullstack-template)
+
+- [**postgres-fastapi-vite-react**](https://github.com/surajsharma/postgres-fastapi-vite-react)
+
+- [**postgres-react-express**](https://github.com/surajsharma/postgres-react-express)
+
+- [**multi-tenant-google-oauth2**](https://github.com/surajsharma/multi-tenant-google-oauth2)
+
+- [**mern-redux-toolkit-auth**](https://github.com/surajsharma/mern-redux-toolkit-auth)
+
+
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=flat-square" style="margin: 0">
+
+
+</div>
+
+---
+
+
 ## Customizations
 
--   [**BlackBar**](https://github.com/surajsharma/BLACKBAR): a dark, small theme for [Launchbar](https://www.obdev.at/products/launchbar/index.html)![blackbar](https://puu.sh/IrMJE/369fd891ec.png)
+-   [**BlackBar**](https://github.com/surajsharma/BLACKBAR): a dark, small theme for [Launchbar↗️](https://www.obdev.at/products/launchbar/index.html)![blackbar](https://puu.sh/IrMJE/369fd891ec.png)
 
--   [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate](https://github.com/inversepolarity/ip_theme) and [coderunner](https://coderunnerapp.com/)
+-   [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate↗️](https://github.com/inversepolarity/ip_theme) and [coderunner↗️](https://coderunnerapp.com/)
 
 ---
 
