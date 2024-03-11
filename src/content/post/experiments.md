@@ -4,6 +4,8 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
+<base target="_blank">
+
 ## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
@@ -25,8 +27,8 @@ an exercise erc721 standard implemented for the zk-snark company Starknet's own 
 
 ---
 
-## [fullstack-3D-carousel](https://www.youtube.com/watch?v=9YEBQj7bmd8)
-full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. demo [video](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
+## [fiber-fullstack-3D-carousel](https://www.youtube.com/watch?v=9YEBQj7bmd8)
+full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [demo video↗️](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
 
 ---
 
@@ -53,18 +55,18 @@ Zen mode for youtube - A featured Cross-browser plugin to remove addictive featu
 ---
 
 ## [Nextrix](https://github.com/surajsharma/nextris)
-My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [start playing↗️](https://nextris.vercel.app/)! [![selectris](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
+My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [play now↗️](https://nextris.vercel.app/)! [![selectris](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
 
 ---
 
 ## [Whatsapp Scraper](https://koshwapp.netlify.app/)
-The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. 
+The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo↗️](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1)
 
 
 ---
 
 ## [SVG Crossword](https://github.com/surajsharma/Crossword)
-A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. Here's a [video demo](https://www.youtube.com/watch?v=pkqtAVJ-olc). 
+A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. Here's a [video demo↗️](https://www.youtube.com/watch?v=pkqtAVJ-olc). 
  [![crossword](/images/CW.gif)](https://github.com/surajsharma/Crossword "svg crossword")
 
 
@@ -84,7 +86,9 @@ Minesweeper in React-Typescript & SASS
 ---
 
 ## [Ray Tracer](https://github.com/surajsharma/raytracer)
-A simple CLI-based ray-tracer with basic lighting and **multiprocessing** written in Python.  ![](https://camo.githubusercontent.com/4e7a2552e00c53bafaf14efac97ec6c71f30985bb8c2d6446482ec94b80b8ade/68747470733a2f2f6261667962656967323334367562376c736266626b756d697a6e65677136716771737573376b656e70377767367670797965687961676e776975712e697066732e696e667572612d697066732e696f2f)
+A simple CLI-based ray-tracer with basic lighting and **multiprocessing** written in Python.  [![asciicast](https://asciinema.org/a/NfxPm895hjRYTvJzflE00QeoA.svg)](https://asciinema.org/a/NfxPm895hjRYTvJzflE00QeoA)
+
+![](https://camo.githubusercontent.com/4e7a2552e00c53bafaf14efac97ec6c71f30985bb8c2d6446482ec94b80b8ade/68747470733a2f2f6261667962656967323334367562376c736266626b756d697a6e65677136716771737573376b656e70377767367670797965687961676e776975712e697066732e696e667572612d697066732e696f2f)
 
 
 ---
