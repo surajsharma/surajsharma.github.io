@@ -116,19 +116,20 @@ A simple calendar written from scratch in React.
 
 ## [*fullstack-templates*](https://github.com/surajsharma/fullstack-template)
 
-- [**postgres-fastapi-vite-react**](https://github.com/surajsharma/postgres-fastapi-vite-react)
+- [**postgres-fastapi-vite-react**↗️](https://github.com/surajsharma/postgres-fastapi-vite-react)
 
-- [**postgres-react-express**](https://github.com/surajsharma/postgres-react-express)
+- [**postgres-react-express**↗️](https://github.com/surajsharma/postgres-react-express)
 
-- [**multi-tenant-google-oauth2**](https://github.com/surajsharma/multi-tenant-google-oauth2)
+- [**multi-tenant-google-oauth2**↗️](https://github.com/surajsharma/multi-tenant-google-oauth2)
 
-- [**mern-redux-toolkit-auth**](https://github.com/surajsharma/mern-redux-toolkit-auth)
+- [**mern-redux-toolkit-auth**↗️](https://github.com/surajsharma/mern-redux-toolkit-auth)
 
 
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square" style="margin: 0">
