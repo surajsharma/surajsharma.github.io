@@ -7,7 +7,7 @@ publishDate: "7 Jun 2023"
 ## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
-basic cellular automata demo using wasm-pack. [launch↗️](https://evenzero.in/wasm-game-of-life/)
+basic cellular automata demo using wasm-pack. [launch↗️](https://is.gd/F3oQdv)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square" style="margin: 0">
