@@ -138,8 +138,9 @@ A simple calendar written from scratch in React.
   <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat-square" style="margin: 0">
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=flat-square" style="margin: 0">
-
-
+  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Mongoose-800?logo=mongoose&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat-square" style="margin: 0">
 </div>
 
 ---
