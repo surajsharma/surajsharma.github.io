@@ -9,7 +9,7 @@ import { siteConfig } from "@/site-config";
 import { getFormattedDate } from "@/utils";
 
 const AssetDir = resolve("public", "fonts");
-const FontPath = join(AssetDir, "bm.woff2");
+const FontPath = join(AssetDir, "bm.woff");
 
 const Font = readFileSync(FontPath);
 
