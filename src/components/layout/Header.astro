@@ -30,23 +30,21 @@ const url = new URL(Astro.request.url);
 	});
 </script>
 
-<header id="main-header" class="-ml-2 mb-12 h-20 w-full flex justify-between">
-	<div class="flex sm:flex-col justify-between">
+<header id="main-header" class="-ml-2 mb-12 flex h-20 w-full justify-between">
+	<div class="flex justify-between sm:flex-col">
 		<a
 			href="/"
 			class="inline-flex items-center hover:filter-none"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
 			<div class="flex h-20 w-full justify-between overflow-hidden align-middle">
-				<div class="-rotate-6 text-wrap w-6 items-center break-words text-xl font-bold leading-none">
-					<p class="ml-1 w-6 evenzero h-full">evenzero</p>
-				</div>
-				<div class="-rotate-6 ml-2 h-full border-l border-linkHover border-dashed"></div>
-				<nav
-					id="navigation-menu"
-					class="text-[12px] -rotate-6 -ml-1 -mt-1"
-					aria-label="Main menu"
+				<div
+					class="text-wrap w-6 -rotate-6 items-center break-words text-xl font-bold leading-none"
 				>
+					<p class="evenzero ml-1 h-full w-8">evenzero</p>
+				</div>
+				<div class="ml-2 h-full -rotate-6 border-l border-dashed border-linkHover"></div>
+				<nav id="navigation-menu" class="-ml-1 -mt-1 -rotate-6 text-[12px]" aria-label="Main menu">
 					{
 						MENU_LINKS.map((link) => (
 							<a
@@ -61,7 +59,6 @@ const url = new URL(Astro.request.url);
 						))
 					}
 				</nav>
-
 			</div>
 		</a>
 	</div>
