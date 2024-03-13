@@ -114,7 +114,7 @@ A simple calendar written from scratch in React.
 
 ---
 
-## [*fullstack-templates*](https://github.com/surajsharma/fullstack-template)
+## [*fullstack-boilerplates*](https://github.com/surajsharma/fullstack-template)
 
 - [**postgres-fastapi-vite-react**↗️](https://github.com/surajsharma/postgres-fastapi-vite-react)
 
