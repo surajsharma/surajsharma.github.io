@@ -39,7 +39,7 @@ export const FOOOTER_LINKS = [
 		path: "https://www.linkedin.com/in/suraj-sharma-58b765246/",
 	},
 	{
-		title: "Devreel",
-		path: "https://t.ly/FOrl6",
+		title: "YouTube",
+		path: "https://www.youtube.com/@evenzero",
 	},
 ];
