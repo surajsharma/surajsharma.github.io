@@ -125,7 +125,7 @@ export const clients: client[] = [
 			import: sb,
 			height: 48,
 		},
-		url: "https://www.salesbeat.co/",
+		url: "https://www.crunchbase.com/organization/salesbeat-ltd",
 		agency: false,
 		remote: true,
 	},
