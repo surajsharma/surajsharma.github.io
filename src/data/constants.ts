@@ -28,7 +28,7 @@ export const FOOOTER_LINKS = [
 	},
 	{
 		title: "Github",
-		path: "https://github.com/surajsharma/",
+		path: "https://github.com/inversepolarity",
 	},
 	{
 		title: "inversepolarity",
@@ -36,7 +36,7 @@ export const FOOOTER_LINKS = [
 	},
 	{
 		title: "LinkedIn",
-		path: "https://www.linkedin.com/in/suraj-sharma-58b765246/",
+		path: "https://www.linkedin.com/company/35930433/",
 	},
 	{
 		title: "YouTube",
