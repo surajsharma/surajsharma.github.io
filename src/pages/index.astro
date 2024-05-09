@@ -3,7 +3,10 @@ import PageLayout from "@/layouts/Base";
 import { Image } from "@astrojs/image/components";
 import { clients } from "@/data/clients";
 
-const exp_url = import.meta.env.MODE === 'development' ? import.meta.env.PUBLIC_FB_EXP_RTDB_URL : import.meta.env.FB_EXP_RTDB_URL;
+const exp_url =
+	import.meta.env.MODE === "development"
+		? import.meta.env.PUBLIC_FB_EXP_RTDB_URL
+		: import.meta.env.FB_EXP_RTDB_URL;
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -36,26 +39,30 @@ const exp_url = import.meta.env.MODE === 'development' ? import.meta.env.PUBLIC_
 		}
 	</script>
 	<section class="flex-col" client:load>
-		<div class="text-xl lowercase leading-relaxed">
+		<div class="text-justify text-xl lowercase leading-relaxed">
 			<span class="inline-block">
 				<span class="exp-counter">
 					<span class="exp cursor-pointer" id="exp">10,000</span>
 				</span>
 			</span>
 
-			<sup class="cursor-pointer font-semibold">+</sup> man-hours of experience in shipping <span
-				class="font-semibold">pixel-perfect frontends</span
-			>, highly available <span class="text-xl font-semibold uppercase">API</span>s, scalable, secure <span
-				class="text-xl font-semibold">services</span
-			>, and <span class="text-xl font-semibold">performant operations</span> on the <span
-				class="text-xl font-semibold">edge</span
-			>, <span class="text-xl font-semibold">cloud</span>, and <span class="text-xl font-semibold"
-				>downstream</span
-			>.
+			<sup class="cursor-pointer font-semibold">+</sup> man-hours of experience in shipping pixel-perfect<span
+				class="font-semibold"
+			>
+				frontends</span
+			>, highly available <span class="text-xl font-semibold uppercase">API</span>s, scalable,
+			secure <span class="text-xl font-semibold">services</span>, and <span
+				class="text-xl font-semibold">performant operations</span
+			> on the <span class="text-xl font-semibold">edge</span>, <span class="text-xl font-semibold"
+				>cloud</span
+			>, and <span class="text-xl font-semibold">downstream</span>.
 			<br /><br />
 			<p class="mt-10 text-xl lowercase leading-relaxed">
-				<a class="email font-semibold underline underline-offset-2" href="mailto:suraj@evenzero.in"
-					>get in touch</a
+				email
+				<a
+					class="email font-semibold underline underline-offset-2"
+					href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hey%20there!%0D%0A%0D%0AI%20would%20like%20to%20get%20some%20cutting%20edge%20software%20development%20done%2C%20can%20someone%20at%20evenzero%20get%20on%20a%20quick%20call%20using%20the%20calendly%20link%20below%20so%20we%20can%20discuss%20an%20action%20plan%20and%20rates%3F%0D%0A%0D%0ACheers!%0D%0Ahttps%3A%2F%2Fcalendly.com%2Fin_evenzero%2F30min"
+					>suraj@evenzero.in</a
 				>
 				for incredible, domain-agnostic, agile adventures in delivering <span class="font-semibold"
 					>orders of magnitude better</span
