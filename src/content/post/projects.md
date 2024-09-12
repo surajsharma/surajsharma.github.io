@@ -35,7 +35,7 @@ A cloud-based platform as a service (PaaS). Simplifies the complexities of the I
 Able is one of India's premier web-development agency.
 
 ### [TeamDriveAway](https://github.com/TeamDriveAway/cc)
-A bespoke Svelte front-end for [TeamDriveAway](https://teamdriveaway.com/). Tested with Jest and Testing-Library. Small [video demo↗️](https://bit.ly/3taJZLr) of product under development. 
+A bespoke Svelte front-end for [TeamDriveAway](https://teamdriveaway.com/). Tested with Jest and Testing-Library. Small [video demo↗️](https://bit.ly/3taJZLr) of product under development.
 
 | Frontend                                                                                                |                                                       Backend                                                        |                                                                                                                                                                                                                                                                                                                                         Other |
 | :------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -44,7 +44,7 @@ A bespoke Svelte front-end for [TeamDriveAway](https://teamdriveaway.com/). Test
 ---
 
 ## [Autoproctor](https://www.autoproctor.co/) [![Y Combinator Badge](https://img.shields.io/badge/Y%20Combinator-F0652F?logo=ycombinator&logoColor=fff&style=flat-square)](https://www.ycombinator.com/companies/autoproctor)
-YC backed AutoProctor uses Artificial Intelligence to prevent and gather evidence of malpractice during an online test. Highly configurable, you decide if and what sources (like audio, video, etc) AutoProctor tracks and stores. 
+YC backed AutoProctor uses Artificial Intelligence to prevent and gather evidence of malpractice during an online test. Highly configurable, you decide if and what sources (like audio, video, etc) AutoProctor tracks and stores.
 | Frontend                                                                                                                                                                                                                                 |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square) ![Material Design Badge](https://img.shields.io/badge/Material%20Design-757575?logo=materialdesign&logoColor=fff&style=flat-square) |
@@ -52,7 +52,7 @@ YC backed AutoProctor uses Artificial Intelligence to prevent and gather evidenc
 ---
 
 ## [Socratease](https://www.socratease.co) ![Y Combinator Badge](https://img.shields.io/badge/Y%20Combinator-F0652F?logo=ycombinator&logoColor=fff&style=flat-square)
-YC-backed Edtech-as-a-Service product. A White-labelled solution that provides Content Hosting and Delivery, E-learning Web and Mobile Apps, Student and Classroom Management, and Analytics. You give us your content, we will give you a full-fledged Digital Learning Product. 
+YC-backed Edtech-as-a-Service product. A White-labelled solution that provides Content Hosting and Delivery, E-learning Web and Mobile Apps, Student and Classroom Management, and Analytics. You give us your content, we will give you a full-fledged Digital Learning Product.
 
 | Frontend                                                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                     Backend                                                                                                                                                      |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -61,7 +61,7 @@ YC-backed Edtech-as-a-Service product. A White-labelled solution that provides C
 ---
 
 ## [Bombay Shirt Company](https://www.bombayshirts.com/)
-A full-fledged React/Redux/Ruby based factory-to-store e-commerce solution for Bombay Shirt Company. 
+A full-fledged React/Redux/Ruby based factory-to-store e-commerce solution for Bombay Shirt Company.
 
 | Frontend                                                                                                                                                                                                                                                                                                                                                                                                                        |                                              Backend                                              |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------------: |
@@ -69,7 +69,7 @@ A full-fledged React/Redux/Ruby based factory-to-store e-commerce solution for B
 
 ---
 
-## [Salesbeat](https://www.salesbeat.co)
+## [Salesbeat](https://www.linkedin.com/company/salesbeat/)
 An AWS Amplify based full-stack solution for collecting sales related data and storing it in a single-table **DynamoDb** database queried via Amplify's Graphql interface. [Video demo↗️](https://www.youtube.com/watch?v=TfMYcRGHvcY&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=12).
 
 | Frontend                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                                                                                                               Backend                                                                                                                                                                               |
@@ -98,7 +98,7 @@ A multi-industry, context-aware, image/pdf-to-data ML engine created by [Singula
 ---
 
 ## [Ballyhoo](https://www.crunchbase.com/organization/ballyhoo-today)
-An travel booking / loyalty management ticketing portal for events in T1 cities across India. 
+An travel booking / loyalty management ticketing portal for events in T1 cities across India.
 
 | Frontend                                                                                                                                                                                                                                                                                                                             |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
