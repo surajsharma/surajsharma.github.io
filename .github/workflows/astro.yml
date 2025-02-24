@@ -73,7 +73,7 @@ jobs:
         env:
           FB_EXP_RTDB_URL: ${{ secrets.FB_EXP_RTDB }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/dist
 
