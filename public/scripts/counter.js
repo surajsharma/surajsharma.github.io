@@ -19,9 +19,9 @@ async function animateNumber(numberArray, element, oldArray) {
 	if (!ticks.length) return;
 	return new Promise(async (resolve, reject) => {
 		for (const tick of ticks) {
+			await sleep(10);
 			const dist = parseInt(tick.getAttribute("data-counter") - 1);
-			tick.style.transform = `translateY(-${dist * 100}%)`;
-			await sleep(20);
+			tick.style.setProperty("transform", `translateY(-${dist * 100}%)`, "important");
 			resolve(1);
 		}
 	});
@@ -38,7 +38,7 @@ async function createNumberHTML(numbers, old, element) {
 				const dist = parseInt(datacounter - 1);
 				const ret = element.insertAdjacentHTML(
 					"beforeend",
-					`<span data-counter="${datacounter}" style="transform: translateY(0%);">
+					`<span data-counter="${datacounter}" style="transform: translateY(0%) !important;">
 						${number}
 					</span>`
 				);

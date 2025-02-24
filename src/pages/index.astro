@@ -25,15 +25,17 @@ const exp_url =
 		async function update() {
 			const ss = Date.now();
 
-			let experience = await fetch(exp_url + "?ss=" + ss, {
+			let experience = await fetch("https://exphours-default-rtdb.europe-west1.firebasedatabase.app/experience.json" + "?ss=" + ss, {
 				cache: "no-cache",
-			}).then((data) => data.json());
+			})
+
+			experience = await experience.json();
 
 			const newExp = new Intl.NumberFormat("en-GB").format(experience);
 			const value = createFormattedNumberArray(newExp);
 
 			if (value.join("") == old.join("")) return;
-
+			
 			await animateNumber(value, exp, old);
 			old = createFormattedNumberArray(newExp);
 		}
