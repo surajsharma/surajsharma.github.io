@@ -22,9 +22,9 @@ jobs:
       FB_EXP_RTDB_URL: ${{ secrets.FB_EXP_RTDB }}
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4.2.2
       - name: Install, build, and upload your site
-        uses: withastro/action@v0
+        uses: withastro/action@v3.0.2
         # with:
         # path: . # The root location of your Astro project inside the repository. (optional)
         # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
@@ -38,14 +38,14 @@ jobs:
 
       # Points to a recent commit instead of `main` to avoid supply chain attacks. (The latest tag is very old.)
       - name: 🎟 Get GitHub App token
-        uses: navikt/github-app-token-generator@a3831f44404199df32d8f39f7c0ad9bb8fa18b1c
+        uses: navikt/github-app-token-generator@v1.1.1
         id: get-token
         with:
           app-id: ${{ secrets.GH_APP_ID }}
           private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
 
       - name: 🗑 Delete deployment environment
-        uses: strumwolf/delete-deployment-environment@v2.3.0
+        uses: strumwolf/delete-deployment-environment@v3.0.0
         with:
           # Use a JWT created with your GitHub App's private key
           token: ${{ steps.get-token.outputs.token }}
