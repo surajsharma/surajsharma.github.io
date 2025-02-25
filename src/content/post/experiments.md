@@ -4,6 +4,26 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
+
+## [kanastar](https://github.com/surajsharma/kanastar) 
+
+a simple container orchestrator written in go.
+
+![kanastar](https://github.com/surajsharma/kanastar/raw/main/docs/images/architecture.svg)
+
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/Podman-892CA0?logo=podman&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/Linux%20Containers-333?logo=linuxcontainers&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/Open%20Containers%20Initiative-262261?logo=opencontainersinitiative&logoColor=fff&style=flat-square" style="margin: 0">
+</div>
+
+---
+
+
 ## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 

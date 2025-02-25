@@ -25,10 +25,7 @@ const exp_url =
 		async function update() {
 			const ss = Date.now();
 
-			let experience = await fetch("https://exphours-default-rtdb.europe-west1.firebasedatabase.app/experience.json" + "?ss=" + ss, {
-				cache: "no-cache",
-			})
-
+			let experience = await fetch(exp_url + "?ss=" + ss, {cache: "no-cache",})
 			experience = await experience.json();
 
 			const newExp = new Intl.NumberFormat("en-GB").format(experience);
