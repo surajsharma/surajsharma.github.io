@@ -5,7 +5,7 @@ publishDate: "7 Jun 2023"
 ---
 
 
-## [kanastar](https://github.com/surajsharma/kanastar) 
+## [kanastar](https://github.com/surajsharma/kanastar)
 
 a simple container orchestrator written in go.
 
@@ -24,10 +24,10 @@ a simple container orchestrator written in go.
 ---
 
 
-## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life) 
+## [wasm-game-of-life](https://github.com/surajsharma/wasm-game-of-life)
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
-basic cellular automata demo using wasm-pack. <a href="https://evenzero.in/wasm-game-of-life" target="_blank">[launch↗️]</a>
+basic cellular automata demo using wasm-pack. <a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">[launch↗️]</a>
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square" style="margin: 0">
@@ -40,7 +40,7 @@ basic cellular automata demo using wasm-pack. <a href="https://evenzero.in/wasm-
 
 ---
 
-## [starknet-erc721](https://github.com/surajsharma/starknet-erc721) 
+## [starknet-erc721](https://github.com/surajsharma/starknet-erc721)
 an exercise erc721 standard implemented for the zk-snark company Starknet's own blockchain network. the smart contracts are written in a solidity-like language called cairo.
 
 ---
@@ -62,7 +62,7 @@ Zen mode for youtube - A featured Cross-browser plugin to remove addictive featu
 
 <div>
     <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
-    <img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a> 
+    <img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a>
     <a class="no-underline" href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=Firefox-Browser&amp;logoColor=white" alt="Firefox"></a>
     <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a>
     <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a>
@@ -84,7 +84,7 @@ The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.
 ---
 
 ## [SVG Crossword](https://github.com/surajsharma/Crossword)
-A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words. 
+A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. Inspired by [The Guardian crossword puzzle](https://github.com/zetter/react-crossword), and has all the same features, which include revealing individual words, revealing all words, verifying each/all words from the backend and color-coding correct/incorrect words.
  [![crossword](/images/CW.gif)](https://github.com/surajsharma/Crossword "svg crossword")
 
 
@@ -93,12 +93,12 @@ A Simple Crossword puzzle in React built with the philosophy of SVG-over-CSS. In
 
 ## [Match The Following](https://codepen.io/surajs1/pen/mYXeWJ)
 A match-the-following game written in [p5js](https://p5js.org). Later at [Socratease](https://socratease.co), this evolved into a purely React-based project using Atlassian's [React-Beautiful-DnD](https://github.com/atlassian/react-beautiful-dnd). A similar implementation of this turned into a Classification puzzle for [Socratease](https://socratease.co), here, instead of matching columns, the user must drag the choices into appropriate "buckets". Features included a randomized color-colding scheme which informs the user of the correct bucket. Click on images for respective demos/videos.
- [![Match The Following](/images/mtf.png)](https://codepen.io/surajs1/pen/mYXeWJ) 
+ [![Match The Following](/images/mtf.png)](https://codepen.io/surajs1/pen/mYXeWJ)
 
 ---
 
 ## [MineSweeper-TS](https://github.com/surajsharma/TS-Minesweeper)
-Minesweeper in React-Typescript & SASS 
+Minesweeper in React-Typescript & SASS
 
 
 ---
@@ -112,24 +112,24 @@ A simple CLI-based ray-tracer with basic lighting and **multiprocessing** writte
 ---
 
 ## [URL Shortener](https://github.com/surajsharma/url-shortener)
-Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo↗️](https://www.youtube.com/watch?v=w75OT1gX_uA). 
+Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo↗️](https://www.youtube.com/watch?v=w75OT1gX_uA).
 
 
 ---
 
 ## [Candlestick Chart](https://github.com/surajsharma/Candlestick-Chart)
-A simple React/D3/[D3FC](https://d3fc.io/) based toy app I built to teach myself the basics. 
+A simple React/D3/[D3FC](https://d3fc.io/) based toy app I built to teach myself the basics.
 
 
 ---
 
 ## [React-Table Dashboard](https://github.com/surajsharma/react-table-with-charts)
-A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment. Click [here↗️](https://quirky-poitras-eb3484.netlify.app/ ) to use. 
+A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment. Click [here↗️](https://quirky-poitras-eb3484.netlify.app/ ) to use.
 
 ---
 
 ## [Calendar](https://github.com/surajsharma/Calendar)
-A simple calendar written from scratch in React. 
+A simple calendar written from scratch in React.
 
 
 ---
