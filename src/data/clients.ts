@@ -10,6 +10,8 @@ import tda from "../assets/tda.png";
 import cp from "../assets/clearpool.svg";
 import ESICBlack from "../assets/ESICBlack.svg";
 import nc from "../assets/nc.png";
+import bc from "../assets/because.png";
+import blank from "../assets/1x1.png";
 
 type client = {
 	name: string;
@@ -26,7 +28,7 @@ type client = {
 };
 
 export const clients: client[] = [
-	{
+ {
 		name: "Holdex",
 		hq: "HK",
 		img: {
@@ -163,4 +165,22 @@ export const clients: client[] = [
 		agency: false,
 		remote: false,
 	},
+  {
+		img: {
+			import: blank,
+			width: 1,
+		},
+	},
+  {
+		name: "Demtech",
+		hq: "IN",
+		img: {
+			import: bc,
+			width: 84,
+		},
+		url: "https://www.demtech.ai/",
+		agency: false,
+		remote: true,
+	},
+
 ];

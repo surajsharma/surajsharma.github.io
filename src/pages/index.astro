@@ -32,7 +32,7 @@ const exp_url =
 			const value = createFormattedNumberArray(newExp);
 
 			if (value.join("") == old.join("")) return;
-			
+
 			await animateNumber(value, exp, old);
 			old = createFormattedNumberArray(newExp);
 		}
@@ -71,7 +71,7 @@ const exp_url =
 		</div>
 		<p class="text-lg lowercase">Global teams / governments served:</p>
 		<section
-			class="mt-10 grid grid-cols-2 place-items-center items-center gap-16 p-4 text-center md:scale-110 md:grid-cols-3 lg:gap-12"
+			class="mt-10 grid grid-cols-2 content-center justify-center grid-cols-subgrid place-items-center items-center gap-16 p-4 text-center md:scale-110 md:grid-cols-3 lg:gap-12"
 		>
 			{
 				clients.map((client) => {
