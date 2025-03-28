@@ -25,7 +25,7 @@ export const siteConfig: SiteConfig = {
 	ogLocale: "en_GB",
 	// Sets the meta data theme-color, found in src/components/BaseHead.astro L:34. Toggling the dark mode will update the meta content with either light/dark color, implementation in src/layouts/Base.astro L:41.
 	themeColorLight: "#e0e0e0",
-	themeColorDark: "#0e0e0e",
+	themeColorDark: "#1f1f1f",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
 		locale: "en-GB",

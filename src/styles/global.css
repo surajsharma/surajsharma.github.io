@@ -33,7 +33,7 @@
 
 	:root.dark {
 		color-scheme: dark;
-		--theme-bg: #0e0e0e;
+		--theme-bg: #1f1f1f;
 		--theme-link: #d480aa;
 		--theme-text: #c9cacc;
 		--theme-accent: #2bbc89;
@@ -45,12 +45,12 @@
 
 	html {
 		@apply h-full scroll-smooth border-t-2 border-textColor;
-		font-family: "dm", sans-serif;
+		font-family: "bm", sans-serif;
 	}
 
 	html body {
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
-		font-family: "dm", sans-serif;
+		font-family: "bm", sans-serif;
 	}
 
 	.tpl {
@@ -103,8 +103,8 @@
 	}
 
 	@font-face {
-		font-family: "dm";
-		src: url("/fonts/dm.woff2") format("woff2");
+		font-family:"bm";
+		src: url("/fonts/bm.woff2") format("woff2");
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
