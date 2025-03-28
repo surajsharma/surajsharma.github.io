@@ -11,7 +11,7 @@ import cp from "../assets/clearpool.svg";
 import ESICBlack from "../assets/ESICBlack.svg";
 import nc from "../assets/nc.png";
 import bc from "../assets/because.png";
-import blank from "../assets/1x1.png";
+import blank from "../assets/blank.svg";
 
 type client = {
 	name: string;
@@ -166,6 +166,7 @@ export const clients: client[] = [
 		remote: false,
 	},
   {
+    url:"0#",
 		img: {
 			import: blank,
 			width: 1,
