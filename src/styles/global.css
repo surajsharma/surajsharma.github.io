@@ -44,7 +44,7 @@
 	}
 
 	html {
-		@apply h-full scroll-smooth border-t-2 border-textColor;
+		@apply h-full scroll-smooth border-textColor;
 		font-family: "bm", sans-serif;
 	}
 
@@ -103,7 +103,7 @@
 	}
 
 	@font-face {
-		font-family:"bm";
+		font-family: "bm";
 		src: url("/fonts/bm.woff2") format("woff2");
 		font-weight: normal;
 		font-style: normal;
