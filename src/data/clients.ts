@@ -1,7 +1,7 @@
 import able from "../assets/able.svg";
 import apr from "../assets/autoproctor.svg";
 import bsc from "../assets/bscr.svg";
-import cyb from "../assets/cybrilla.png";
+import cyb from "../assets/cybrilla.svg";
 import holdexImg from "../assets/holdex.svg";
 import sb from "../assets/salesbeat.svg";
 import sn from "../assets/sn.svg";
@@ -28,7 +28,7 @@ type client = {
 };
 
 export const clients: client[] = [
- {
+	{
 		name: "Holdex",
 		hq: "HK",
 		img: {
@@ -165,14 +165,14 @@ export const clients: client[] = [
 		agency: false,
 		remote: false,
 	},
-  {
-    url:"0#",
+	{
+		url: "0#",
 		img: {
 			import: blank,
 			width: 1,
 		},
 	},
-  {
+	{
 		name: "Demtech",
 		hq: "IN",
 		img: {
