@@ -32,7 +32,7 @@ export const FOOOTER_LINKS = [
 	},
 	{
 		title: "inversepolarity",
-		path: "https://inversepolarity.github.io/ip/",
+		path: "https://ip.evenzero.in",
 	},
 	{
 		title: "LinkedIn",
