@@ -50,10 +50,16 @@ const {
 			// initailse root class attribute
 			root.classList.toggle("dark", isDark);
 		</script>
-		<script>
+
+		<script lang="ts">
 			!(function () {
-				for (var e = document.body.getElementsByTagName("a"), t = e.length, n = 0; n < t; n++)
-					new URL(e[n].href).origin !== location.origin && e[n].setAttribute("target", "_blank");
+			// all links open in own tab
+			const links = document.body.getElementsByTagName("a");
+			for (const link of links) {
+				if (link?.href && new URL(link.href).origin !== location.origin) {
+				link.setAttribute("target", "_blank");
+				}
+			}
 			})();
 		</script>
 		<script type="application/ld+json">

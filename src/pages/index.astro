@@ -1,7 +1,7 @@
 ---
 import PageLayout from "@/layouts/Base";
-import { Image } from "@astrojs/image/components";
-import { clients } from "@/data/clients";
+import Hero from "@/components/Hero";
+import Clients from "@/components/Clients";
 
 const exp_url =
 	import.meta.env.MODE === "development"
@@ -25,7 +25,7 @@ const exp_url =
 		async function update() {
 			const ss = Date.now();
 
-			let experience = await fetch(exp_url + "?ss=" + ss, {cache: "no-cache",})
+			let experience = await fetch(exp_url + "?ss=" + ss, { cache: "no-cache" });
 			experience = await experience.json();
 
 			const newExp = new Intl.NumberFormat("en-GB").format(experience);
@@ -37,88 +37,6 @@ const exp_url =
 			old = createFormattedNumberArray(newExp);
 		}
 	</script>
-	<section class="flex-col" client:load>
-		<div class="text-justify text-xl lowercase leading-relaxed">
-			<p class="mb-10">
-				<span class="inline-block">
-					<span class="exp-counter">
-						<span class="exp cursor-pointer" id="exp">10,000</span>
-					</span>
-				</span>
-				<sup class="cursor-pointer font-semibold">+</sup> man-hours of experience in shipping pixel-perfect<span
-					class="font-semibold"
-				>
-					frontends</span
-				>, highly available <span class="text-xl font-semibold uppercase">API</span>s, scalable,
-				secure <span class="text-xl font-semibold">(micro)services</span>, and <span
-					class="text-xl font-semibold">performant operations</span
-				> on the <span class="text-xl font-semibold">edge</span>, <span
-					class="text-xl font-semibold">cloud</span
-				>, and <span class="text-xl font-semibold">downstream</span>.
-			</p>
-			<p class="mb-4 text-xl lowercase leading-relaxed">
-				email
-				<a
-					class="email font-semibold underline underline-offset-2"
-					href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hi%2C%0D%0A%0D%0APlease%20add%20your%20request%20for%20quote%20here.%0D%0A%0D%0A%0D%0Acheers!"
-					>suraj</a
-				>
-				for incredible, domain-agnostic, agile adventures in delivering <span class="font-semibold"
-					>orders of magnitude better</span
-				>, fault-tolerant, intuitive software.
-			</p>
-			<br />
-		</div>
-		<p class="text-xl lowercase">Global teams / governments served:</p>
-		<section
-			class="mt-10 grid grid-cols-2 content-center justify-center grid-cols-subgrid place-items-center items-center gap-16 p-4 text-center md:scale-110 md:grid-cols-3 lg:gap-12"
-		>
-			{
-				clients.map((client) => {
-					if (!client.agency) {
-						return (
-							<a href={client.url} target="_blank">
-								<Image
-									class="tpl"
-									height={client.img.height}
-									width={client.img.width}
-									src={client.img.import}
-									alt={client.name}
-								/>
-							</a>
-						);
-					} else {
-						if (client.clients?.length) {
-							return (
-								<>
-									<a href={client.url} target="_blank">
-										<Image
-											class="tpl"
-											height={client.img.height}
-											width={client.img.width}
-											src={client.img.import}
-											alt={client.name}
-										/>
-									</a>
-									{client.clients?.map((c) => {
-										return (
-											<a href={c.url} target="_blank">
-												<Image
-													class="tpl"
-													height={c.img.height}
-													width={client.img.width}
-													src={c.img.import}
-													alt={c.name}
-												/>
-											</a>
-										);
-									})}
-								</>
-							);
-						}
-					}
-				})
-			}
-		</section>
-	</section>
+	<Hero />
+	<Clients />
 </PageLayout>

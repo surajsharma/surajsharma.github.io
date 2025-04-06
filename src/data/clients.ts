@@ -29,11 +29,25 @@ type client = {
 
 export const clients: client[] = [
 	{
+		name: "Cybrilla",
+		hq: "IN",
+		img: {
+			import: cyb,
+			width: 2000,
+			height: 1000,
+
+		},
+		url: "https://www.cybrilla.com/",
+		agency: false,
+		remote: true,
+	},
+	{
 		name: "Holdex",
 		hq: "HK",
 		img: {
 			import: holdexImg,
-			height: 32,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://holdex.io",
 		agency: true,
@@ -44,7 +58,8 @@ export const clients: client[] = [
 				hq: "US",
 				img: {
 					import: cp,
-					height: 32,
+					width: 2000,
+					height: 1000,
 				},
 				url: "https://clearpool.finance",
 				agency: false,
@@ -53,22 +68,12 @@ export const clients: client[] = [
 		],
 	},
 	{
-		name: "Cybrilla",
-		hq: "IN",
-		img: {
-			import: cyb,
-			width: 128,
-		},
-		url: "https://www.cybrilla.com/",
-		agency: false,
-		remote: true,
-	},
-	{
 		name: "Starknet",
 		hq: "IL",
 		img: {
 			import: sn,
-			height: 32,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://www.starknet.io/en",
 		agency: false,
@@ -79,7 +84,8 @@ export const clients: client[] = [
 		hq: "IN",
 		img: {
 			import: able,
-			height: 26,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://www.able.do",
 		agency: true,
@@ -90,7 +96,8 @@ export const clients: client[] = [
 				hq: "US",
 				img: {
 					import: tda,
-					height: 64,
+					width: 2000,
+					height: 1000,
 				},
 				url: "https://teamdriveaway.com/",
 				agency: false,
@@ -98,59 +105,64 @@ export const clients: client[] = [
 			},
 		],
 	},
-	{
-		name: "NSE Cogencis",
-		hq: "IN",
-		img: {
-			import: nc,
-			height: 40,
-		},
-		url: "https://www.cogencis.com",
-		agency: false,
-		remote: false,
-	},
+
 	{
 		name: "Tattle",
 		hq: "IN",
 		img: {
 			import: tattle,
-			height: 32,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://tattle.co.in/",
 		agency: false,
 		remote: true,
 	},
 	{
+		name: "NSE Cogencis",
+		hq: "IN",
+		img: {
+			import: nc,
+			width: 2000,
+			height: 1000,
+		},
+		url: "https://www.cogencis.com",
+		agency: false,
+		remote: false,
+	},
+	{
 		name: "SalesBeat",
 		hq: "UK",
 		img: {
 			import: sb,
-			height: 48,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://www.crunchbase.com/organization/salesbeat-ltd",
 		agency: false,
 		remote: true,
 	},
 	{
-		name: "Bombay Shirts Company",
-		hq: "IN",
-		img: {
-			import: bsc,
-			height: 36,
-		},
-		url: "https://www.bombayshirts.com",
-		agency: false,
-		remote: false,
-	},
-
-	{
 		name: "Socratease Autoproctor Equip",
 		hq: "IN",
 		img: {
 			import: apr,
-			height: 40,
+			height: 1000,
+			width:1000,
 		},
 		url: "https://www.autoproctor.co/",
+		agency: false,
+		remote: false,
+	},
+	{
+		name: "Bombay Shirts Company",
+		hq: "IN",
+		img: {
+			import: bsc,
+			width: 2000,
+			height: 1000,
+		},
+		url: "https://www.bombayshirts.com",
 		agency: false,
 		remote: false,
 	},
@@ -159,25 +171,20 @@ export const clients: client[] = [
 		hq: "IN",
 		img: {
 			import: ESICBlack,
-			height: 42,
+			height: 1000,
+			width:1000,
 		},
 		url: "https://esic.gov.in/",
 		agency: false,
 		remote: false,
 	},
 	{
-		url: "0#",
-		img: {
-			import: blank,
-			width: 1,
-		},
-	},
-	{
 		name: "Demtech",
 		hq: "IN",
 		img: {
 			import: bc,
-			width: 84,
+			width: 2000,
+			height: 1000,
 		},
 		url: "https://www.demtech.ai/",
 		agency: false,
