@@ -5,11 +5,15 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://evenzero.in/",
   output: "static",
+  adapter: node({
+    mode: 'standalone',
+  }),
   markdown: {
     shikiConfig: {
       theme: "dracula",
