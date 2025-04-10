@@ -84,9 +84,6 @@
 		filter: drop-shadow(1px 1px 1px #787887);
 	}
 
-	.m2{
-	}
-
 	.marquee {
 		display: grid;
 		grid-auto-flow: column; /* Creates columns automatically */

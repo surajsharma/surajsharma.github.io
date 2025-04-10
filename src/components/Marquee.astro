@@ -1,0 +1,10 @@
+---
+import Clients from "./Clients.jsx";
+import { clients } from "@/data/clients";
+---
+
+<div
+	class="no-scrollbar absolute left-1/2 right-auto -mt-8 flex h-48 w-screen -translate-x-1/2 items-center justify-center overflow-hidden sm:mt-24 md:mt-16"
+>
+	<Clients client:load clients={clients} />
+</div>
