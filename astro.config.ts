@@ -5,33 +5,47 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
-import node from '@astrojs/node';
+import node from "@astrojs/node";
+
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://evenzero.in/",
-  output: "static",
-  adapter: node({
-    mode: 'standalone',
-  }),
-  markdown: {
-    shikiConfig: {
-      theme: "dracula",
-      wrap: true
-    }
-  },
-  integrations: [ mdx({}), tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), sitemap(), prefetch(), react()],
-  compressHTML: true,
-  vite: {
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"]
-    },
-    server: {
-      allowedHosts: ['shell-ideas-illinois-johnny.trycloudflare.com']
-    }
-  }
+	site: "https://evenzero.in/",
+	output: "static",
+	adapter: cloudflare(),
+	markdown: {
+		shikiConfig: {
+			theme: "dracula",
+			wrap: true,
+		},
+	},
+	integrations: [
+		mdx({}),
+		tailwind({
+			config: {
+				applyBaseStyles: false,
+			},
+		}),
+		sitemap(),
+		prefetch(),
+		react(),
+	],
+	compressHTML: true,
+	vite: {
+		ssr: {
+			external: ["fs", "path", "child_process", "@resvg/resvg-js"],
+		},
+		optimizeDeps: {
+			exclude: ["@resvg/resvg-js"],
+		},
+		resolve: {
+			alias: {
+				"@resvg/resvg-js": "@resvg/resvg-js/wasm", // force WASM
+			},
+		},
+		server: {
+			allowedHosts: ["shell-ideas-illinois-johnny.trycloudflare.com"],
+		},
+	},
 });
