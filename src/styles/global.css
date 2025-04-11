@@ -103,17 +103,14 @@
 		object-fit: contain;
 	}
 
-
 	.no-scrollbar {
 		scrollbar-width: none; /* Firefox */
 		-ms-overflow-style: none; /* IE and Edge */
 	}
-	  
 
 	.no-scrollbar::-webkit-scrollbar {
 		display: none; /* Chrome, Safari, Opera */
 	}
-
 
 	@keyframes slide {
 		from{
@@ -178,13 +175,12 @@
 	}
 
 	.exp-counter {
-		@apply flex h-8 overflow-hidden;
+		@apply flex h-8 w-full;
 	}
 
 	.exp {
 		position: relative;
 		display: flex;
-		align-items: flex-end;
 		overflow: hidden;
 		align-items: center;
 		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;

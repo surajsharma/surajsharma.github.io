@@ -44,7 +44,7 @@ export default defineConfig({
 			},
 		},
 		server: {
-			allowedHosts: ["shell-ideas-illinois-johnny.trycloudflare.com"],
+			allowedHosts: ["verbal-seemed-preparing-dat.trycloudflare.com"],
 		},
 	},
 });
