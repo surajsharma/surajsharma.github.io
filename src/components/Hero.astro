@@ -1,37 +1,39 @@
 ---
-
 ---
 
-	<section class="flex-col" client:load>
-		<div class="text-justify text-xl md:text-2xl xl:text-3xl lowercase leading-relaxed md:leading-loose xl:leading-[1.5]">
-			<p class="mb-10">
-				<span class="inline-block">
-					<span class="exp-counter h-full">
-						<span class="exp cursor-pointer" id="exp">10,000</span>
-						<sup class="cursor-pointer font-semibold mt-4">+</sup> 
-					</span>
+<section class="flex-col container @container container-size h-full " client:load>
+  <div class="text-justify lowercase leading-loose space-y-8
+              text-[1.25rem]
+              @container-h-[200px]:text-[1.5rem]
+              @container-h-[400px]:text-[2rem]
+              @container-h-[600px]:text-[2.5rem]
+              @container-h-[800px]:text-[clamp(2.75rem,5cqh,3.25rem)]"
+  >
+		<p>
+			<span class="inline-block">
+				<span class="exp-counter h-full">
+					<span class="exp cursor-pointer" id="exp">10,000</span>
+					<sup class="mt-4 cursor-pointer font-semibold">+</sup>
 				</span>
-				man-hours of experience in shipping pixel-perfect
-				<span class="font-semibold">frontends</span>, 
-				highly available 
-				<span class="font-semibold uppercase">API</span>s, 
-				scalable, secure <span class="font-semibold">microservices</span>, 
-				and <span class="font-semibold">performant operations</span> 
-				on the <span class="font-semibold">edge</span>, 
-				<span class="font-semibold">cloud</span>, 
-				and <span class="font-semibold">downstream</span>.
-			</p>
-			<p class="text-justify text-xl md:text-2xl xl:text-3xl lowercase leading-relaxed md:leading-loose xl:leading-[1.5]">
-				email
-				<a
-					class="email font-semibold underline underline-offset-2"
-					href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hi%2C%0D%0A%0D%0APlease%20add%20your%20request%20for%20quote%20here.%0D%0A%0D%0A%0D%0Acheers!"
-					>suraj</a
-				>
-				for incredible, domain-agnostic, agile adventures in delivering <span class="font-semibold"
-					>orders of magnitude better</span
-				>, fault-tolerant, intuitive software.
-			</p>
-			<br />
-		</div>
-	</section>
+			</span>
+			man-hours of experience in shipping pixel-perfect
+			<span class="font-semibold">frontends</span>, highly available
+			<span class="font-semibold uppercase">API</span>s, scalable, secure <span
+				class="font-semibold">microservices</span
+			>, and <span class="font-semibold">performant operations</span>
+			on the <span class="font-semibold">edge</span>,
+			<span class="font-semibold">cloud</span>, and <span class="font-semibold">downstream</span>.
+		</p>
+		<p>
+			email
+			<a
+				class="email font-semibold underline underline-offset-2"
+				href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hi%2C%0D%0A%0D%0APlease%20add%20your%20request%20for%20quote%20here.%0D%0A%0D%0A%0D%0Acheers!"
+				>suraj</a
+			>
+			for incredible, domain-agnostic, agile adventures in delivering <span class="font-semibold"
+				>orders of magnitude better</span
+			>, fault-tolerant, intuitive software.
+		</p>
+	</div>
+</section>

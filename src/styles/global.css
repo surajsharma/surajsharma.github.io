@@ -29,6 +29,8 @@
 			0.2px 4.1px 4.3px -2.1px hsl(var(--shadow-color) / 0.4),
 			0.3px 6.4px 6.7px -2.6px hsl(var(--shadow-color) / 0.38),
 			0.4px 9.5px 10px -3px hsl(var(--shadow-color) / 0.36);
+    --theme-grid: rgb(250 250 250 / 0.5);
+    --theme-fade: #eeeeee;
 	}
 
 	:root.dark {
@@ -41,7 +43,9 @@
 		--theme-quote: #ccffb6;
 		--theme-menu-bg: rgb(29 31 33 / 0.85);
 		--theme-link-hover-bg: #cd3724;
-	}
+    --theme-grid: rgb(50 50 50 / 0.5);
+    --theme-fade: #111111;
+  }
 
 	html {
 		@apply h-full scroll-smooth border-textColor;
@@ -52,9 +56,12 @@
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 		font-family: "bm", sans-serif;
 		background-size: 40px 40px;
-		background-image:
-			linear-gradient(to right, var(--tw-color-bgColor, rgb(26, 26, 26)) 1px, transparent 1px),
-			linear-gradient(to bottom, var(--tw-color-bgColor, rgb(26, 26, 26)) 1px, transparent 1px);
+		background-image: linear-gradient(
+				to right,
+				var(--theme-grid) 1px,
+				transparent 1px
+			),
+			linear-gradient(to bottom, var(--theme-grid) 1px, transparent 1px);
 
 		background-attachment: fixed;
 		position: relative;
@@ -68,10 +75,12 @@
 		right: 0;
 		top: 0;
 		bottom: 0;
-		background: linear-gradient(to bottom,
-				rgba(255, 255, 255, 0) 0%,
-				rgba(255, 255, 255, 0) 10%,
-				var(--tw-color-bgColor-bg, black) 100%);
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0) 10%,
+			var(--theme-fade) 100%
+		);
 		pointer-events: none;
 		/* Mask for fading effect */
 		/* mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
@@ -94,10 +103,9 @@
 		/* overflow-y: auto; Allows horizontal scrolling if needed */
 		align-items: center;
 		animation: 5s slide infinite linear;
-
 	}
 
-	.marquee  img {
+	.marquee img {
 		height: 30px; /* Fill the row height */
 		width: auto; /* Width adjusts based on aspect ratio */
 		object-fit: contain;
@@ -113,11 +121,11 @@
 	}
 
 	@keyframes slide {
-		from{
-			transform: translateX(0)
+		from {
+			transform: translateX(0);
 		}
-		to{
-			transform:translateX(-410%)
+		to {
+			transform: translateX(-410%);
 		}
 	}
 
@@ -148,7 +156,6 @@
 	}
 
 	@keyframes hmh {
-
 		0%,
 		20% {
 			background-size: 200%;

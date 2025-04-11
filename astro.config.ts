@@ -44,7 +44,7 @@ export default defineConfig({
 			},
 		},
 		server: {
-			allowedHosts: ["verbal-seemed-preparing-dat.trycloudflare.com"],
+			allowedHosts: ["function-rj-february-incorporate.trycloudflare.com"],
 		},
 	},
 });

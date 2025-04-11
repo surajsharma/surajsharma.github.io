@@ -5,33 +5,16 @@
 		"jsxImportSource": "react",
 		"baseUrl": ".",
 		"paths": {
-			"@/components/*": [
-				"src/components/*.astro"
-			],
-			"@/layouts/*": [
-				"src/layouts/*.astro"
-			],
-			"@/utils": [
-				"src/utils/index.ts"
-			],
-			"@/stores/*": [
-				"src/stores/*"
-			],
-			"@/data/*": [
-				"src/data/*"
-			],
-			"@/site-config": [
-				"src/site.config.ts"
-			]
+			"@/components/*": ["src/components/*.astro"],
+			"@/layouts/*": ["src/layouts/*.astro"],
+			"@/utils": ["src/utils/index.ts"],
+			"@/stores/*": ["src/stores/*"],
+			"@/data/*": ["src/data/*"],
+			"@/site-config": ["src/site.config.ts"]
 		},
 		"preserveValueImports": false,
 		"importsNotUsedAsValues": "remove",
-		"verbatimModuleSyntax": false,
+		"verbatimModuleSyntax": false
 	},
-	"exclude": [
-		"node_modules",
-		"**/node_modules/*",
-		".vscode",
-		"dist"
-	]
+	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
 }

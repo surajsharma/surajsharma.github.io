@@ -3,6 +3,8 @@ import Clients from "./Clients.jsx";
 import { clients } from "@/data/clients";
 ---
 
-<div class="no-scrollbar absolute left-1/2 right-auto flex h-48 w-screen -translate-x-1/2 items-center justify-center overflow-hidden bottom-10">
+<div
+	class="no-scrollbar absolute bottom-10 left-1/2 right-auto flex h-48 w-screen -translate-x-1/2 items-center justify-center overflow-hidden"
+>
 	<Clients client:load clients={clients} />
 </div>

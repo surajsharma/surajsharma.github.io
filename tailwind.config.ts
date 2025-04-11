@@ -16,10 +16,19 @@ export default {
 		borderOpacity: false,
 		textOpacity: false,
 		fontVariantNumeric: false,
+    container:true,
 	},
 	theme: {
+  container: {
+    type: 'normal', // or 'inline'
+  },
+  future: {
+    // ✅ Enables @container utilities
+    hoverOnlyWhenSupported: true,
+  },
 		extend: {
 			colors: {
+        grid: "var(--theme-grid)",
 				bgColor2: "var(--theme-menu-bg)",
 				bgColor: "var(--theme-bg)",
 				linkHover: "var(--theme-link-hover-bg)",

@@ -35,7 +35,6 @@ export const clients: client[] = [
 			import: cyb,
 			width: 2000,
 			height: 1000,
-
 		},
 		url: "https://www.cybrilla.com/",
 		agency: false,
@@ -148,7 +147,7 @@ export const clients: client[] = [
 		img: {
 			import: apr,
 			height: 1000,
-			width:1000,
+			width: 1000,
 		},
 		url: "https://www.autoproctor.co/",
 		agency: false,
@@ -172,7 +171,7 @@ export const clients: client[] = [
 		img: {
 			import: ESICBlack,
 			height: 1000,
-			width:1000,
+			width: 1000,
 		},
 		url: "https://esic.gov.in/",
 		agency: false,
@@ -190,5 +189,4 @@ export const clients: client[] = [
 		agency: false,
 		remote: true,
 	},
-
 ];
