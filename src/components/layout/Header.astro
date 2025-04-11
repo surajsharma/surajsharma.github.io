@@ -30,7 +30,7 @@ const url = new URL(Astro.request.url);
 	});
 </script>
 
-<header id="main-header" class="-ml-2 mb-10 flex h-20 w-full justify-between">
+<header id="main-header" class="mb-10 flex h-20 w-full justify-between">
 	<div class="flex justify-between sm:flex-col">
 		<a
 			href="/"
@@ -38,27 +38,23 @@ const url = new URL(Astro.request.url);
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
 			<div class="flex h-20 w-full justify-between overflow-hidden align-middle">
-				<div
-					class="text-wrap w-6  items-center break-words text-2xl font-bold leading-none"
-				>
-				<div class=" w-20 h-20 p-1 border bg-linkHover  border-linkHover">
-					<div class="-mt-1">
-						<p class="evenzero">even</p>
-						<p class="evenzero -mt-2">zero</p>
+				<div class="w-6 items-center text-wrap break-words text-2xl font-bold leading-none">
+					<div class="h-20 w-20 border border-linkHover bg-linkHover p-1">
+						<div class="-mt-1">
+							<p class="evenzero">even</p>
+							<p class="evenzero -mt-2">zero</p>
+						</div>
 					</div>
 				</div>
-				</div>
-				<nav id="navigation-menu" class="ml-14 text-sm" aria-label="Main menu">
+				<nav id="navigation-menu" class="ml-14 flex flex-col text-sm" aria-label="Main menu">
 					{
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class="px-2 uppercase leading-4 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
+								class="mb-1 px-2 uppercase leading-4 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
 								aria-current={url.pathname === link.path ? "page" : false}
-								rel="prefetch"
 							>
 								{link.title}
-								<br />
 							</a>
 						))
 					}

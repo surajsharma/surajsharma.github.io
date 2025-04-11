@@ -3,10 +3,7 @@ import PageLayout from "@/layouts/Base";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 
-const exp_url =
-	import.meta.env.MODE === "development"
-		? import.meta.env.PUBLIC_FB_EXP_RTDB_URL
-		: import.meta.env.FB_EXP_RTDB_URL;
+const exp_url = "https://exphours-default-rtdb.europe-west1.firebasedatabase.app/"
 ---
 
 <PageLayout meta={{ title: "Home" }}>
