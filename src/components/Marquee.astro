@@ -4,7 +4,29 @@ import { clients } from "@/data/clients";
 ---
 
 <div
-	class="no-scrollbar absolute bottom-10 left-1/2 right-auto flex h-48 w-screen -translate-x-1/2 items-center justify-center overflow-hidden"
+	class="no-scrollbar absolute left-1/2 right-auto flex h-48 w-screen -translate-x-1/2 items-center justify-center overflow-hidden mqs bottom-10"
 >
 	<Clients client:load clients={clients} />
 </div>
+
+<style>
+@media (max-height: 699px) {
+  .mqs {
+    display: none;
+  }
+}
+
+@media (max-width: 542px) {
+  .mqs {
+    transform: scale(0.8) translateX(-62.5%) translateY(10%);
+    width: 665px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .mqs {
+    transform: scale(0.6) translateX(-83.5%) translateY(45%);
+    width: 765px !important;
+  }
+}
+</style>

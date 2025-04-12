@@ -54,7 +54,7 @@ const {
 		<script lang="ts">
 			!(function () {
 				// all links open in own tab
-				const links = document.body.getElementsByTagName("a");
+        const links = Array.from(document?.body?.getElementsByTagName("a")??[]);
 				for (const link of links) {
 					if (link?.href && new URL(link.href).origin !== location.origin) {
 						link.setAttribute("target", "_blank");
