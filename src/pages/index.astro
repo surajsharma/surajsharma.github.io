@@ -8,13 +8,13 @@ const exp_url = "https://exphours-default-rtdb.europe-west1.firebasedatabase.app
 
 <PageLayout meta={{ title: "Home" }}>
 	<script is:inline src="/scripts/counter.js"></script>
-	<script define:vars={{ exp_url }} type="module">
+  <script is:inline define:vars={{ exp_url }} type="module">
 		const exp = document.getElementById("exp");
 		let old = createFormattedNumberArray(exp.innerText);
 
 		animateNumber(old, exp, old).then(async (res) => {
 			if (res && res === 1) {
-				await update();
+			  await update();
 				setInterval(update, 10000);
 			}
 		});
