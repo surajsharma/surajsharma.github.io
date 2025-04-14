@@ -39,14 +39,14 @@ const url = new URL(Astro.request.url);
 		>
 			<div class="flex h-20 w-full justify-between overflow-hidden align-middle">
 				<div class="w-6 items-center text-wrap break-words text-2xl font-bold leading-none">
-					<div class="h-20 w-20 border border-linkHover bg-linkHover p-1">
-						<div class="-mt-1">
+					<div class="h-20 w-20 g-linkHover p-1">
+						<div class="-mt-1 text-white">
 							<p class="evenzero">even</p>
 							<p class="evenzero -mt-2">zero</p>
 						</div>
 					</div>
 				</div>
-				<nav id="navigation-menu" class="ml-14 flex flex-col text-sm" aria-label="Main menu">
+				<nav id="navigation-menu" class="ml-14 mt-[2px] justify-center h-full flex flex-col text-sm" aria-label="Main menu">
 					{
 						MENU_LINKS.map((link) => (
 							<a

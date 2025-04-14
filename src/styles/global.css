@@ -29,7 +29,7 @@
 			0.2px 4.1px 4.3px -2.1px hsl(var(--shadow-color) / 0.4),
 			0.3px 6.4px 6.7px -2.6px hsl(var(--shadow-color) / 0.38),
 			0.4px 9.5px 10px -3px hsl(var(--shadow-color) / 0.36);
-    --theme-grid: rgb(250 250 250 / 0.5);
+    --theme-grid: rgb(200 200 200 / 0.55);
     --theme-fade: #eeeeee;
 	}
 

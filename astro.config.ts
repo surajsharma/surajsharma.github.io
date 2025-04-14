@@ -40,7 +40,7 @@ export default defineConfig({
       },
     },
     server: {
-      allowedHosts: ["search-ny-phi-soonest.trycloudflare.com"],
+      allowedHosts: [".trycloudflare.com"],
     },
   },
 });
