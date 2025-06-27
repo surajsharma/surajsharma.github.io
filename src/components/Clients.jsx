@@ -58,10 +58,10 @@ export default function MotionMarquee({ clients }) {
         className="flex flex-shrink-0 space-x-16 whitespace-nowrap"
       >
         {fullList.map((client, i) => (
-          <a href={client.url} target="_blank" key={i}>
+        <a href={client.url} target="_blank" key={i}>
             <img
               className="tpl h-20 w-auto object-contain"
-              src={client.img.import.src}
+              src={client?.img?.import?.src}
               alt={client.name}
             />
           </a>
@@ -80,7 +80,7 @@ export default function MotionMarquee({ clients }) {
           <a href={client.url} target="_blank" key={i}>
             <img
               className="tpl h-20 w-auto object-contain"
-              src={client.img.import.src}
+              src={client?.img?.import?.src}
               alt={client.name}
             />
           </a>
