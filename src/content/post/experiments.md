@@ -11,7 +11,7 @@ a threejs snake on an infinite, procedurally generated terrain
 [<a href="https://bongasnake-jy8x4i8ky-surajsharmas-projects-4640bdda.vercel.app/" target="_blank">final version↗️</a>]
 [![final](https://img001.prntscr.com/file/img001/ixAb9hJUSWGs3HaVXO3IuA.jpeg)](https://www.youtube.com/watch?v=F3Rsx-np4_0)
 
-[<a href="https://bongasnake-jy8x4i8ky-surajsharmas-projects-4640bdda.vercel.app/" target="_blank">development version↗️</a>]
+[<a href="https://bongasnake-omo966t4k-surajsharmas-projects-4640bdda.vercel.app/" target="_blank">development version↗️</a>]
 [![dev](https://img001.prntscr.com/file/img001/_KS3wxwDSiygSKB-OqyYTw.jpeg)](#)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
