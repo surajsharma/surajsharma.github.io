@@ -4,6 +4,27 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
+## [bongasnake](https://github.com/surajsharma/bongasnake)
+
+a threejs snake on an infinite, procedurally generated terrain
+
+[<a href="https://bongasnake-jy8x4i8ky-surajsharmas-projects-4640bdda.vercel.app/" target="_blank">final version↗️</a>]
+
+https://github.com/user-attachments/assets/b463c97c-552c-40cc-9893-3ab80bc7d03c
+
+[<a href="https://bongasnake-jy8x4i8ky-surajsharmas-projects-4640bdda.vercel.app/" target="_blank">development version↗️</a>]
+
+https://github.com/user-attachments/assets/8ba2f938-9755-4258-a3d6-8a008fe259b5
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square" style="margin: 0">
+  
+</div>
+
+---
+
 ## [kanastar](https://github.com/surajsharma/kanastar)
 
 a simple container orchestrator written in go.
@@ -25,7 +46,7 @@ a simple container orchestrator written in go.
 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
-basic cellular automata demo using wasm-pack. <a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">[launch↗️]</a>
+basic cellular automata demo using wasm-pack. [<a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">launch↗️</a>]
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square" style="margin: 0">
