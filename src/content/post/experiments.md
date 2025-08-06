@@ -8,15 +8,14 @@ publishDate: "7 Jun 2023"
 
 upstream is a game about a little cube trying to stay afloat and alive while on an infinite river in space
 
-[<a href="https://evenzero.in/upstream" target="_blank"> play↗️</a>]
+[<a href="https://evenzero.in/upstream" target="_blank">play↗️</a>]
 
 ![play](https://github.com/inversepolarity/Upstream/raw/master/promo.png)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff&style=flat" style="margin: 0">
 <img src="https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=flat" style="margin: 0">
-<img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat-square" style="margin: 0">
-
+<img src="https://img.shields.io/badge/WebGL-900?logo=webgl&logoColor=fff&style=flat" style="margin: 0">
 </div>
 
 ---
