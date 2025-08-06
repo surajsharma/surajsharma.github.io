@@ -43,12 +43,12 @@ a simple container orchestrator written in go.
 ![kanastar](https://github.com/surajsharma/kanastar/raw/main/docs/images/architecture.svg)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
-<img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=fff&style=flat-square" style="margin: 0">
-<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat-square" style="margin: 0">
-<img src="https://img.shields.io/badge/Podman-892CA0?logo=podman&logoColor=fff&style=flat-square" style="margin: 0">
-<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=flat-square" style="margin: 0">
-<img src="https://img.shields.io/badge/Linux%20Containers-333?logo=linuxcontainers&logoColor=fff&style=flat-square" style="margin: 0">
-<img src="https://img.shields.io/badge/Open%20Containers%20Initiative-262261?logo=opencontainersinitiative&logoColor=fff&style=flat-square" style="margin: 0">
+<img src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/Podman-892CA0?logo=podman&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/Linux%20Containers-333?logo=linuxcontainers&logoColor=fff&style=flat" style="margin: 0">
+<img src="https://img.shields.io/badge/Open%20Containers%20Initiative-262261?logo=opencontainersinitiative&logoColor=fff&style=flat" style="margin: 0">
 </div>
 
 ---
@@ -60,11 +60,11 @@ a simple container orchestrator written in go.
 basic cellular automata demo using wasm-pack. [<a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">launch↗️</a>]
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
-  <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/WebAssembly-654FF0?logo=webassembly&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=000&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat" style="margin: 0">
 </div>
 
 ---
@@ -85,13 +85,15 @@ full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a n
 
 a babel plugin for more convenient JSX syntax when passing props to components.
 
-[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat-square)](https://www.npmjs.com/package/babel-prop-name-value-shorthand)
+[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat)](https://www.npmjs.com/package/babel-prop-name-value-shorthand)
 
 ---
 
 ## [ZYT](https://github.com/inversepolarity/ZYT)
 
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
+
+![](https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png)
 
 <div>
     <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
@@ -179,20 +181,20 @@ A simple calendar written from scratch in React.
 - [**mern-redux-toolkit-auth**↗️](https://github.com/surajsharma/mern-redux-toolkit-auth)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Mongoose-800?logo=mongoose&logoColor=fff&style=flat-square" style="margin: 0">
-  <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat-square" style="margin: 0">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Express-000?logo=express&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Mongoose-800?logo=mongoose&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat" style="margin: 0">
 </div>
 
 ---
