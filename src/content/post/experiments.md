@@ -33,7 +33,7 @@ upstream is a game about a little cube trying to stay afloat and alive while on 
 
 transient clipboard server for windows
 
-[<a href="https://github.com/inversepolarity/spill/releases/" target="_blank">download latest executable</a>]
+[<a href="https://github.com/inversepolarity/spill/releases/" target="_blank">download latest executable↗️</a>]
 
 ![spill](https://github.com/inversepolarity/spill/raw/master/spill.gif)
 
@@ -86,7 +86,7 @@ an exercise erc721 standard implemented for the zk-snark company Starknet's own 
 
 ## [fiber-fullstack-3D-carousel](https://github.com/surajsharma/strapi-threejs-fullstack-showcase)
 
-full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [demo video↗️](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
+full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [[demo video↗️]](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
 
 ---
 
@@ -103,15 +103,12 @@ a babel plugin for more convenient JSX syntax when passing props to components.
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
 
 <img width="300" alt="zentube"  alt="semantic-uuid" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
-
-<div>
     <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
     <img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a>
     <a class="no-underline" href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=Firefox-Browser&amp;logoColor=white" alt="Firefox"></a>
     <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a>
     <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a>
     <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a>
-</div>
 
 ---
 
