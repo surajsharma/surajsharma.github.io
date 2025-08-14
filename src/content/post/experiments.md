@@ -4,6 +4,15 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "7 Jun 2023"
 ---
 
+## [semantic-uuid](https://www.npmjs.com/package/semantic-uuid)
+
+Transform UUIDs into memorable 4-square visual patterns with quantized colors and emojis.
+<img width="1489" height="1214" alt="semantic-uuid" src="https://github.com/user-attachments/assets/f7008683-f60d-4642-9168-2fad16f380be" />
+
+[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat)](https://www.npmjs.com/package/babel-prop-name-value-shorthand)
+
+---
+
 ## [upstream](https://github.com/inversepolarity/Upstream)
 
 upstream is a game about a little cube trying to stay afloat and alive while on an infinite river in space
@@ -93,7 +102,7 @@ a babel plugin for more convenient JSX syntax when passing props to components.
 
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
 
-![](https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png)
+<img height="500" alt="zentube"  alt="semantic-uuid" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
 
 <div>
     <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
