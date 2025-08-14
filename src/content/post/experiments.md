@@ -102,7 +102,7 @@ a babel plugin for more convenient JSX syntax when passing props to components.
 
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
 
-<img height="500" alt="zentube"  alt="semantic-uuid" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
+<img width="300" alt="zentube"  alt="semantic-uuid" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
 
 <div>
     <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
