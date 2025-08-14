@@ -102,13 +102,8 @@ a babel plugin for more convenient JSX syntax when passing props to components.
 
 Zen mode for youtube - A featured Cross-browser plugin to remove addictive features on YouTube like thumbnails, comments, previews and more... to make the experience less addicting. Download for your browser by clicking on the respective badge below.
 
-<img width="300" alt="zentube"  alt="semantic-uuid" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
-    <a class="no-underline" href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip">
-    <img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a>
-    <a class="no-underline" href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=Firefox-Browser&amp;logoColor=white" alt="Firefox"></a>
-    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a>
-    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a>
-    <a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a>
+<img width="300" alt="zentube" src="https://raw.githubusercontent.com/inversepolarity/ZenTube/main/src/promo/ZYT.png" />
+<div class="getzyt"><a href="https://github.com/inversepolarity/ZenTube/raw/main/safari/ZenTube/build/sa_zentube-latest.zip"><img src="https://img.shields.io/badge/Safari-f0f0f0?style=for-the-badge&amp;logo=Safari&amp;logoColor=black" alt="Safari"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/zentube/"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="https://bit.ly/3S3dTvT"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
 
 ---
 

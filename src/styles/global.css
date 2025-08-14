@@ -93,6 +93,20 @@
 		filter: drop-shadow(1px 1px 1px #787887);
 	}
 
+	.getzyt{
+	    text-decoration: none !important;
+	    display: flex;
+	    flex-direction: row;
+	    gap: 4px;
+	}
+
+	.getzyt a {
+	  text-decoration: none !important;
+	  border-bottom: 0 !important;
+	  background-image: none !important;
+	  box-shadow: none !important; /* some use shadows as “underline” */
+	}
+
 	.marquee {
 		display: grid;
 		grid-auto-flow: column; /* Creates columns automatically */
@@ -138,11 +152,11 @@
 		cursor: pointer;
 	}
 
-  .eo {
+	.eo {
 		background-position: center;
-    background-size: contain;
+    	background-size: contain;
 		background-image: url("/images/e0_4.png");
-  }
+  	}
 
 	.about {
 		background-position: center;
