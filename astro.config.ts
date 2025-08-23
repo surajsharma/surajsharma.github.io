@@ -12,7 +12,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   site: "https://evenzero.in/",
   output: "static",
-  adapter: cloudflare(),
+  adapter: import.meta.env.PROD ? cloudflare() : undefined,
   markdown: {
     shikiConfig: {
       theme: "dracula",
