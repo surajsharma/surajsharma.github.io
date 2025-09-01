@@ -5,7 +5,7 @@ publishDate: "1 Aug 2025"
 ---
 
 
-## uncl(https://github.com/inversepolarity/uncl)
+## [uncl](https://github.com/inversepolarity/uncl)
 
 uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable, resizeable, and draggable floating term window as an accomplice to your worst terminal misdeeds, written in rust.
 
