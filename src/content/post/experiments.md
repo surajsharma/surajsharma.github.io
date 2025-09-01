@@ -1,8 +1,24 @@
 ---
 title: "Experiments"
 description: "Tinkering / R&D for work or otherwise, FOSS publications"
-publishDate: "7 Jun 2023"
+publishDate: "1 Aug 2025"
 ---
+
+
+## uncl(https://github.com/inversepolarity/uncl)
+
+uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable, resizeable, and draggable floating term window as an accomplice to your worst terminal misdeeds, written in rust.
+
+<img width="1489" height="1214" alt="uncl" src="https://github.com/inversepolarity/uncl/raw/master/screenshot.png" />
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/GNU%20Bash-4EAA25?logo=gnubash&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/Zsh-F15A24?logo=zsh&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/WezTerm-4E49EE?logo=wezterm&logoColor=fff&style=flat">
+</div>
+
+---
+
 
 ## [semantic-uuid](https://www.npmjs.com/package/semantic-uuid)
 
