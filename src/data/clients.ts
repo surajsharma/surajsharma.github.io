@@ -1,17 +1,16 @@
 import able from "../assets/able.svg";
 import apr from "../assets/autoproctor.svg";
 import bsc from "../assets/bscr.svg";
-import cyb from "../assets/cybrilla.svg";
+import cyb from "../assets/fp.png";
 import holdexImg from "../assets/holdex.svg";
 import sb from "../assets/salesbeat.svg";
 import sn from "../assets/sn.svg";
 import tattle from "../assets/tattle.png";
-import tda from "../assets/tda.png";
+import tda from "../assets/tda2x.png";
 import cp from "../assets/clearpool.svg";
 import ESICBlack from "../assets/ESICBlack.svg";
 import nc from "../assets/nc.png";
 import bc from "../assets/because.png";
-import blank from "../assets/blank.svg";
 
 type client = {
 	name: string;

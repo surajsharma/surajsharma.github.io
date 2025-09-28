@@ -4,7 +4,7 @@ description: "Projects I have worked on in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
 
-## [demTech.ai](https://demtech.ai)
+## [DemTech.ai](https://demtech.ai)
 
 An All-in-One, robust, whitelabelled citizen action platform (grassroots CRM) called <a href="https://because.center" target="_blank">beCause</a>. Designed with scalability and big data in mind for organisations of all sizes and scopes that allows your organization to use what you need directly out-of-the-box. There are very few digital tools on the market that support citizen-led actions and the tools that exist are becoming prohibitively expensive for many organizations. <a href="https://Jhatkaa.org/" target="_blank">Jhatkaa.org↗️</a> is powered by this platform.
 
@@ -32,7 +32,10 @@ The first decentralized credit marketplace.
 
 ---
 
-## [Fintech Primitives](https://fintechprimitives.com/)
+## [Cybrilla](https://cybrilla.com/about)
+Revolutionising mutual fund investing by making it simple and accessible, Cybrilla empowers mutual fund companies and distributors to streamline processes, cut operation costs, and make investing easier.
+
+### [Fintech Primitives](https://fintechprimitives.com/)
 
 A cloud-based platform as a service (PaaS). Simplifies the complexities of the Indian financial ecosystem with APIs. The domain, regulatory and technology complexity have been modularized into building blocks, which provide functionality through simple APIs. AMCs / fintech startups / wealth management businesses can mix and match these APIs to build awesome experiences, serving their customers better.
 
