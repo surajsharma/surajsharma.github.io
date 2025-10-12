@@ -6,7 +6,9 @@ publishDate: "1 Aug 2025"
 
 ## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
 
-custom wallpaper cycler with tray icon for [swww](https://github.com/LGFae/swww)
+🌀 custom wallpaper cycler with tray icon for [swww](https://github.com/LGFae/swww)
+
+<img width="1489" height="1214" alt="uncl" src="https://github.com/inversepolarity/swwwcycle/raw/master/swwwcycle.gif" />
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=fff&style=flat">
