@@ -8,7 +8,7 @@ publishDate: "1 Aug 2025"
 
 🌀 custom wallpaper cycler with tray icon for [swww](https://github.com/LGFae/swww)
 
-<img width="1489" height="1214" alt="uncl" src="https://github.com/inversepolarity/swwwcycle/raw/master/swwwcycle.gif" />
+<img alt="swwwcycle" src="https://github.com/inversepolarity/swwwcycle/raw/master/swwwcycle.gif" />
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=fff&style=flat">
@@ -23,7 +23,7 @@ publishDate: "1 Aug 2025"
 
 uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable, resizeable, and draggable floating term window as an accomplice to your worst terminal misdeeds, written in rust.
 
-<img width="1489" height="1214" alt="uncl" src="https://github.com/inversepolarity/uncl/raw/master/screenshot.png" />
+<img alt="uncl" src="https://github.com/inversepolarity/uncl/raw/master/screenshot.png" />
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25?logo=gnubash&logoColor=fff&style=flat">
@@ -39,7 +39,7 @@ uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable
 Transform UUIDs into memorable 4-square visual patterns with quantized colors and emojis.
 <img width="1489" height="1214" alt="semantic-uuid" src="https://github.com/user-attachments/assets/f7008683-f60d-4642-9168-2fad16f380be" />
 
-[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat)](https://www.npmjs.com/package/babel-prop-name-value-shorthand)
+[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat)](https://www.npmjs.com/package/semantic-uuid)
 
 ---
 
