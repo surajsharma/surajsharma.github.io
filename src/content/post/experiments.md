@@ -4,6 +4,18 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "1 Aug 2025"
 ---
 
+## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
+
+custom wallpaper cycler with tray icon for [swww](https://github.com/LGFae/swww)
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat">
+</div>
+
+---
+
 
 ## [uncl](https://github.com/inversepolarity/uncl)
 
