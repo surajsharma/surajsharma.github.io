@@ -8,7 +8,7 @@ publishDate: "1 Aug 2025"
 
 Complete Cross-browser Extension manifest.json (v3) generator with all official fields 
 
-<img alt="swwwcycle" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/screenshot.png" />
+<img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
 
 [<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
 
