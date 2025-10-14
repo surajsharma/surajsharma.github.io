@@ -4,6 +4,21 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "1 Aug 2025"
 ---
 
+## [v3manifestbuilder](https://github.com/inversepolarity/v3manifestbuilder)
+
+Complete Cross-browser Extension manifest.json (v3) generator with all official fields 
+
+<img alt="swwwcycle" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/screenshot.png" />
+
+[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff&style=flat">
+</div>
+
+---
+
+
 ## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
 
 🌀 custom wallpaper cycler with tray icon for [swww](https://github.com/LGFae/swww)
