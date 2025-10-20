@@ -62,15 +62,6 @@ const {
 				}
 			})();
 		</script>
-		<script type="application/ld+json">
-			{
-				"@context": "http://schema.org",
-				"@type": "Organization",
-				"name": "Evenzero",
-				"url": "https://evenzero.in",
-				"logo": "https://raw.githubusercontent.com/surajsharma/surajsharma.github.io/main/src/assets/e0_4.png"
-			}
-		</script>
 	</head>
 	<body>
 		<SkipLink />
@@ -79,5 +70,34 @@ const {
 		  <slot />
 		</main>
 		<Footer />
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Suraj Sharma",
+			"url": "https://www.evenzero.in",
+			"image": "https://www.evenzero.in/images/e0_4.png",
+			"sameAs": [
+				"https://github.com/surajsharma",
+				"https://twitter.com/surajsharmafyi",
+				"https://www.linkedin.com/in/surajsharma"
+			],
+			"jobTitle": "Software Engineer",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Evenzero"
+			},
+			"knowsAbout": [
+				"Software Engineering",
+				"Frontend Development",
+				"Backend Development",
+				"Microservices",
+				"Cloud Computing",
+				"API Development",
+				"React",
+				"Node.js",
+				"TypeScript"
+			],
+			"description": "Full-stack software engineer with 10,000+ hours of experience in shipping pixel-perfect frontends, highly available APIs, scalable microservices, and performant operations."
+		})} />
 	</body>
 </html>

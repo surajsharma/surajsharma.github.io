@@ -1,0 +1,3 @@
+Contact: mailto:suraj@evenzero.in
+Preferred-Languages: en
+Canonical: https://www.evenzero.in/.well-known/security.txt

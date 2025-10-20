@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*.json$
 
-Sitemap: https://astro-theme-cactus.netlify.app/sitemap-index.xml
+Sitemap: https://www.evenzero.in/sitemap-index.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Crawl-delay: 1

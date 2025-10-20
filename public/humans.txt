@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Suraj Sharma
+Site: https://www.evenzero.in
+Email: suraj@evenzero.in
+Location: India
+
+/* SITE */
+Last update: 2025/10/20
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Astro, React, TypeScript, TailwindCSS
+Software: VS Code, Git

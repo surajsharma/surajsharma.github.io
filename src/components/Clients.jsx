@@ -33,11 +33,14 @@ export default function MotionMarquee({ clients }) {
         innerClassName="gap-[4rem] h-24"
       >
         {logos.map((client, i) => (
-          <a href={client.url} target="_blank" key={i}>
+          <a href={client.url} target="_blank" rel="noopener noreferrer" key={i} aria-label={`Visit ${client.name} website`}>
             <img
               className={`tpl h-20 w-auto object-contain ${i === 0 ? 'ml-16' : ''}`}
               src={client?.img?.import?.src}
-              alt={client.name}
+              alt={`${client.name} logo`}
+              loading="lazy"
+              width="auto"
+              height="80"
             />
           </a>
         ))}

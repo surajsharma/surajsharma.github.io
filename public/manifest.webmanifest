@@ -1,16 +1,27 @@
 {
-	"name": "evenzero",
-	"short_name": "eo",
-	"description": "evenzero.in",
+	"name": "evenzero - Suraj Sharma Portfolio",
+	"short_name": "evenzero",
+	"description": "Full-stack software engineer with 10,000+ hours of experience in building pixel-perfect frontends, scalable APIs, and cloud-native microservices",
 	"icons": [
 		{
 			"src": "/favicon.ico",
 			"sizes": "64x64",
-			"type": "image/png"
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/images/e0_4.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
 		}
 	],
 	"start_url": "/",
+	"scope": "/",
 	"background_color": "#1d1f21",
 	"theme_color": "#2bbc8a",
-	"display": "standalone"
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"categories": ["portfolio", "development", "technology"],
+	"lang": "en-GB",
+	"dir": "ltr"
 }

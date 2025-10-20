@@ -4,4 +4,4 @@ const { badge } = Astro.props;
 const ref = badges[badge];
 ---
 
-<img src={ref} alt={badge} />
+<img src={ref} alt={`${badge} badge`} loading="lazy" width="auto" height="20" />
