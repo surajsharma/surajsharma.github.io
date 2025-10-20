@@ -3,37 +3,40 @@ import PageLayout from "@/layouts/Base";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 
-const exp_url = "https://exphours-default-rtdb.europe-west1.firebasedatabase.app/experience.json";
+const exp_url =
+  "https://exphours-default-rtdb.europe-west1.firebasedatabase.app/experience.json";
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<script is:inline src="/scripts/counter.js"></script>
+  <script is:inline src="/scripts/counter.js"></script>
   <script is:inline define:vars={{ exp_url }} type="module">
-		const exp = document.getElementById("exp");
-		let old = createFormattedNumberArray(exp.innerText);
+    const exp = document.getElementById("exp");
+    let old = createFormattedNumberArray(exp.innerText);
 
-		animateNumber(old, exp, old).then(async (res) => {
-			if (res && res === 1) {
-			  await update();
-				setInterval(update, 10000);
-			}
-		});
+    animateNumber(old, exp, old).then(async (res) => {
+      if (res && res === 1) {
+        await update();
+        setInterval(update, 10000);
+      }
+    });
 
-		async function update() {
-			const ss = Date.now();
+    async function update() {
+      const ss = Date.now();
 
-			let experience = await fetch(exp_url + "?ss=" + ss, { cache: "no-cache" });
-			experience = await experience.json();
+      let experience = await fetch(exp_url + "?ss=" + ss, {
+        cache: "no-cache",
+      });
+      experience = await experience.json();
 
-			const newExp = new Intl.NumberFormat("en-GB").format(experience);
-			const value = createFormattedNumberArray(newExp);
+      const newExp = new Intl.NumberFormat("en-GB").format(experience);
+      const value = createFormattedNumberArray(newExp);
 
-			if (value.join("") == old.join("")) return;
+      if (value.join("") == old.join("")) return;
 
-			await animateNumber(value, exp, old);
-			old = createFormattedNumberArray(newExp);
-		}
-	</script>
-	<Hero />
-	<Marquee />
+      await animateNumber(value, exp, old);
+      old = createFormattedNumberArray(newExp);
+    }
+  </script>
+  <Hero />
+  <Marquee />
 </PageLayout>

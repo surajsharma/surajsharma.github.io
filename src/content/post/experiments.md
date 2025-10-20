@@ -4,19 +4,34 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "1 Aug 2025"
 ---
 
-## [v3 manifest builder](https://github.com/surajsharma/v3manifestbuilder)
 
-Complete Cross-browser Extension manifest.json (v3) generator with all official fields 
+## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-<img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
+Omnibar search → nth result (press escape to cancel). `I am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
 
-[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
+<img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
-<div style="gap: 3px; display: flex; flex-wrap: wrap;">
-<img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff&style=flat">
-</div>
+<div class="getzyt"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/i-am-not-uncertain/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="#0"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="#0"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="#0"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
+
 
 ---
+
+## [online code judge]()
+
+A spring-boot/nextjs based online code judge for java. Complete full-stack dockerised app with real-time leaderboard and simple authentication.
+
+![](https://github.com/surajsharma/online-code-judge/raw/main/frontend/public/login.png)
+![](https://github.com/surajsharma/online-code-judge/raw/main/frontend/public/frontend.png)
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat">
+</div>
+
+
+--- 
 
 
 ## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
@@ -29,6 +44,20 @@ Complete Cross-browser Extension manifest.json (v3) generator with all official 
 <img src="https://img.shields.io/badge/Qt-41CD52?logo=qt&logoColor=fff&style=flat">
 <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat">
 <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat">
+</div>
+
+---
+
+## [v3 manifest builder](https://github.com/surajsharma/v3manifestbuilder)
+
+Complete Cross-browser Extension manifest.json (v3) generator with all official fields 
+
+<img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
+
+[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff&style=flat">
 </div>
 
 ---
