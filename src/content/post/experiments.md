@@ -7,11 +7,11 @@ publishDate: "1 Aug 2025"
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-Omnibar search → nth result (press escape to cancel). `I am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
+Omnibar search → nth result (press escape to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
-<div class="getzyt"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/i-am-not-uncertain/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
+<div class="getianu"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/i-am-not-uncertain/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
 
 
 ---
@@ -187,9 +187,11 @@ My interpretation of the russian game, done entirely using `input` HTML elements
 
 ---
 
-## [Whatsapp Scraper](https://koshwapp.netlify.app/)
+## [Whatsapp Scraper]()
 
-The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo↗️](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1)
+![whatsapp-scraper](https://github.com/tattle-made/whatsapp-scraper/raw/master/docs/images/project-logo.png)
+
+The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo↗️](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1) 
 
 ---
 
@@ -227,21 +229,9 @@ Full stack app using Express, React, Mongodb, Tailwind. With Google Authenticati
 
 ---
 
-## [Candlestick Chart](https://github.com/surajsharma/Candlestick-Chart)
-
-A simple React/D3/[D3FC](https://d3fc.io/) based toy app I built to teach myself the basics.
-
----
-
 ## [React-Table Dashboard](https://github.com/surajsharma/react-table-with-charts)
 
-A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment. Click [here↗️](https://quirky-poitras-eb3484.netlify.app/) to use.
-
----
-
-## [Calendar](https://github.com/surajsharma/Calendar)
-
-A simple calendar written from scratch in React.
+A perfunctory marketing datagrid/dashboard using [React-Table](https://github.com/tannerlinsley/react-table), Axios and Chart.js built as an interview assignment.
 
 ---
 
