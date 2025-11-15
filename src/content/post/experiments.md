@@ -14,7 +14,7 @@ publishDate: "1 Aug 2025"
 
 - Average accuracy with an english dictionary of ~50k words is well around 70-75% for POC.
 
-![poc](/public/images/xk.gif)
+![poc](/images/xk.gif)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff&style=flat">
