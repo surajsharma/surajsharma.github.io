@@ -4,6 +4,28 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "1 Aug 2025"
 ---
 
+## [xk - expected keyboard](#)
+
+- [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) + Glide/Swipe typing
+
+- Closed source since I'm only one lone tinkerer and this is Google level stuff. Kindly get in touch if interested in APK.
+
+- Developed 100% Without Android Studio.
+
+- Average accuracy with an english dictionary of ~50k words is well around 70-75% for POC.
+
+![poc](/public/images/xk.gif)
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/OpenJDK-000?logo=openjdk&logoColor=fff&style=flat">
+<img src="https://img.shields.io/badge/NixOS-5277C3?logo=nixos&logoColor=fff&style=flat">
+<img src="">
+</div>
+
+
+---
+
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
