@@ -8,11 +8,11 @@ publishDate: "1 Aug 2025"
 
 - [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) + Glide/Swipe typing
 
-- Closed source since I'm only one lone tinkerer and this is Google level stuff. Kindly get in touch if interested in APK.
+- Closed source for obvious reasons. Kindly get in touch if interested in APK.
 
 - Developed 100% Without Android Studio.
 
-- Average accuracy with an english dictionary of ~50k words is well around 70-75% for POC.
+- Average accuracy with an english dictionary of ~50k words is well around 70-75% for POC, higher for ensemble decoder in the works.
 
 ![poc](/images/xk.gif)
 
