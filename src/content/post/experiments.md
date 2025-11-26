@@ -4,7 +4,7 @@ description: "Tinkering / R&D for work or otherwise, FOSS publications"
 publishDate: "1 Aug 2025"
 ---
 
-## [xk - expected keyboard](#)
+## [skiboard](#)
 
 - [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) + Glide/Swipe typing
 
@@ -12,7 +12,7 @@ publishDate: "1 Aug 2025"
 
 - Developed 100% Without Android Studio.
 
-- Average accuracy with an english dictionary of ~50k words is well around 70-75% for POC, higher for ensemble decoder in the works.
+- Average accuracy with an english dictionary of ~50k words is well around 88-92% for POC, with a modular 'plug-n-play' decoder that allows ensemble strategies to take it upto 98-99%.
 
 ![poc](/images/xk.gif)
 
