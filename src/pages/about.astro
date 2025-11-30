@@ -2,136 +2,149 @@
 import PageLayout from "@/layouts/Base";
 
 const meta = {
-	title: "About",
-	description: "Learn about Evenzero and Suraj Sharma - Weapons-grade software engineering and distributed systems expertise since 2000. Trusted by Goldman Sachs, MIT, Palantir, and Y Combinator startups.",
+  title: "About",
+  description:
+    "Learn about Evenzero and Suraj Sharma - Weapons-grade software engineering and distributed systems expertise since 2000. Trusted by Goldman Sachs, MIT, Palantir, and Y Combinator startups.",
 };
 ---
 
 <PageLayout meta={meta}>
-	<div class="about">
-		<div class="space-y-6 bg-bgColor p-2 opacity-90 shadow text-justify">
-			<div class="items-top flex flex-col gap-3 rounded-lg border border-bgColor p-0">
-				<div class="flex items-center justify-between">
-					<div class="flex gap-0"></div>
-					<h1 class="p-4 text-lg font-semibold uppercase">evenzero</h1>
-				</div>
-				<span class="grid grid-cols-1 p-4">
-					<p class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold">
-						<span class="has-tooltip cursor-pointer text-teal-600">
-							<span
-								class="tooltip -mt-28 rounded border border-bgColor2 bg-bgColor p-1 text-red-500 shadow-lg"
-							>
-								<span class="flex items-center justify-start gap-1">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="icon icon-tabler icon-tabler-circle-key h-4 w-4"
-										width="44"
-										height="44"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="#2c3e50"
-										fill="none"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									>
-										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-										<path d="M14 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-										<path d="M21 12a9 9 0 1 1 -18 0a9 9 0 0 1 18 0z"></path>
-										<path d="M12.5 11.5l-4 4l1.5 1.5"></path>
-										<path d="M12 15l-1.5 -1.5"></path>
-									</svg>Post-quantum<br /></span
-								>
-								<span class="flex items-center justify-start gap-1"
-									><svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="icon icon-tabler icon-tabler-square-number-0 h-4 w-4"
-										width="44"
-										height="44"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="#2c3e50"
-										fill="none"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									>
-										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-										<path
-											d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-										></path>
-										<path d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0 -4 0z"></path>
-									</svg>Zero-Knowledge<br /></span
-								>
-								<span class="flex items-center justify-start gap-1">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="icon icon-tabler icon-tabler-hexagon-3d h-4 w-4"
-										width="44"
-										height="44"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="#2c3e50"
-										fill="none"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									>
-										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-										<path
-											d="M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z"
-										></path>
-										<path d="M12 16.5v4.5"></path>
-										<path d="M4.5 7.5l3.5 2.5"></path>
-										<path d="M16 10l4 -2.5"></path>
-										<path d="M12 7.5v4.5l-4 2"></path>
-										<path d="M12 12l4 2"></path>
-										<path d="M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z"></path>
-									</svg>FHE<br /></span
-								>
-								<span class="flex items-center justify-start gap-1">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="icon icon-tabler icon-tabler-binary-tree h-4 w-4"
-										width="44"
-										height="44"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="#2c3e50"
-										fill="none"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									>
-										<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-										<path d="M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
-										<path d="M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
-										<path d="M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
-										<path d="M11 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
-										<path d="M21 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
-										<path d="M5.058 18.306l2.88 -4.606"></path>
-										<path d="M10.061 10.303l2.877 -4.604"></path>
-										<path d="M10.065 13.705l2.876 4.6"></path>
-										<path d="M15.063 5.7l2.881 4.61"></path>
-									</svg>LLVM/MLIR<br /></span
-								>
-							</span>
-							Weapons-grade
-            </span> software and distributed systems since the turn of the millennium. Pushing the envelope for institutional investors,
-            fintech, fashion, academia, ed-tech, e-commerce, civic-tech, and SaaS businesses. Created in 2018, by Suraj
-            Sharma, who sold his first line of code in the year 2000. </p>
-					<p
-						class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
-					>
-						Over the past few decades, we have excelled in balancing precision and redundancy,
-						delivering under previously unheard levels of transparency. Our works
-            are evaluated, studied, used, and trusted by global brands like
-            Goldman Sachs, Massachusetts Institute of Technology, Palantir, YC etc. </p>
+  <div class="about">
+    <div class="space-y-6 bg-bgColor p-2 opacity-90 shadow text-justify">
+      <div
+        class="items-top flex flex-col gap-3 rounded-lg border border-bgColor p-0"
+      >
+        <div class="flex items-center justify-between">
+          <div class="flex gap-0"></div>
+          <h1 class="p-4 text-lg font-semibold uppercase">evenzero</h1>
+        </div>
+        <span class="grid grid-cols-1 p-4">
+          <p
+            class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold"
+          >
+            <span class="has-tooltip cursor-pointer text-teal-600">
+              <span
+                class="tooltip -mt-28 rounded border border-bgColor2 bg-bgColor p-1 text-red-500 shadow-lg"
+              >
+                <span class="flex items-center justify-start gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-circle-key h-4 w-4"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#2c3e50"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M21 12a9 9 0 1 1 -18 0a9 9 0 0 1 18 0z"></path>
+                    <path d="M12.5 11.5l-4 4l1.5 1.5"></path>
+                    <path d="M12 15l-1.5 -1.5"></path>
+                  </svg>Post-quantum<br /></span
+                >
+                <span class="flex items-center justify-start gap-1"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-square-number-0 h-4 w-4"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#2c3e50"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0 -4 0z"></path>
+                  </svg>Zero-Knowledge<br /></span
+                >
+                <span class="flex items-center justify-start gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-hexagon-3d h-4 w-4"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#2c3e50"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M19 6.844a2.007 2.007 0 0 1 1 1.752v6.555c0 .728 -.394 1.399 -1.03 1.753l-6 3.844a2 2 0 0 1 -1.942 0l-6 -3.844a2.007 2.007 0 0 1 -1.029 -1.752v-6.556c0 -.729 .394 -1.4 1.029 -1.753l6 -3.583a2.05 2.05 0 0 1 2 0l6 3.584h-.03z"
+                    ></path>
+                    <path d="M12 16.5v4.5"></path>
+                    <path d="M4.5 7.5l3.5 2.5"></path>
+                    <path d="M16 10l4 -2.5"></path>
+                    <path d="M12 7.5v4.5l-4 2"></path>
+                    <path d="M12 12l4 2"></path>
+                    <path d="M12 16.5l4 -2.5v-4l-4 -2.5l-4 2.5v4z"></path>
+                  </svg>FHE<br /></span
+                >
+                <span class="flex items-center justify-start gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-binary-tree h-4 w-4"
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#2c3e50"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                    <path d="M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                    <path d="M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                    <path d="M11 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                    <path d="M21 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                    <path d="M5.058 18.306l2.88 -4.606"></path>
+                    <path d="M10.061 10.303l2.877 -4.604"></path>
+                    <path d="M10.065 13.705l2.876 4.6"></path>
+                    <path d="M15.063 5.7l2.881 4.61"></path>
+                  </svg>LLVM/MLIR<br /></span
+                >
+              </span>
+              Weapons-grade
+            </span> software and distributed systems since the turn of the millennium.
+            Pushing the envelope for institutional investors, fintech, fashion, academia,
+            ed-tech, e-commerce, civic-tech, and SaaS businesses. Created in 2018,
+            by Suraj Sharma, who sold his first line of code in the year 2000.
+          </p>
+          <p
+            class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
+          >
+            Over the past few decades, we have excelled in balancing precision
+            and redundancy, delivering under previously unheard levels of
+            transparency. Our works are evaluated, studied, used, and trusted by
+            global brands like Goldman Sachs, Massachusetts Institute of
+            Technology, Palantir, YC etc.
+          </p>
         </span>
         <span class="grid grid-cols-1 p-4 -mt-4">
           <p
-						class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
-					>
-          Request a quote <a class="text-teal-600" href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hi%2C%0D%0A%0D%0APlease%20add%20your%20request%20for%20quote%20here.%0D%0A%0D%0A%0D%0Acheers!">suraj@evenzero.in</a>
-         </p>
+            class="mt-2 rounded-lg border-l border-r border-red-500 bg-bgColor p-2 font-semibold opacity-90"
+          >
+            Request a too-good-to-be-true quote <a
+              class="text-teal-600"
+              href="mailto:suraj@evenzero.in?subject=Hello%20Evenzero!&body=Hi%2C%0D%0A%0D%0APlease%20add%20your%20request%20for%20quote%20here.%0D%0A%0D%0A%0D%0Acheers!"
+              >suraj@evenzero.in</a
+            >
+          </p>
         </span>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </PageLayout>

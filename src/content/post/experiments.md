@@ -29,7 +29,7 @@ publishDate: "1 Aug 2025"
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-Omnibar search → nth result (press escape to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
+Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
