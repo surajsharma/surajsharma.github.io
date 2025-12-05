@@ -29,9 +29,11 @@ publishDate: "1 Aug 2025"
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. 
+Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short [video tutorial](https://www.youtube.com/watch?v=14l0j2kKkds) to learn more.
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
+
+
 
 <div class="getzyt"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/i-am-not-uncertain/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
 
