@@ -29,7 +29,8 @@ publishDate: "1 Aug 2025"
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short [video tutorial](https://www.youtube.com/watch?v=14l0j2kKkds) to learn more.
+Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short 
+<a href="https://www.youtube.com/watch?v=14l0j2kKkds" target="_blank">video tutorial ↗️</a> to learn basic usage.
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
@@ -78,7 +79,7 @@ Complete Cross-browser Extension manifest.json (v3) generator with all official 
 
 <img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
 
-[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
+[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch ↗️</a>]
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff&style=flat">
