@@ -193,7 +193,10 @@ full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a n
 
 a babel plugin for more convenient JSX syntax when passing props to components.
 
-[![npm Badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat)](https://www.npmjs.com/package/babel-prop-name-value-shorthand) ![Babel Badge](https://img.shields.io/badge/Babel-F9DC3E?logo=babel&logoColor=000&style=flat-square)
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=flat" style="margin: 0">
+  <img src="https://img.shields.io/badge/Babel-F9DC3E?logo=babel&logoColor=000&style=flat-flat" style="margin: 0">
+</div>
 
 ---
 
