@@ -17,10 +17,10 @@ publishDate: "1 Aug 2025"
 ![poc](/images/xk.gif)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
-<img src="https://img.shields.io/badge/NixOS-5277C3?logo=nixos&logoColor=fff&style=flat">
-<img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff&style=flat">
-<img src="https://img.shields.io/badge/OpenJDK-000?logo=openjdk&logoColor=fff&style=flat">
-<img src="https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=fff&style=flat-flat">
+  <img src="https://img.shields.io/badge/OpenJDK-000?logo=openjdk&logoColor=fff&style=flat">
+  <img src="https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=fff&style=flat">
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?logo=jetpackcompose&logoColor=fff&style=flat">
+  <img src="https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=fff&style=flat-flat">
 </div>
 
 
