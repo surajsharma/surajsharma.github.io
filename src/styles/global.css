@@ -29,8 +29,8 @@
 			0.2px 4.1px 4.3px -2.1px hsl(var(--shadow-color) / 0.4),
 			0.3px 6.4px 6.7px -2.6px hsl(var(--shadow-color) / 0.38),
 			0.4px 9.5px 10px -3px hsl(var(--shadow-color) / 0.36);
-    --theme-grid: rgb(200 200 200 / 0.55);
-    --theme-fade: #eeeeee;
+		--theme-grid: rgb(200 200 200 / 0.55);
+		--theme-fade: #eeeeee;
 	}
 
 	:root.dark {
@@ -43,9 +43,9 @@
 		--theme-quote: #ccffb6;
 		--theme-menu-bg: rgb(29 31 33 / 0.85);
 		--theme-link-hover-bg: #cd3724;
-    --theme-grid: rgb(50 50 50 / 0.5);
-    --theme-fade: #111111;
-  }
+		--theme-grid: rgb(50 50 50 / 0.5);
+		--theme-fade: #111111;
+	}
 
 	html {
 		@apply h-full scroll-smooth border-textColor;
@@ -82,56 +82,51 @@
 			var(--theme-fade) 100%
 		);
 		pointer-events: none;
-		/* Mask for fading effect */
-		/* mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
-		/* -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%); */
 		z-index: -1;
-		/* Place the pseudo-element behind the content */
 	}
 
 	.tpl {
 		filter: drop-shadow(1px 1px 1px #787887);
 	}
 
-	.getzyt{
-	    text-decoration: none !important;
-	    display: flex;
-	    flex-direction: row;
-	    gap: 4px;
+	.getzyt {
+		text-decoration: none !important;
+		display: flex;
+		flex-direction: row;
+		gap: 4px;
 	}
 
 	.getzyt a {
-	  text-decoration: none !important;
-	  border-bottom: 0 !important;
-	  background-image: none !important;
-	  box-shadow: none !important; /* some use shadows as “underline” */
+		text-decoration: none !important;
+		border-bottom: 0 !important;
+		background-image: none !important;
+		box-shadow: none !important;
 	}
 
 	.marquee {
 		display: grid;
-		grid-auto-flow: column; /* Creates columns automatically */
-		grid-auto-columns: max-content; /* Each column sized to its content */
-		grid-template-rows: 100px; /* Fixed row height */
-		gap: 100px; /* Space between images */
+		grid-auto-flow: column;
+		grid-auto-columns: max-content;
+		grid-template-rows: 100px;
+		gap: 100px;
 		width: 100%;
-		/* overflow-y: auto; Allows horizontal scrolling if needed */
 		align-items: center;
 		animation: 5s slide infinite linear;
 	}
 
 	.marquee img {
-		height: 30px; /* Fill the row height */
-		width: auto; /* Width adjusts based on aspect ratio */
+		height: 30px;
+		width: auto;
 		object-fit: contain;
 	}
 
 	.no-scrollbar {
-		scrollbar-width: none; /* Firefox */
-		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none;
+		-ms-overflow-style: none;
 	}
 
 	.no-scrollbar::-webkit-scrollbar {
-		display: none; /* Chrome, Safari, Opera */
+		display: none;
 	}
 
 	@keyframes slide {
@@ -154,9 +149,9 @@
 
 	.eo {
 		background-position: center;
-    	background-size: contain;
+		background-size: contain;
 		background-image: url("/images/e0_4.png");
-  	}
+	}
 
 	.about {
 		background-position: center;
@@ -235,5 +230,28 @@
 
 	.has-tooltip:hover .tooltip {
 		@apply visible z-50 mt-6 shadow;
+	}
+
+	/* ============================================
+	   VIEWPORT HEIGHT SCALING (700px - 900px)
+	   Scale everything to 0.8
+	   ============================================ */
+	@media screen and (min-height: 700px) and (max-height: 900px) {
+		html {
+			zoom: 0.8;
+		}
+
+		/* Firefox fallback (doesn't support zoom) */
+		@supports not (zoom: 1) {
+			html {
+				transform: scale(0.8);
+				transform-origin: top center;
+			}
+
+			html body {
+				width: 125%; /* Compensate for scale: 100/0.8 = 125% */
+				max-width: none;
+			}
+		}
 	}
 }
