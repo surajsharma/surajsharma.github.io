@@ -4,6 +4,14 @@ description: "Projects I have worked on in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
 
+## [Mantra](https://ip.evenzero.in)
+
+![mantra](https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text.png?raw=true)
+
+[Tik-tok on steroids](#0).
+
+
+
 ## [DemTech.ai](https://demtech.ai)
 
 An All-in-One, robust, whitelabelled citizen action platform (grassroots CRM) called <a href="https://because.center" target="_blank">beCause</a>. Designed with scalability and big data in mind for organisations of all sizes and scopes that allows your organization to use what you need directly out-of-the-box. There are very few digital tools on the market that support citizen-led actions and the tools that exist are becoming prohibitively expensive for many organizations. <a href="https://Jhatkaa.org/" target="_blank">Jhatkaa.org↗️</a> is powered by this platform.
