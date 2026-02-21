@@ -9,6 +9,8 @@ publishDate: "8 Jun 2023"
 ![mantra](https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text.png?raw=true)
 
 [Tik-tok on steroids](#0).
+<br />
+[Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
 
 
 
