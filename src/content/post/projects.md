@@ -6,7 +6,8 @@ publishDate: "8 Jun 2023"
 
 ## [Mantra](https://ip.evenzero.in)
 
-![mantra](https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text.png?raw=true)
+<img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-light.png?raw=true" alt="Logo" class="light-only" />
+<img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-dark.png?raw=true" alt="Logo" class="dark-only" />
 
 [Tik-tok on steroids](#0).
 <br />

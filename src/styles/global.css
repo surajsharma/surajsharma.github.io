@@ -56,11 +56,9 @@
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 		font-family: "bm", sans-serif;
 		background-size: 40px 40px;
-		background-image: linear-gradient(
-				to right,
+		background-image: linear-gradient(to right,
 				var(--theme-grid) 1px,
-				transparent 1px
-			),
+				transparent 1px),
 			linear-gradient(to bottom, var(--theme-grid) 1px, transparent 1px);
 
 		background-attachment: fixed;
@@ -75,12 +73,10 @@
 		right: 0;
 		top: 0;
 		bottom: 0;
-		background: linear-gradient(
-			to bottom,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(255, 255, 255, 0) 10%,
-			var(--theme-fade) 100%
-		);
+		background: linear-gradient(to bottom,
+				rgba(255, 255, 255, 0) 0%,
+				rgba(255, 255, 255, 0) 10%,
+				var(--theme-fade) 100%);
 		pointer-events: none;
 		z-index: -1;
 	}
@@ -133,6 +129,7 @@
 		from {
 			transform: translateX(0);
 		}
+
 		to {
 			transform: translateX(-410%);
 		}
@@ -171,6 +168,7 @@
 	}
 
 	@keyframes hmh {
+
 		0%,
 		20% {
 			background-size: 200%;
@@ -249,9 +247,28 @@
 			}
 
 			html body {
-				width: 125%; /* Compensate for scale: 100/0.8 = 125% */
+				width: 125%;
+				/* Compensate for scale: 100/0.8 = 125% */
 				max-width: none;
 			}
 		}
 	}
+}
+
+/* Default: light mode */
+.dark-only {
+	display: none;
+}
+
+.light-only {
+	display: block;
+}
+
+/* When <html class="dark"> is set (e.g., by a theme toggle) */
+html.dark .dark-only {
+	display: block;
+}
+
+html.dark .light-only {
+	display: none;
 }
