@@ -9,7 +9,7 @@ publishDate: "8 Jun 2023"
 <img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-light.png?raw=true" alt="Logo" class="light-only" />
 <img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-dark.png?raw=true" alt="Logo" class="dark-only" />
 
-[Tik-tok on steroids](#0).
+[Download from Google Play](#0).
 <br />
 [Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
 
