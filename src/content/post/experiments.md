@@ -30,7 +30,7 @@ publishDate: "1 Aug 2025"
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
 Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short 
-<a href="https://www.youtube.com/watch?v=14l0j2kKkds" target="_blank">video tutorial↗️</a> to learn basic usage.
+<a href="https://www.youtube.com/watch?v=14l0j2kKkds" target="_blank">video tutorial</a> to learn basic usage.
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
@@ -79,7 +79,7 @@ Complete Cross-browser Extension manifest.json (v3) generator with all official 
 
 <img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
 
-[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch↗️</a>]
+[<a href="https://v3manifestbuilder.vercel.app" target="_blank">launch</a>]
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
 <img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=fff&style=flat">
@@ -116,7 +116,7 @@ Transform UUIDs into memorable 4-square visual patterns with quantized colors an
 
 upstream is a game about a little cube trying to stay afloat and alive while on an infinite river in space
 
-[<a href="https://evenzero.in/upstream" target="_blank">play↗️</a>]
+[<a href="https://evenzero.in/upstream" target="_blank">play</a>]
 
 ![play](https://github.com/inversepolarity/Upstream/raw/master/public/promo.png)
 
@@ -132,7 +132,7 @@ upstream is a game about a little cube trying to stay afloat and alive while on 
 
 transient clipboard server for windows
 
-[<a href="https://github.com/inversepolarity/spill/releases/" target="_blank">download latest executable↗️</a>]
+[<a href="https://github.com/inversepolarity/spill/releases/" target="_blank">download latest executable</a>]
 
 ![spill](https://github.com/inversepolarity/spill/raw/master/spill.gif)
 
@@ -165,7 +165,7 @@ a simple container orchestrator written in go.
 
 ![wgol](https://raw.githubusercontent.com/surajsharma/wasm-game-of-life/master/wgol.jpg)
 
-basic cellular automata demo using wasm-pack. [<a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">launch↗️</a>]
+basic cellular automata demo using wasm-pack. [<a href="https://surajsharma.github.io/wasm-game-of-life" target="_blank">launch</a>]
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat" style="margin: 0">
@@ -185,7 +185,7 @@ an exercise erc721 standard implemented for the zk-snark company Starknet's own 
 
 ## [fiber-fullstack-3D-carousel](https://github.com/surajsharma/strapi-threejs-fullstack-showcase)
 
-full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [[demo video↗️]](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
+full-stack app with api that serves `.glb` files (pre-rendered 3D models) to a next.js client which renders them as a simple carousel. The strapi-based api is consumed by a client using react-three-fiber and next.js in a specially configured canvas. Great starting point for 3D showcases that need a backend. [[demo video]](https://www.youtube.com/watch?v=9YEBQj7bmd8&list=PLWT9NvDdpWqyc-UxGVY7JMumlzYJx8XOd&index=9).
 
 ---
 
@@ -211,7 +211,7 @@ Zen mode for youtube - A featured Cross-browser plugin to remove addictive featu
 
 ## [Nextrix](https://github.com/surajsharma/nextris)
 
-My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [play now↗️](https://nextris.vercel.app/)! [![Nextrix](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
+My interpretation of the russian game, done entirely using `input` HTML elements. Using Next.js/TypeScript. **Fully responsive/Mobile ready** (swipe up, down, left, right). Speeds up as score increases. Click the image for a video demo or [play now](https://nextris.vercel.app/)! [![Nextrix](https://github.com/surajsharma/nextris/raw/main/public/nextris.png)](https://www.youtube.com/watch?v=uI725Y0SJz0&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=6)
 
 ---
 
@@ -219,7 +219,7 @@ My interpretation of the russian game, done entirely using `input` HTML elements
 
 ![whatsapp-scraper](https://github.com/tattle-made/whatsapp-scraper/raw/master/docs/images/project-logo.png)
 
-The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo↗️](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1) 
+The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1) 
 
 ---
 
@@ -253,7 +253,7 @@ A simple CLI-based ray-tracer with basic lighting and **multiprocessing** writte
 
 ## [URL Shortener](https://github.com/surajsharma/url-shortener)
 
-Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo↗️](https://www.youtube.com/watch?v=w75OT1gX_uA).
+Full stack app using Express, React, Mongodb, Tailwind. With Google Authentication and simple encryption. A short [video demo](https://www.youtube.com/watch?v=w75OT1gX_uA).
 
 ---
 
@@ -265,13 +265,13 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 ## [_fullstack-boilerplates_](https://github.com/surajsharma/fullstack-template)
 
-- [**postgres-fastapi-vite-react**↗️](https://github.com/surajsharma/postgres-fastapi-vite-react)
+- [**postgres-fastapi-vite-react**](https://github.com/surajsharma/postgres-fastapi-vite-react)
 
-- [**postgres-react-express**↗️](https://github.com/surajsharma/postgres-react-express)
+- [**postgres-react-express**](https://github.com/surajsharma/postgres-react-express)
 
-- [**multi-tenant-google-oauth2**↗️](https://github.com/surajsharma/multi-tenant-google-oauth2)
+- [**multi-tenant-google-oauth2**](https://github.com/surajsharma/multi-tenant-google-oauth2)
 
-- [**mern-redux-toolkit-auth**↗️](https://github.com/surajsharma/mern-redux-toolkit-auth)
+- [**mern-redux-toolkit-auth**](https://github.com/surajsharma/mern-redux-toolkit-auth)
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat" style="margin: 0">
@@ -294,17 +294,17 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 ## Customizations
 
-- [**BlackBar**](https://github.com/surajsharma/BLACKBAR): a dark, small theme for [Launchbar↗️](https://www.obdev.at/products/launchbar/index.html)![blackbar](https://puu.sh/IrMJE/369fd891ec.png)
+- [**BlackBar**](https://github.com/surajsharma/BLACKBAR): a dark, small theme for [Launchbar](https://www.obdev.at/products/launchbar/index.html)![blackbar](https://puu.sh/IrMJE/369fd891ec.png)
 
-- [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate↗️](https://github.com/inversepolarity/ip_theme) and [coderunner↗️](https://coderunnerapp.com/)
+- [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate](https://github.com/inversepolarity/ip_theme) and [coderunner](https://coderunnerapp.com/)
 
 
 - [**evenzero wallpaper**](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 
 ![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
 
-- [2560x1600↗️](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true) 
-- [4096x2560↗️](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
+- [2560x1600](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true) 
+- [4096x2560](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 ---
 
 ## Defunct/Deprecated
