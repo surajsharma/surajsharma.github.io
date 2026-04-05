@@ -298,6 +298,9 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 - [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate↗️](https://github.com/inversepolarity/ip_theme) and [coderunner↗️](https://coderunnerapp.com/)
 
+
+- [**evenzero wallpaper**](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
+![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 ---
 
 ## Defunct/Deprecated
