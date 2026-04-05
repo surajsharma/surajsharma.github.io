@@ -300,7 +300,11 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 
 - [**evenzero wallpaper**](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
-![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
+
+![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
+
+- [2560x1600↗️](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true) 
+- [4096x2560↗️](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 ---
 
 ## Defunct/Deprecated
