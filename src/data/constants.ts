@@ -22,8 +22,8 @@ export const MENU_LINKS = [
 
 export const FOOOTER_LINKS = [
 	{
-		title: "CV",
-		path: `https://github.com/surajsharma/surajsharma/tree/main/CV_Suraj_${yyyy}/CV.pdf`,
+		title: "Privacy",
+		path: `/privacy/`,
 	},
 	{
 		title: "Github",
