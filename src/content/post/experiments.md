@@ -1,6 +1,6 @@
 ---
 title: "Experiments"
-description: "Tinkering / R&D for work or otherwise, FOSS publications"
+description: "Tinkering / R&D, FOSS publications, Templates, Customizations, and more!"
 publishDate: "1 Aug 2025"
 ---
 
@@ -29,7 +29,7 @@ publishDate: "1 Aug 2025"
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
-Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short 
+Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is a cross-browser extension that redirects users directly from omnibar search to first/nth (up to 5th) search result. Supports all major search engines. Watch a short
 <a href="https://www.youtube.com/watch?v=14l0j2kKkds" target="_blank">video tutorial</a> to learn basic usage.
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
@@ -56,7 +56,7 @@ A spring-boot/nextjs based online code judge for java. Complete full-stack docke
 </div>
 
 
---- 
+---
 
 
 ## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
@@ -75,7 +75,7 @@ A spring-boot/nextjs based online code judge for java. Complete full-stack docke
 
 ## [v3 manifest builder](https://github.com/surajsharma/v3manifestbuilder)
 
-Complete Cross-browser Extension manifest.json (v3) generator with all official fields 
+Complete Cross-browser Extension manifest.json (v3) generator with all official fields
 
 <img alt="v3manifestbuilder" src="https://github.com/surajsharma/v3manifestbuilder/raw/master/og-image.png" />
 
@@ -219,7 +219,7 @@ My interpretation of the russian game, done entirely using `input` HTML elements
 
 ![whatsapp-scraper](https://github.com/tattle-made/whatsapp-scraper/raw/master/docs/images/project-logo.png)
 
-The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1) 
+The open source scraper built for [Tattle](https://tattle.co.in) takes in the `.zip/.txt` files exported by WhatsApp users and stores it on Google Drive, it then downloads and parses them into JSON, which is then uploaded to the Tattle Database/CMS. [video demo](https://www.youtube.com/watch?v=CE34PukkAEI&list=PLWT9NvDdpWqy3K8WRsmCyKvTFMpIOHXNo&index=1)
 
 ---
 
@@ -303,7 +303,7 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 ![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
 
->  - [2560x1600](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true) 
+>  - [2560x1600](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
 >  - [4096x2560](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 ---
 

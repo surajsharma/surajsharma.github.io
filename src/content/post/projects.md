@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-description: "Projects I have worked on in a commercial capacity"
+description: "In-house projects and software shipped in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
 
