@@ -11,7 +11,7 @@ publishDate: "8 Jun 2023"
 
 > Only for you, children of doctrine and learning, have we written this work.
 
-Tik-Tok on steroids, doomscrolling destroyer, _"cards against humanity meets tinder for thoughts"_, a digital rosary, a hyperjournal not only for those with a compulsive need to jot worthwhile thoughts on a medium that respects individuality without the alienation attendant in modern software. Mantra is all these things and more! Featuring:
+Tik-Tok on steroids, doomscrolling destroyer, _"cards against humanity meets tinder for thoughts"_, a digital rosary, a hyperjournal not only for those with a compulsive need to jot worthwhile thoughts on a medium that respects individuality without the alienation attendant in industrial software. Mantra is all these things and more! Featuring:
 
 - end-to-end encryption
 - an offline-first philosophy
@@ -23,8 +23,11 @@ Tik-Tok on steroids, doomscrolling destroyer, _"cards against humanity meets tin
 
 [Download from Google Play](#0)
 <br />
-
 [Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
+<br />
+[Terms of Usage](#0)
+<br />
+[Privacy Policy](/privacy)
 
 | Frontend                                                                                                                                                                                                        |                                                                                                                        Backend                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Other |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
