@@ -303,4 +303,4 @@ By using Mantra, you acknowledge that you have read, understood, and agree to be
 
 ---
 
-**Thank you for choosing Mantra. Write freely, think deeply.**
+**Thank you for choosing Mantra. Make up your mind.**
