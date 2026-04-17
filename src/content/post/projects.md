@@ -6,8 +6,8 @@ publishDate: "8 Jun 2023"
 
 ## [Mantra](posts/projects#mantra)
 
-<img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-light.png?raw=true" alt="Logo" class="light-only" />
-<img src="https://github.com/inversepolarity/media/blob/main/mantra/promo-vertical-text-dark.png?raw=true" alt="Logo" class="dark-only" />
+<img src="https://raw.githubusercontent.com/inversepolarity/media/refs/heads/main/mantra/pixel_5.png?raw=true" alt="Logo" class="light-only" />
+<img src="https://raw.githubusercontent.com/inversepolarity/media/refs/heads/main/mantra/pixel_5_dark.png?raw=true" alt="Logo" class="dark-only" />
 
 > Only for you, children of doctrine and learning, have we written this work.
 
