@@ -22,7 +22,6 @@ Tik-Tok on steroids, doomscrolling destroyer, _'cards against humanity meets tin
 - curated fonts for best experiences
 
 ![Download from Google Play](https://raw.githubusercontent.com/inversepolarity/media/07249195856fca75b34c5f9acdadcb22439ba2ac/mantra/GetItOnGooglePlay_Badge_Web_color_English.svg)
-<br />
 [Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
 <br />
 [Terms of Usage](/posts/mantratou)
