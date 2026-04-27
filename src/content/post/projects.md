@@ -23,6 +23,8 @@ Tik-Tok on steroids, doomscrolling destroyer, _'cards against humanity meets tin
 
 [![Download from Google Play](https://raw.githubusercontent.com/inversepolarity/media/07249195856fca75b34c5f9acdadcb22439ba2ac/mantra/GetItOnGooglePlay_Badge_Web_color_English.svg)](https://play.google.com/store/apps/details?id=com.ip.mantra)
 
+- Mantra is shipped transparently by professional software developers with continuous inputs from Astrophycists, Lawyers, Psychologists and mental health practitioners, media professionals, CISO certified security practitioners as well as end-users.
+
 [Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
 <br />
 [Terms of Usage](/posts/mantratou)
