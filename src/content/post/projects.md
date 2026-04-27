@@ -21,7 +21,8 @@ Tik-Tok on steroids, doomscrolling destroyer, _'cards against humanity meets tin
 - bring your own cloud and sync over SSH
 - curated fonts for best experiences
 
-![Download from Google Play](https://raw.githubusercontent.com/inversepolarity/media/07249195856fca75b34c5f9acdadcb22439ba2ac/mantra/GetItOnGooglePlay_Badge_Web_color_English.svg)
+[![Download from Google Play](https://raw.githubusercontent.com/inversepolarity/media/07249195856fca75b34c5f9acdadcb22439ba2ac/mantra/GetItOnGooglePlay_Badge_Web_color_English.svg)](https://play.google.com/store/apps/details?id=com.ip.mantra)
+
 [Media-kit](https://github.com/inversepolarity/media/tree/main/mantra)
 <br />
 [Terms of Usage](/posts/mantratou)
