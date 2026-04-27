@@ -11,7 +11,7 @@ publishDate: "8 Jun 2023"
 
 > Only for you, children of doctrine and learning, have we written this work.
 
-Tik-Tok on steroids, doomscrolling destroyer, _'cards against humanity meets tinder for thoughts'_, a digital rosary, a hyperjournal not only for those with a compulsive need to jot worthwhile ideas on a medium that respects individuality without the alienation attendant in industrial, mass-produced software. Mantra is all these things and more! A tool to take back your attention and detox without leaving the screen. Make up your mind with:
+Tik-Tok on steroids, doomscrolling destroyer, _'cards against humanity meets tinder for thoughts'_, a digital rosary, a hyperjournal not only for those with a compulsive need to jot worthwhile ideas on a medium that respects individuality without the alienation attendant in industrial, mass-produced software. Mantra is all these things and more! A medium for thoughts and a portal back to your attention. Detox without leaving the screen or memorize for that math/pharmacology test tomorrow, leave enlightening notes-to-self or simply curate quotes! Make up your mind with:
 
 - end-to-end encryption
 - an offline-first philosophy
