@@ -27,7 +27,7 @@ export const FOOOTER_LINKS = [
 	},
 	{
 		title: "Github",
-		path: "https://github.com/inversepolarity",
+		path: "https://github.com/evenzzero",
 	},
 	{
 		title: "inversepolarity",
