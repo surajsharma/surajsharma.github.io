@@ -161,7 +161,9 @@
 		background-clip: text;
 		position: relative;
 		overflow: hidden;
-	}
+		background-image: url("/images/email.webp");
+		background-size: 4%;
+  }
 
 	.email:hover {
 		background-size: 100%;
