@@ -5,30 +5,6 @@ import ThemeToggle from "../ThemeToggle.astro";
 const url = new URL(Astro.request.url);
 ---
 
-<script is:inline src="/scripts/baffle.js"></script>
-
-<script>
-	let titleAnimationInterval: NodeJS.Timer | undefined;
-	let b = baffle(".evenzero", { characters: "▐0▓_▒*░$#@-+?~&" }).reveal(5000).stop();
-
-	window.addEventListener("load", () => {
-		titleAnimationInterval = setInterval(() => {
-			b.reveal(5000).stop();
-		}, 5000);
-	});
-
-	window.addEventListener("focus", () => {
-		b.reveal(5000).stop();
-		titleAnimationInterval = setInterval(() => {
-			b.reveal(5000).stop();
-		}, 5000);
-	});
-
-	window.addEventListener("blur", () => {
-		clearInterval(titleAnimationInterval);
-		b.stop();
-	});
-</script>
 
 <header id="main-header" class="mb-10 flex h-20 w-full justify-between">
 	<div class="flex justify-between sm:flex-col">
