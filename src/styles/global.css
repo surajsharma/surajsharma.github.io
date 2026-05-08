@@ -5,7 +5,7 @@
 @layer base {
 	:root {
 		color-scheme: light;
-		--theme-bg: #e0e0e0;
+		--theme-bg: #ffffcc;
 		--theme-link: #f2780c;
 		--theme-text: #262406;
 		--theme-accent: #f2a663;
@@ -30,7 +30,7 @@
 			0.3px 6.4px 6.7px -2.6px hsl(var(--shadow-color) / 0.38),
 			0.4px 9.5px 10px -3px hsl(var(--shadow-color) / 0.36);
 		--theme-grid: rgb(200 200 200 / 0.55);
-		--theme-fade: #eeeeee;
+		--theme-fade: #ffffee;
     --theme-email: 38, 36, 6;
 	}
 
