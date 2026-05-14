@@ -25,7 +25,7 @@ const url = new URL(Astro.request.url);
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class="mb-1 px-2 uppercase leading-4 hover:border-l-4 hover:border-linkHover  hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
+								class="mb-1 px-2 uppercase leading-4 hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
 								aria-current={url.pathname === link.path ? "page" : false}
 							>
 								{link.title}

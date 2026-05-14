@@ -32,6 +32,7 @@
 		--theme-grid: rgb(255 200 200 / 0.3);
 		--theme-fade: #ffffee;
     --theme-email: 38, 36, 6;
+    --theme-logo-border: #a9c0ff;
 	}
 
 	:root.dark {
@@ -47,6 +48,7 @@
 		--theme-grid: rgb(50 50 50 / 0.5);
 		--theme-fade: #111111;
     --theme-email: 201, 202, 204;
+	  --theme-logo-border: #f04a00;
 	}
 
 	html {
@@ -62,7 +64,6 @@
 				var(--theme-grid) 1px,
 				transparent 1px),
 			linear-gradient(to bottom, var(--theme-grid) 1px, transparent 1px);
-
 		background-attachment: fixed;
 		position: relative;
 		box-sizing: border-box;
@@ -137,26 +138,18 @@
 		}
 	}
 
-	.logo {
-		background-position: center;
-		background-clip: text;
-		background-image: url("/images/email.webp");
-		color: transparent;
-		animation: hmh 20s infinite;
-		cursor: pointer;
-	}
-
 	.eo {
 		background-position: center;
+    border: 3px solid var(--theme-logo-border);
 		background-size: contain;
 		background-image: url("/images/e0_5.png");
     border-radius: 100px;
   }
 
 	.about {
-	background-size: cover;
+  	background-size: cover;
     background-position: center;
-		background-image: url("https://github.com/evenzzero/media/raw/main/e0/e0_wallpaper_01.jpg?raw=true");
+		background-image: url("/images/e0_wallpaper_01.jpg");
 	}
 
   .email {
@@ -164,7 +157,6 @@
     background-clip: text;
     position: relative;
     overflow: hidden;
-
   }
 
   .email:hover {
@@ -208,7 +200,8 @@
 		display: flex;
 		overflow: hidden;
 		align-items: center;
-		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
+    transform: translateY(0.01em);
+		@apply bg-gradient-to-b from-red-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
 	}
 
 	.exp span {
@@ -218,7 +211,7 @@
 		height: 100%;
 		transition: all 2s ease !important;
 		transform: translateY(0);
-		@apply bg-gradient-to-b from-rose-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
+		@apply bg-gradient-to-b from-red-400 via-red-500 to-rose-600 bg-clip-text font-semibold text-transparent;
 	}
 
 	.exp span span {
