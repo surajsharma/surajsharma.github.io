@@ -65,11 +65,15 @@ const {
 	</head>
 	<body>
 		<SkipLink />
-		<Header />
-		<main id="main" class="flex flex-col justify-center items-center flex-1">
+		<div class="mx-auto w-full max-w-3xl px-8 pt-12 md:pt-16 shrink-0">
+			<Header />
+		</div>
+		<main id="main" class="flex flex-col flex-1 w-full">
 		  <slot />
 		</main>
-    <Footer />
+		<div class="mx-auto w-full max-w-3xl px-8 pb-6 md:pb-8 pt-2 mt-auto shrink-0">
+			<Footer />
+		</div>
 
 		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",

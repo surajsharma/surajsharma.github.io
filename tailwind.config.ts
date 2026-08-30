@@ -104,7 +104,7 @@ export default {
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
-    plugin(function({ addComponents }) {
+    plugin(function ({ addComponents }) {
       addComponents({
         ".cactus-link": {
           "@apply bg-[size:100%_6px] bg-bottom bg-repeat-x": {},

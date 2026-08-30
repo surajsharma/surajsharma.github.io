@@ -19,13 +19,7 @@ export default defineConfig({
       wrap: true,
     },
   },
-  integrations: [
-    mdx({}),
-    tailwind({}),
-    sitemap(),
-    prefetch(),
-    react(),
-  ],
+  integrations: [mdx({}), tailwind({}), sitemap(), prefetch(), react()],
   compressHTML: true,
   vite: {
     ssr: {

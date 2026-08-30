@@ -1,3 +1,3 @@
 global.navigator.geolocation.getCurrentPosition((data) => {
-	console.log(data);
+  console.log(data);
 });

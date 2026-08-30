@@ -23,9 +23,7 @@ publishDate: "1 Aug 2025"
   <img src="https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=fff&style=flat-flat">
 </div>
 
-
 ---
-
 
 ## [i am not uncertain](https://github.com/inversepolarity/iamnotuncertain)
 
@@ -34,10 +32,7 @@ Omnibar search → nth result (press `space` to cancel). `i am not uncertain` is
 
 <img alt="iamnotuncertain" src="https://github.com/inversepolarity/iamnotuncertain/raw/master/usage.png" />
 
-
-
 <div class="getzyt"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/i-am-not-uncertain/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"><img src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&amp;logo=-Browser&amp;logoColor=white" alt="Firefox"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&amp;logo=Google-chrome&amp;logoColor=white" alt="Chrome"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&amp;logo=Microsoft-edge&amp;logoColor=white" alt="Edge"></a><a class="no-underline" href="https://chromewebstore.google.com/detail/i-am-not-uncertain/nndnipacjppbbflliokfggcbkhaiheba"><img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white" alt="Brave"></a></div>
-
 
 ---
 
@@ -55,9 +50,7 @@ A spring-boot/nextjs based online code judge for java. Complete full-stack docke
 <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat">
 </div>
 
-
 ---
-
 
 ## [swwwcycle](https://github.com/inversepolarity/swwwcycle)
 
@@ -87,7 +80,6 @@ Complete Cross-browser Extension manifest.json (v3) generator with all official 
 
 ---
 
-
 ## [uncl](https://github.com/inversepolarity/uncl)
 
 uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable, resizeable, and draggable floating term window as an accomplice to your worst terminal misdeeds, written in rust.
@@ -101,7 +93,6 @@ uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable
 </div>
 
 ---
-
 
 ## [semantic-uuid](https://www.npmjs.com/package/semantic-uuid)
 
@@ -142,7 +133,6 @@ transient clipboard server for windows
 </div>
 
 ---
-
 
 ## [kanastar](https://github.com/surajsharma/kanastar)
 
@@ -298,13 +288,13 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 
 - [**ip_theme**](https://github.com/inversepolarity/ip_theme): a dark theme for [textmate](https://github.com/inversepolarity/ip_theme) and [coderunner](https://coderunnerapp.com/)
 
-
 - [**evenzero wallpaper**](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
 
 ![e0_wallpaper_02](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
 
->  - [2560x1600](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
->  - [4096x2560](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
+> - [2560x1600](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_01.jpg?raw=true)
+> - [4096x2560](https://github.com/inversepolarity/media/blob/main/e0/e0_wallpaper_02.jpeg?raw=true)
+
 ---
 
 ## Defunct/Deprecated

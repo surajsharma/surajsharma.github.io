@@ -79,6 +79,8 @@ import { getCollection, getEntryBySlug } from "astro:content";
 // }
 
 export const getStaticPaths = (async () => {
-	const posts = await getCollection("post");
-	return posts.filter(({ data }) => !data.ogImage).map(({ slug }) => ({ params: { slug } }));
+  const posts = await getCollection("post");
+  return posts
+    .filter(({ data }) => !data.ogImage)
+    .map(({ slug }) => ({ params: { slug } }));
 }) satisfies GetStaticPaths;

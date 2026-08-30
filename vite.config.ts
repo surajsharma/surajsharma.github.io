@@ -4,7 +4,7 @@ import dns from "node:dns";
 dns.setDefaultResultOrder("verbatim");
 
 export default defineConfig({
-	server: {
-		allowedHosts: [".trycloudflare.com"],
-	},
+  server: {
+    allowedHosts: [".trycloudflare.com", "dell5501.local"],
+  },
 });

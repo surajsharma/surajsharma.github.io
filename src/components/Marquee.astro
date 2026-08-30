@@ -1,26 +1,156 @@
 ---
-import Clients from "./Clients.jsx";
 import { clients } from "@/data/clients";
+
+// Flatten client hierarchy (parent clients + child agency clients)
+const flattenClients = (items: typeof clients) => {
+  const list: typeof clients = [];
+  items.forEach((client) => {
+    if (!client.agency) {
+      list.push(client);
+    } else if (client.clients?.length) {
+      list.push(client, ...client.clients);
+    }
+  });
+  return list;
+};
+
+const logos = flattenClients(clients);
 ---
 
 <div
-  class="no-scrollbar flex h-48 w-screen items-center justify-center overflow-hidden mqs mt-auto mb-0 md:mb-10"
+  class="marquee-wrapper group relative w-full py-4 select-none"
+  style="--gap: 3.5rem; --duration: 35s;"
 >
-  <Clients client:load clients={clients} />
+  <!-- Continuous Flex Wrapper with gap matching track gap -->
+  <div class="flex w-fit gap-[var(--gap)]">
+    <!-- Primary Track (Interactive) -->
+    <div class="marquee-track flex shrink-0 items-center gap-[var(--gap)]">
+      {
+        logos.map((client) => (
+          <a
+            href={client.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center shrink-0 opacity-85 hover:opacity-100 transition-opacity transform-gpu"
+            aria-label={`Visit ${client.name} website`}
+          >
+            <img
+              class="tpl h-10 sm:h-12 md:h-16 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] object-contain shrink-0"
+              src={client?.img?.import?.src ?? client?.img?.import}
+              alt={`${client.name} logo`}
+              loading="eager"
+              decoding="async"
+              width={client.img.width ?? 160}
+              height={client.img.height ?? 80}
+            />
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Duplicate Track 1 -->
+    <div
+      class="marquee-track flex shrink-0 items-center gap-[var(--gap)]"
+      aria-hidden="true"
+    >
+      {
+        logos.map((client) => (
+          <a
+            href={client.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            tabindex="-1"
+            class="flex items-center justify-center shrink-0 opacity-85 hover:opacity-100 transition-opacity transform-gpu"
+            aria-label={`Visit ${client.name} website`}
+          >
+            <img
+              class="tpl h-10 sm:h-12 md:h-16 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] object-contain shrink-0"
+              src={client?.img?.import?.src ?? client?.img?.import}
+              alt={`${client.name} logo`}
+              loading="eager"
+              decoding="async"
+              width={client.img.width ?? 160}
+              height={client.img.height ?? 80}
+            />
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Duplicate Track 2 (ensures continuous loop coverage across ultrawide & 4K screens) -->
+    <div
+      class="marquee-track flex shrink-0 items-center gap-[var(--gap)]"
+      aria-hidden="true"
+    >
+      {
+        logos.map((client) => (
+          <a
+            href={client.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            tabindex="-1"
+            class="flex items-center justify-center shrink-0 opacity-85 hover:opacity-100 transition-opacity transform-gpu"
+            aria-label={`Visit ${client.name} website`}
+          >
+            <img
+              class="tpl h-10 sm:h-12 md:h-16 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] object-contain shrink-0"
+              src={client?.img?.import?.src ?? client?.img?.import}
+              alt={`${client.name} logo`}
+              loading="eager"
+              decoding="async"
+              width={client.img.width ?? 160}
+              height={client.img.height ?? 80}
+            />
+          </a>
+        ))
+      }
+    </div>
+  </div>
 </div>
 
 <style>
-  @media (max-width: 542px) {
-    .mqs {
-      transform: scale(0.8);
-      width: 665px !important;
+  .marquee-wrapper {
+    overflow-x: clip;
+    overflow-y: visible;
+    isolation: isolate;
+    contain: paint;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .marquee-track {
+    animation: marquee-scroll var(--duration, 35s) linear infinite;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  .group:hover .marquee-track,
+  .group:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee-scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(calc(-100% - var(--gap)), 0, 0);
     }
   }
 
-  @media (max-width: 460px) {
-    .mqs {
-      transform: scale(0.6);
-      width: 765px !important;
+  @media (max-width: 640px) {
+    div[style*="--gap"] {
+      --gap: 2rem !important;
+      --duration: 22s !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation-play-state: paused;
     }
   }
 </style>

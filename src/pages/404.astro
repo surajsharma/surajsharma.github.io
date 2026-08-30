@@ -1,6 +1,5 @@
 ---
 import PageLayout from "@/layouts/Base";
-import { Image } from "@astrojs/image/components";
 
 const meta = {
 	title: "Oops! You found a missing page!",
@@ -11,6 +10,8 @@ export const prerender = false;
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-6">404 | Oops something went wrong</h1>
-	<p class="mb-8">Please use the navigation to find your way back</p>
+	<div class="mx-auto w-full max-w-3xl px-8 flex-1 flex flex-col justify-center">
+		<h1 class="title mb-6">404 | Oops something went wrong</h1>
+		<p class="mb-8">Please use the navigation to find your way back</p>
+	</div>
 </PageLayout>
