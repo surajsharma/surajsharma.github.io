@@ -1,45 +1,62 @@
 name: experience
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 on:
   workflow_dispatch:
   schedule:
-    # Use off-peak minute (17) instead of 0 to avoid GitHub Actions scheduler queue congestion/drops
-    - cron: "17 * * * *"
+    - cron: "0 * * * *"
+
+env:
+  BUILD_PATH: "."
 
 jobs:
-  update-experience:
+  cron:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     env:
       FB_API_KEY: ${{ secrets.FB_API_KEY }}
       FB_EXP_RTDB_URL: ${{ secrets.FB_EXP_RTDB }}
       FB_EXP_UPDATE_URL: ${{ secrets.FB_UPDATE_EXP_URL }}
     steps:
-      - name: Update Experience Counter
-        shell: bash
+      - name: update experience
         run: |
-          set -eo pipefail
-
-          if [ -z "$FB_API_KEY" ] || [ -z "$FB_EXP_RTDB_URL" ] || [ -z "$FB_EXP_UPDATE_URL" ]; then
-            echo "::error::Required secrets (FB_API_KEY, FB_EXP_RTDB, FB_UPDATE_EXP_URL) are missing!"
-            exit 1
-          fi
-
-          echo "1. Fetching current experience count..."
-          RAW_EXP=$(curl -sSf "$FB_EXP_RTDB_URL")
-          EXPERIENCE_NUMBER=$(echo "$RAW_EXP" | jq -r 'if type == "object" then .experience else . end')
+          EXPERIENCE_NUMBER=$(curl -s $FB_EXP_RTDB_URL)
           NEW_EXPERIENCE_NUMBER=$((EXPERIENCE_NUMBER + 1))
-          echo "   Current: $EXPERIENCE_NUMBER -> Next: $NEW_EXPERIENCE_NUMBER"
+          AUTH_TOKEN=$(curl https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$FB_API_KEY -H 'Content-Type: application/json' --data-binary '{"returnSecureToken":true}' | sed -n '/idToken/p' | sed -E 's/.*"(.*)".*/\1/')
+          curl -X PATCH -d '{"experience":'"$NEW_EXPERIENCE_NUMBER"'}' -H "Content-Type: application/json" $FB_EXP_UPDATE_URL?auth=$AUTH_TOKEN
+        shell: bash
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions: write-all
 
-          echo "2. Authenticating with Firebase Auth..."
-          AUTH_RES=$(curl -sSf -X POST "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$FB_API_KEY" \
-            -H 'Content-Type: application/json' \
-            --data-binary '{"returnSecureToken":true}')
-          AUTH_TOKEN=$(echo "$AUTH_RES" | jq -re .idToken)
+    steps:
+      - uses: actions/checkout@v3
 
-          echo "3. Updating Firebase Realtime Database..."
-          curl -sSf -X PATCH \
-            -H "Content-Type: application/json" \
-            -d "{\"experience\": $NEW_EXPERIENCE_NUMBER}" \
-            "$FB_EXP_UPDATE_URL?auth=$AUTH_TOKEN"
+      # Points to a recent commit instead of `main` to avoid supply chain attacks. (The latest tag is very old.)
+      - name: 🎟 Get GitHub App token
+        uses: navikt/github-app-token-generator@a3831f44404199df32d8f39f7c0ad9bb8fa18b1c
+        id: get-token
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
 
-          echo "4. Success! Experience counter updated to $NEW_EXPERIENCE_NUMBER."
+      - name: 🗑 Delete deployment environment
+        uses: strumwolf/delete-deployment-environment@v2.3.0
+
+        with:
+          # Use a JWT created with your GitHub App's private key
+          token: ${{ steps.get-token.outputs.token }}
+          environment: github-pages
+          ref: ${{ github.ref_name }}
+          onlyRemoveDeployments: true
