@@ -6,26 +6,26 @@ const url = new URL(Astro.request.url);
 ---
 
 
-<header id="main-header" class="mb-10 flex h-20 w-full justify-between">
+<header id="main-header" class="mb-4 sm:mb-6 md:mb-10 flex h-20 w-full justify-between items-center">
 	<div class="flex justify-between sm:flex-col">
 		<a
 			href="/"
 			class="inline-flex items-center hover:filter-none"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<div class="flex h-20 w-full justify-between overflow-hidden align-middle">
+			<div class="flex h-20 w-full justify-between items-center align-middle">
 				<div class="w-6 items-center text-wrap break-words text-2xl font-bold leading-none">
 					<div class="h-20 w-20 eo p-1">
 						<div class="-mt-1 text-white">
 						</div>
 					</div>
 				</div>
-				<nav id="navigation-menu" class="ml-14 mt-[2px] justify-center h-full flex flex-col text-sm" aria-label="Main menu">
+				<nav id="navigation-menu" class="ml-16 justify-center h-full flex flex-col text-xs sm:text-sm" aria-label="Main menu">
 					{
 						MENU_LINKS.map((link) => (
 							<a
 								href={link.path}
-								class="mb-1 px-2 uppercase leading-4 hover:text-accent-2 hover:text-linkHover hover:no-underline sm:py-0"
+								class="py-[1px] uppercase leading-tight hover:text-accent-2 hover:text-linkHover hover:no-underline"
 								aria-current={url.pathname === link.path ? "page" : false}
 							>
 								{link.title}

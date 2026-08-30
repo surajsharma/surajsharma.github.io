@@ -2,19 +2,17 @@
 import { FOOOTER_LINKS } from "@/data/constants";
 ---
 
-<footer
-	class="flex w-full flex-col items-center justify-center gap-y-4 text-center text-gray-500 sm:flex-row sm:justify-between sm:text-xs"
->
+<footer class="w-full text-center text-gray-500">
 	<nav
 		aria-label="More about evenzero"
-		class="flex w-full flex-wrap justify-center gap-x-2 gap-y-2 sm:justify-between"
+		class="flex w-full flex-row flex-nowrap items-center justify-between text-[9px] xs:text-[10px] sm:text-xs"
 	>
 		{
 			FOOOTER_LINKS.map((link) => (
 				<a
 					target="_blank"
 					href={link.path}
-					class="px-2 py-1 text-[10px] uppercase transition-colors hover:text-textColor hover:underline sm:px-2 sm:py-0"
+					class="px-1 py-0 uppercase whitespace-nowrap transition-colors hover:text-textColor hover:underline shrink-0"
 				>
 					{link.title}
 				</a>
