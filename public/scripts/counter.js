@@ -18,16 +18,17 @@ async function animateNumber(numberArray, element, oldArray) {
   const ticks = [...ele.querySelectorAll("span[data-counter]")];
   if (!ticks.length) return;
   return new Promise(async (resolve, reject) => {
+    void element.offsetHeight;
     for (const tick of ticks) {
-      await sleep(10);
+      await sleep(15);
       const dist = parseInt(tick.getAttribute("data-counter") - 1);
       tick.style.setProperty(
         "transform",
-        `translateY(-${dist * 100}%)`,
+        `translate3d(0, -${dist * 1.15}em, 0)`,
         "important",
       );
-      resolve(1);
     }
+    resolve(1);
   });
 }
 
@@ -37,15 +38,15 @@ async function createNumberHTML(numbers, old, element) {
       if (isNaN(numbers[i]) || isNaN(old[i])) {
         element.insertAdjacentHTML(
           "beforeend",
-          `<span data-counter="1">${numbers[i]}</span>`,
+          `<span data-counter="1" style="transform: translate3d(0, 0, 0) !important;"><span>${numbers[i]}</span></span>`,
         );
       } else {
-        const datacounter = calcDeltaBetweenNumbers(old[i], numbers[i]).length;
-        const number = calcDeltaBetweenNumbers(old[i], numbers[i]).join("");
-        const dist = parseInt(datacounter - 1);
-        const ret = element.insertAdjacentHTML(
+        const delta = calcDeltaBetweenNumbers(old[i], numbers[i]);
+        const datacounter = delta.length;
+        const number = delta.join("");
+        element.insertAdjacentHTML(
           "beforeend",
-          `<span data-counter="${datacounter}" style="transform: translateY(0%) !important;">
+          `<span data-counter="${datacounter}" style="transform: translate3d(0, 0, 0) !important;">
 						${number}
 					</span>`,
         );

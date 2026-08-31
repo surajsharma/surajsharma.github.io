@@ -7,7 +7,45 @@
     color-scheme: light;
     --theme-bg: #ffffcc;
     --theme-link: #f2780c;
-    --theme-text: #262406;
+    --theme-text: #444;
+    --text: var(--theme-text);
+    --bg: var(--theme-bg);
+    --text-fade: color-mix(in srgb, var(--text) 50%, transparent);
+    --bg-fade: color-mix(in srgb, var(--bg) 50%, transparent);
+    --bg25: repeating-conic-gradient(
+        var(--text-fade) 0% 25%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg50: repeating-conic-gradient(
+        var(--text-fade) 0% 25%,
+        transparent 0% 50%,
+        var(--text-fade) 0% 75%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg75: repeating-conic-gradient(
+        transparent 0% 25%,
+        var(--text-fade) 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg25-i: repeating-conic-gradient(
+        var(--bg-fade) 0% 25%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg50-i: repeating-conic-gradient(
+        var(--bg-fade) 0% 25%,
+        transparent 0% 50%,
+        var(--bg-fade) 0% 75%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg75-i: repeating-conic-gradient(
+        transparent 0% 25%,
+        var(--bg-fade) 0% 100%
+      )
+      1px 0.5px / 2px 2px;
     --theme-accent: #f2a663;
     --theme-accent-2: #111;
     --theme-quote: #a1a1a1;
@@ -40,16 +78,54 @@
 
   :root.dark {
     color-scheme: dark;
-    --theme-bg: #1f1f1f;
+    --theme-bg: #111;
     --theme-link: #d480aa;
     --theme-text: #c9cacc;
+    --text: var(--theme-text);
+    --bg: var(--theme-bg);
+    --text-fade: color-mix(in srgb, var(--text) 50%, transparent);
+    --bg-fade: color-mix(in srgb, var(--bg) 50%, transparent);
+    --bg25: repeating-conic-gradient(
+        var(--text-fade) 0% 25%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg50: repeating-conic-gradient(
+        var(--text-fade) 0% 25%,
+        transparent 0% 50%,
+        var(--text-fade) 0% 75%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg75: repeating-conic-gradient(
+        transparent 0% 25%,
+        var(--text-fade) 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg25-i: repeating-conic-gradient(
+        var(--bg-fade) 0% 25%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg50-i: repeating-conic-gradient(
+        var(--bg-fade) 0% 25%,
+        transparent 0% 50%,
+        var(--bg-fade) 0% 75%,
+        transparent 0% 100%
+      )
+      1px 0.5px / 2px 2px;
+    --bg75-i: repeating-conic-gradient(
+        transparent 0% 25%,
+        var(--bg-fade) 0% 100%
+      )
+      1px 0.5px / 2px 2px;
     --theme-accent: #2bbc89;
     --theme-accent-2: #eee;
     --theme-quote: #ccffb6;
-    --theme-menu-bg: rgb(29 31 33 / 0.85);
+    --theme-menu-bg: rgb(30 30 30 / 0.85);
     --theme-link-hover-bg: #cd3724;
-    --theme-grid: rgb(50 50 50 / 0.5);
-    --theme-fade: #111111;
+    --theme-grid: rgb(50 50 50 / 0.2);
+    --theme-fade: #222;
     --theme-email: 201, 202, 204;
     --theme-logo-border: #f04a00;
   }
@@ -62,7 +138,7 @@
   html body {
     @apply flex min-h-screen w-full flex-col bg-bgColor font-mono text-sm font-normal text-textColor antialiased;
     font-family: "bm", sans-serif;
-    background-size: 40px 40px;
+    background-size: 3px 3px;
     background-image:
       linear-gradient(to right, var(--theme-grid) 1px, transparent 1px),
       linear-gradient(to bottom, var(--theme-grid) 1px, transparent 1px);
@@ -93,6 +169,28 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: translateZ(0);
+  }
+
+  /* Progressive Halftone Link States across hover, focus, active */
+  a:not([class*="no-dither"]) {
+    transition:
+      background 0.12s ease-in-out,
+      color 0.12s ease-in-out;
+  }
+
+  a:not([class*="no-dither"]):hover {
+    background: var(--bg25);
+    text-decoration: none;
+  }
+
+  a:not([class*="no-dither"]):focus,
+  a:not([class*="no-dither"]):focus-visible {
+    background: var(--bg50);
+    outline: none;
+  }
+
+  a:not([class*="no-dither"]):active {
+    background: var(--bg75);
   }
 
   .getzyt {
@@ -132,16 +230,33 @@
     background-image: url("/images/e0_wallpaper_01.jpg");
   }
 
+  a.email,
   .email {
-    background-position: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    position: relative;
-    @apply bg-gradient-to-b from-red-400 via-red-500 to-rose-600 font-semibold text-transparent;
+    background: var(--bg25);
+    padding: 0 0.15em;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.15s ease-in-out;
+    @apply font-semibold text-textColor;
   }
 
+  a.email:hover,
   .email:hover {
-    @apply underline decoration-red-500 decoration-2 underline-offset-4;
+    background: var(--bg75) !important;
+    text-decoration: none;
+  }
+
+  a.email:focus,
+  a.email:focus-visible,
+  .email:focus,
+  .email:focus-visible {
+    background: var(--bg75) !important;
+    outline: none;
+  }
+
+  a.email:active,
+  .email:active {
+    background: var(--bg75) !important;
   }
 
   @keyframes hmh {
@@ -166,36 +281,95 @@
     font-family: "bm";
     src: url("/fonts/bm.woff2") format("woff2");
     font-weight: normal;
-    font-style: normal;
     font-display: swap;
   }
 
+  /* Container Query Setup for Hero */
+  .hero-container {
+    container-type: inline-size;
+    container-name: hero;
+    width: 100%;
+  }
+
+  .hero-content {
+    font-family: "bm", sans-serif;
+    font-size: clamp(1.5rem, 5.2cqw, 3.85rem);
+    line-height: 1.45;
+    letter-spacing: normal;
+  }
+
+  @container hero (max-width: 420px) {
+    .hero-content {
+      font-size: clamp(1.35rem, 6.2cqw, 2rem);
+      line-height: 1.45;
+    }
+  }
+
+  @container hero (min-width: 421px) and (max-width: 768px) {
+    .hero-content {
+      font-size: clamp(2rem, 5.2cqw, 3.25rem);
+      line-height: 1.45;
+    }
+  }
+
+  @container hero (min-width: 769px) {
+    .hero-content {
+      font-size: clamp(3rem, 5cqw, 4.25rem);
+      line-height: 1.45;
+    }
+  }
+
   .exp-counter {
-    @apply flex h-5 sm:h-6 md:h-8 w-full;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.15em;
+    line-height: 1.15em;
+    vertical-align: -0.1em;
+    position: relative;
   }
 
   .exp {
     position: relative;
-    display: flex;
+    display: inline-flex;
     overflow: hidden;
-    align-items: center;
-    transform: translateY(0.01em);
+    align-items: flex-start;
+    height: 1.15em;
+    line-height: 1.15em;
+    background: var(--bg25);
+    padding: 0 0.15em;
+    border-radius: 2px;
+    vertical-align: top;
+    transition: background 0.15s ease-in-out;
     @apply font-semibold text-textColor;
   }
 
-  .exp span {
+  .exp:hover {
+    background: var(--bg75);
+  }
+
+  .exp > span {
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    transition: all 2s ease !important;
-    transform: translateY(0);
+    display: inline-block;
+    height: 1.15em;
+    line-height: 1.15em;
+    vertical-align: top;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 2.2s cubic-bezier(0.12, 0.8, 0.2, 1) !important;
     @apply font-semibold text-textColor;
   }
 
-  .exp span span {
-    flex: 0 0 100%;
-    height: 100%;
+  .exp > span > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1.15em;
+    line-height: 1.15em;
+    text-align: center;
   }
 
   .tooltip {
