@@ -238,6 +238,7 @@
     text-decoration: none;
     transition: background 0.15s ease-in-out;
     @apply font-semibold text-textColor;
+    vertical-align: -0.085em;
   }
 
   a.email:hover,
@@ -325,7 +326,7 @@
     justify-content: center;
     height: 1.15em;
     line-height: 1.15em;
-    vertical-align: -0.1em;
+    vertical-align: -0.09em;
     position: relative;
   }
 
