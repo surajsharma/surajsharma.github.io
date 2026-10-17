@@ -4,6 +4,23 @@ description: "In-house projects and software shipped in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
 
+## [hh](https://github.com/inversepolarity/hh)
+
+Your agent guesses how long the tests take, sets that guess as a timeout, and when the guess is low the harness kills the run — discarding everything — and the next attempt starts again from zero. hh replaces the guess with a measurement, checkpoints every finished test so it is never re-paid, quarantines hangs instead of letting them eat the whole budget, and reports the utility it actually produced.
+
+Stdlib-only core · zero sockets · zero data leaves the repo · works with unittest, pytest, Jest, Mocha, node:test, Go, and the JUnit-XML family.
+
+Runners Supported:
+
+![Go Badge](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=fff&style=flat-square)
+![Node.js Badge](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=fff&style=flat-square)
+![Jest Badge](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=fff&style=flat-square)
+![Mocha Badge](https://img.shields.io/badge/Mocha-8D6748?logo=mocha&logoColor=fff&style=flat-square)
+![Pytest Badge](https://img.shields.io/badge/Pytest-0A9EDC?logo=pytest&logoColor=fff&style=flat-square)
+![JUnit5 Badge](https://img.shields.io/badge/JUnit5-25A162?logo=junit5&logoColor=fff&style=flat-square)
+
+---
+
 ## [Mantra](#mantra)
 
 <img src="https://raw.githubusercontent.com/inversepolarity/media/refs/heads/main/mantra/pixel_5.png?raw=true" alt="Logo" class="light-only" />
@@ -180,4 +197,3 @@ Open, searchable, and navigable [foam](https://github.com/foambubble/foam) based
 | Tools                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                       Environments                                                                                                                                                                                                                       |                                                                                                                                                                                                                                         Devops                                                                                                                                                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | ![Markdown Badge](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=fff&style=flat-square) ![Ruby Badge](https://img.shields.io/badge/Ruby-CC342D?logo=ruby&logoColor=fff&style=flat-square) ![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=fff&style=flat-square) ![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square) | ![GNU Bash Badge](https://img.shields.io/badge/GNU%20Bash-4EAA25?logo=gnubash&logoColor=fff&style=flat-square) ![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat-square) ![Google Colab Badge](https://img.shields.io/badge/Google%20Colab-F9AB00?logo=googlecolab&logoColor=fff&style=flat-square) ![Jekyll Badge](https://img.shields.io/badge/Jekyll-C00?logo=jekyll&logoColor=fff&style=flat-square) | ![Cloudflare Badge](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=fff&style=flat-square) ![GitHub Actions Badge](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=fff&style=flat-square) ![GitHub Pages Badge](https://img.shields.io/badge/GitHub%20Pages-222?logo=githubpages&logoColor=fff&style=flat-square) ![GoDaddy Badge](https://img.shields.io/badge/GoDaddy-1BDBDB?logo=godaddy&logoColor=000&style=flat-square) |
-

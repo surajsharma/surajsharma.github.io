@@ -4,6 +4,21 @@ description: "Tinkering / R&D, FOSS publications, Templates, Customizations, and
 publishDate: "1 Aug 2025"
 ---
 
+## [x11-canvas](https://github.com/inversepolarity/x11-canvas)
+
+Linux GUI in a browser URL using `Xvfb → x11vnc → websockify → <canvas>`
+
+![poc](https://github.com/inversepolarity/x11-canvas/raw/master/x11-canvas.png)
+
+<div style="gap: 3px; display: flex; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff&style=flat">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat">
+</div>
+
+---
+
 ## [skiboard](#)
 
 - [Unexpected Keyboard](https://github.com/Julow/Unexpected-Keyboard) + Glide/Swipe typing
@@ -300,4 +315,3 @@ A perfunctory marketing datagrid/dashboard using [React-Table](https://github.co
 ## Defunct/Deprecated
 
 - [BBG Minus Context](https://twitter.com/BBGMinusContext) and [BBG Plus Context](https://twitter.com/BBGPlusContext): two (NOW DEFUNCT SINCE BLOOMBERG NEWS IS NO LONGER FREE TO SCRAPE) bots for Bloomberg [inspired](https://surajsharma.github.io/2018/03/Bots) by similar bots for the New York Times.
-
