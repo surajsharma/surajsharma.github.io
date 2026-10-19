@@ -4,7 +4,7 @@ description: "In-house projects and software shipped in a commercial capacity"
 publishDate: "8 Jun 2023"
 ---
 
-## [hh - faster agentic testing](https://github.com/inversepolarity/hh)
+## [hh -  bayesian-optimized agentic testing](https://github.com/even-zero/hh)
 
 Your agent guesses how long the tests take, sets that guess as a timeout, and when the guess is low the harness kills the run — discarding everything — and the next attempt starts again from zero. If the guess is too high your agent is hallucinating.
 
