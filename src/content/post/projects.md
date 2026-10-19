@@ -8,7 +8,7 @@ publishDate: "8 Jun 2023"
 
 Your agent guesses how long the tests take, sets that guess as a timeout, and when the guess is low the harness kills the run — discarding everything — and the next attempt starts again from zero. If the guess is too high your agent is hallucinating.
 
-hh replaces the guess with a measurement, checkpoints every finished test so it is never re-paid, quarantines hangs instead of letting them eat the whole budget, and reports the utility it actually produced.
+hh replaces the guess with a (bayesian) measurement, checkpoints every finished test so it is never re-paid, quarantines hangs instead of letting them eat the whole budget, and reports the utility it actually produced.
 
 - Stdlib-only core
 - Model/agent/harness agnostic
