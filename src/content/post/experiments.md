@@ -10,7 +10,6 @@ Relays a live, structured view of a page's DOM from the browser to a local serve
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
  <img src="https://img.shields.io/badge/Tampermonkey-00485B?logo=tampermonkey&logoColor=fff&style=flat">
  <img src="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat">
- <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat">
  <img src="https://img.shields.io/badge/Express-0A0A0A?logo=express&logoColor=fff&style=flat">
 </div>
 
