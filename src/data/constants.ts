@@ -35,7 +35,7 @@ export const FOOOTER_LINKS = [
   },
   {
     title: "LinkedIn",
-    path: "https://www.linkedin.com/company/35930433/",
+    path: "https://www.linkedin.com/company/even-zero/home",
   },
   {
     title: "YouTube",
