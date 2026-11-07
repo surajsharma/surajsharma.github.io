@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getCollection } from "astro:content";
+import SectionPagination from "@/components/SectionPagination";
 import PostLayout from "@/layouts/BlogPost";
 
 export const getStaticPaths = (async () => {
@@ -14,9 +15,13 @@ export const getStaticPaths = (async () => {
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
+const paginateSections = ["projects", "experiments"].includes(entry.slug);
+const totalPages = Math.ceil(headings.filter((heading) => heading.depth === 2).length);
 ---
 
 <PostLayout post={entry}>
-	<Content />
+	{paginateSections ? (
+		<SectionPagination totalPages={totalPages}><Content /></SectionPagination>
+	) : <Content />}
 </PostLayout>

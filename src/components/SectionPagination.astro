@@ -1,0 +1,153 @@
+---
+import { Pagination } from "webcoreui/astro";
+
+interface Props {
+  totalPages: number;
+}
+
+const { totalPages } = Astro.props;
+---
+
+<div data-section-pagination>
+  <div data-pagination-content><slot /></div>
+  {
+    totalPages > 1 && (
+      <nav class="section-pagination" aria-label="Section pagination" hidden>
+        <Pagination totalPages={totalPages} currentPage={1} type={"arrows"} />
+      </nav>
+    )
+  }
+</div>
+
+<style>
+  .section-pagination {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+  .section-pagination[hidden],
+  [data-pagination-content] :global([hidden]) {
+    display: none !important;
+  }
+  .section-pagination :global(ul) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .section-pagination :global(li) {
+    padding: 0;
+    margin: 0;
+  }
+  .section-pagination :global(button) {
+    font: inherit;
+    color: var(--theme-text);
+    background: transparent;
+    border: 1px solid var(--theme-text);
+    border-radius: 0.25rem;
+    box-shadow: none;
+    padding: 0.4rem 0.65rem;
+  }
+  .section-pagination :global(button:hover:not(:disabled)),
+  .section-pagination :global(button[data-active="true"]) {
+    color: var(--theme-bg);
+    background: var(--theme-text);
+    box-shadow: none;
+  }
+  .section-pagination :global(button:focus-visible) {
+    outline: 2px solid var(--theme-link);
+    outline-offset: 2px;
+  }
+  .section-pagination :global(button:disabled) {
+    opacity: 0.5;
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-section-pagination]");
+  const content = root?.querySelector<HTMLElement>("[data-pagination-content]");
+  const nav = root?.querySelector<HTMLElement>(".section-pagination");
+  const pagination = nav?.querySelector<HTMLElement>(
+    '[data-id="w-pagination"]',
+  );
+
+  if (root && content && nav && pagination) {
+    const elements = Array.from(content.children) as HTMLElement[];
+    const groups: HTMLElement[][] = [];
+    let currentGroup: HTMLElement[] | undefined;
+    for (const element of elements) {
+      if (element.tagName === "H2") {
+        currentGroup = [];
+        groups.push(currentGroup);
+      }
+      currentGroup?.push(element);
+    }
+    const perPage = 1;
+    const total = Math.ceil(groups.length / perPage);
+    const buttons = Array.from(
+      pagination.querySelectorAll<HTMLButtonElement>("button[data-page]"),
+    );
+
+    function showPage(page: number) {
+      page = Math.max(1, Math.min(total, page));
+      groups.forEach((group, index) =>
+        group.forEach((element) => {
+          element.hidden = Math.floor(index / perPage) + 1 !== page;
+        }),
+      );
+      pagination!.dataset.currentPage = String(page);
+      buttons.forEach((button) => {
+        const value = button.dataset.page;
+        button.disabled = value === "prev" ? page === 1 : page === total;
+        button.setAttribute(
+          "aria-label",
+          value === "prev" ? "Previous entry" : "Next entry",
+        );
+      });
+    }
+
+    function pageForHash() {
+      if (!location.hash) return;
+      let id: string;
+      try {
+        id = decodeURIComponent(location.hash.slice(1));
+      } catch {
+        return;
+      }
+      const target = document.getElementById(id);
+      if (!target) return;
+      const index = groups.findIndex((group) =>
+        group.some((element) => element === target || element.contains(target)),
+      );
+      if (index >= 0) {
+        showPage(Math.floor(index / perPage) + 1);
+        target.scrollIntoView();
+      }
+    }
+
+    showPage(1);
+    nav.hidden = false;
+    pageForHash();
+    window.addEventListener("hashchange", pageForHash);
+    // Handle navigation here so fragment links and the arrows share the same page state.
+    nav.addEventListener(
+      "click",
+      (event) => {
+        const button = (event.target as Element).closest<HTMLButtonElement>(
+          "button[data-page]",
+        );
+        if (!button || button.disabled) return;
+        event.stopPropagation();
+        const current = Number(pagination.dataset.currentPage);
+        showPage(current + (button.dataset.page === "prev" ? -1 : 1));
+        // A stale fragment would make re-selecting the same table-of-contents link a no-op.
+        if (location.hash)
+          history.replaceState(null, "", location.pathname + location.search);
+        content.scrollIntoView({ behavior: "smooth", block: "start" });
+      },
+      { capture: true },
+    );
+  }
+</script>

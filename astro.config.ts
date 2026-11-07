@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
+import { webcore } from "webcoreui/integration";
 
 import cloudflare from "@astrojs/cloudflare";
 
@@ -19,7 +20,7 @@ export default defineConfig({
       wrap: true,
     },
   },
-  integrations: [mdx({}), tailwind({}), sitemap(), prefetch(), react()],
+  integrations: [mdx({}), tailwind({}), sitemap(), prefetch(), react(), webcore()],
   compressHTML: true,
   vite: {
     ssr: {
