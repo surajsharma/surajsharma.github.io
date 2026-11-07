@@ -3,7 +3,6 @@ import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
 // import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
-import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
 import { webcore } from "webcoreui/integration";
 
@@ -11,6 +10,7 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: true,
   site: "https://evenzero.in/",
   output: "static",
   adapter: import.meta.env.PROD ? cloudflare() : undefined,
@@ -20,7 +20,7 @@ export default defineConfig({
       wrap: true,
     },
   },
-  integrations: [mdx({}), tailwind({}), sitemap(), prefetch(), react(), webcore()],
+  integrations: [mdx({}), tailwind({}), sitemap(), react(), webcore()],
   compressHTML: true,
   vite: {
     ssr: {
