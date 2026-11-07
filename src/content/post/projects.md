@@ -76,7 +76,6 @@ Holdex is an exceptional team of technology enthusiasts and professionals workin
 
 The first decentralized credit marketplace.
 
-<script defer src="/scripts/cg.js"></script>
 
 <coingecko-coin-price-chart-widget currency="usd" coin-id="clearpool" locale="en" height="300"></coingecko-coin-price-chart-widget>
 
