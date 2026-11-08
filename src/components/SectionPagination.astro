@@ -6,11 +6,12 @@ interface Props {
 }
 
 const { totalPages } = Astro.props;
+// Third-party widget script. It is loaded on demand (see the script below),
+// not while the section that uses it is hidden by the pagination.
+const widgetScript = "/scripts/cg.js";
 ---
 
-<script defer src="/scripts/cg.js"></script>
-
-<div data-section-pagination>
+<div data-section-pagination data-widget-script={widgetScript}>
   <div data-pagination-content><slot /></div>
   {
     totalPages > 1 && (
@@ -75,6 +76,46 @@ const { totalPages } = Astro.props;
     '[data-id="w-pagination"]',
   );
 
+  // Widgets are custom elements (e.g. <coingecko-coin-price-chart-widget>).
+  // They size their canvases from the layout of their container when they
+  // mount, and Chart.js also re-measures while a section is hidden. Because
+  // `display: none` has zero width, a chart that was mounted or left in a
+  // hidden page stays collapsed to 0px after the page is shown again.
+  const isWidget = (element: Element): element is HTMLElement =>
+    element instanceof HTMLElement && element.localName.includes("-");
+  const widgets = content
+    ? Array.from(content.querySelectorAll<HTMLElement>("*")).filter(isWidget)
+    : [];
+  const widgetScriptSrc = root?.dataset.widgetScript;
+  let widgetScriptRequested = false;
+
+  function loadWidgetScript() {
+    if (!widgetScriptSrc || widgetScriptRequested || !widgets.length) return;
+    // Another component may already have registered the widget.
+    if (
+      typeof customElements !== "undefined" &&
+      widgets.every((widget) => customElements.get(widget.localName))
+    )
+      return;
+    widgetScriptRequested = true;
+    const script = document.createElement("script");
+    script.src = widgetScriptSrc;
+    script.async = false;
+    document.head.appendChild(script);
+  }
+
+  // `vue-custom-element` (used by cg.js) exposes the mounted component on the
+  // host. `chart` is the Chart.js instance; `updateContainerClass` recomputes
+  // the widget's small/large layout from the container width.
+  type WidgetHost = HTMLElement & {
+    getVueInstance?: () =>
+      | {
+          chart?: { resize?: () => void };
+          updateContainerClass?: () => void;
+        }
+      | undefined;
+  };
+
   if (root && content && nav && pagination) {
     const elements = Array.from(content.children) as HTMLElement[];
     const groups: HTMLElement[][] = [];
@@ -92,6 +133,72 @@ const { totalPages } = Astro.props;
       pagination.querySelectorAll<HTMLButtonElement>("button[data-page]"),
     );
 
+    function widgetsOnPage(page: number): HTMLElement[] {
+      return (groups[page - 1] ?? []).flatMap((element) => [
+        ...(isWidget(element) ? [element] : []),
+        ...Array.from(element.querySelectorAll<HTMLElement>("*")).filter(
+          isWidget,
+        ),
+      ]);
+    }
+
+    // Replacing a widget with a fresh element makes the custom element mount
+    // again, this time against a laid-out (visible) container. This is only a
+    // last resort for widgets that offer no way to re-measure themselves; a
+    // refresh runs on page changes only, so it cannot loop.
+    function remount(widget: HTMLElement) {
+      const fresh = document.createElement(widget.localName);
+      for (const { name, value } of widget.attributes)
+        fresh.setAttribute(name, value);
+      while (widget.firstChild) fresh.appendChild(widget.firstChild);
+      widget.replaceWith(fresh);
+      // Keep the page groups in sync if the widget itself is a page element.
+      for (const group of groups) {
+        const index = group.indexOf(widget);
+        if (index !== -1) group[index] = fresh;
+      }
+    }
+
+    let refreshFrame: number | undefined;
+
+    function refreshWidgets() {
+      // Coalesce the initial showPage(1) + pageForHash() pair into one refresh.
+      if (refreshFrame !== undefined) cancelAnimationFrame(refreshFrame);
+      refreshFrame = requestAnimationFrame(() => {
+        refreshFrame = undefined;
+        const page = Number(pagination!.dataset.currentPage) || 1;
+        const visibleWidgets = widgetsOnPage(page);
+        if (!visibleWidgets.length) return;
+        loadWidgetScript();
+
+        for (const widget of visibleWidgets) {
+          try {
+            const instance = (widget as WidgetHost).getVueInstance?.();
+            instance?.chart?.resize?.();
+            instance?.updateContainerClass?.();
+          } catch {
+            // A widget that has not upgraded yet (or failed to) must never
+            // break pagination; the fallback below handles hidden mounts.
+          }
+        }
+        // Generic fallback for widgets that only react to a window resize.
+        window.dispatchEvent(new Event("resize"));
+
+        // If a chart is still zero-width while its widget is visible, it was
+        // initialised with no layout. Give it a fresh element to mount again.
+        for (const widget of visibleWidgets) {
+          const canvas = (widget.shadowRoot ?? widget).querySelector("canvas");
+          if (
+            canvas &&
+            widget.getClientRects().length > 0 &&
+            canvas.getBoundingClientRect().width < 1
+          ) {
+            remount(widget);
+          }
+        }
+      });
+    }
+
     function showPage(page: number) {
       page = Math.max(1, Math.min(total, page));
       groups.forEach((group, index) =>
@@ -108,6 +215,10 @@ const { totalPages } = Astro.props;
           value === "prev" ? "Previous entry" : "Next entry",
         );
       });
+      // Start the widget download as soon as its section is on screen, and
+      // re-layout any widget that was mounted/resized while it was hidden.
+      if (widgetsOnPage(page).length) loadWidgetScript();
+      refreshWidgets();
     }
 
     function pageForHash() {
@@ -151,5 +262,8 @@ const { totalPages } = Astro.props;
       },
       { capture: true },
     );
+  } else if (widgets.length) {
+    // No pagination: every section is visible, so mount widgets immediately.
+    loadWidgetScript();
   }
 </script>
