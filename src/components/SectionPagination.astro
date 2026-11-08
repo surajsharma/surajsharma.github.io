@@ -52,12 +52,28 @@ const widgetScript = "/scripts/cg.js";
     border-radius: 0.25rem;
     box-shadow: none;
     padding: 0.4rem 0.65rem;
+    /* Taps should fire a click immediately, never wait for a possible
+       double-tap-to-zoom gesture, and always have a comfortable hit area. */
+    touch-action: manipulation;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .section-pagination :global(button:hover:not(:disabled)),
   .section-pagination :global(button[data-active="true"]) {
     color: var(--theme-bg);
     background: var(--theme-text);
     box-shadow: none;
+  }
+  /* Touch browsers emulate :hover on the first tap, which can swallow that
+     tap and make the button look like it needs a second click. */
+  @media (hover: hover) and (pointer: fine) {
+    .section-pagination :global(button:hover:not(:disabled)) {
+      color: var(--theme-bg);
+      background: var(--theme-text);
+      box-shadow: none;
+    }
   }
   .section-pagination :global(button:focus-visible) {
     outline: 2px solid var(--theme-link);
@@ -132,6 +148,75 @@ const widgetScript = "/scripts/cg.js";
     const buttons = Array.from(
       pagination.querySelectorAll<HTMLButtonElement>("button[data-page]"),
     );
+    // Keep our own page state. The webcore Pagination component also writes
+    // `data-current-page` from its own counter, so reading that attribute back
+    // on each click can make a tap appear to do nothing (or jump two pages).
+    let currentPage = 1;
+
+    function widgetsOnPage(page: number): HTMLElement[] {
+      return (groups[page - 1] ?? []).flatMap((element) => [
+        ...(isWidget(element) ? [element] : []),
+        ...Array.from(element.querySelectorAll<HTMLElement>("*")).filter(
+          isWidget,
+        ),
+      ]);
+    }
+
+    // Replacing a widget with a fresh element makes the custom element mount
+    // again, this time against a laid-out (visible) container. This is only a
+    // last resort for widgets that offer no way to re-measure themselves; a
+    // refresh runs on page changes only, so it cannot loop.
+    function remount(widget: HTMLElement) {
+      const fresh = document.createElement(widget.localName);
+      for (const { name, value } of widget.attributes)
+        fresh.setAttribute(name, value);
+      while (widget.firstChild) fresh.appendChild(widget.firstChild);
+      widget.replaceWith(fresh);
+      // Keep the page groups in sync if the widget itself is a page element.
+      for (const group of groups) {
+        const index = group.indexOf(widget);
+        if (index !== -1) group[index] = fresh;
+      }
+    }
+
+    let refreshFrame: number | undefined;
+
+    function refreshWidgets() {
+      // Coalesce the initial showPage(1) + pageForHash() pair into one refresh.
+      if (refreshFrame !== undefined) cancelAnimationFrame(refreshFrame);
+      refreshFrame = requestAnimationFrame(() => {
+        refreshFrame = undefined;
+        const visibleWidgets = widgetsOnPage(currentPage);
+        if (!visibleWidgets.length) return;
+        loadWidgetScript();
+
+        for (const widget of visibleWidgets) {
+          try {
+            const instance = (widget as WidgetHost).getVueInstance?.();
+            instance?.chart?.resize?.();
+            instance?.updateContainerClass?.();
+          } catch {
+            // A widget that has not upgraded yet (or failed to) must never
+            // break pagination; the fallback below handles hidden mounts.
+          }
+        }
+        // Generic fallback for widgets that only react to a window resize.
+        window.dispatchEvent(new Event("resize"));
+
+        // If a chart is still zero-width while its widget is visible, it was
+        // initialised with no layout. Give it a fresh element to mount again.
+        for (const widget of visibleWidgets) {
+          const canvas = (widget.shadowRoot ?? widget).querySelector("canvas");
+          if (
+            canvas &&
+            widget.getClientRects().length > 0 &&
+            canvas.getBoundingClientRect().width < 1
+          ) {
+            remount(widget);
+          }
+        }
+      });
+    }
 
     function widgetsOnPage(page: number): HTMLElement[] {
       return (groups[page - 1] ?? []).flatMap((element) => [
@@ -200,16 +285,19 @@ const widgetScript = "/scripts/cg.js";
     }
 
     function showPage(page: number) {
-      page = Math.max(1, Math.min(total, page));
+      currentPage = Math.max(1, Math.min(total, page));
       groups.forEach((group, index) =>
         group.forEach((element) => {
-          element.hidden = Math.floor(index / perPage) + 1 !== page;
+          element.hidden = Math.floor(index / perPage) + 1 !== currentPage;
         }),
       );
-      pagination!.dataset.currentPage = String(page);
+      // Still publish the page for the webcore widget / assistive tech, but
+      // never use it as the source of truth for navigation.
+      pagination!.dataset.currentPage = String(currentPage);
       buttons.forEach((button) => {
         const value = button.dataset.page;
-        button.disabled = value === "prev" ? page === 1 : page === total;
+        button.disabled =
+          value === "prev" ? currentPage === 1 : currentPage === total;
         button.setAttribute(
           "aria-label",
           value === "prev" ? "Previous entry" : "Next entry",
@@ -217,7 +305,7 @@ const widgetScript = "/scripts/cg.js";
       });
       // Start the widget download as soon as its section is on screen, and
       // re-layout any widget that was mounted/resized while it was hidden.
-      if (widgetsOnPage(page).length) loadWidgetScript();
+      if (widgetsOnPage(currentPage).length) loadWidgetScript();
       refreshWidgets();
     }
 
@@ -240,28 +328,37 @@ const widgetScript = "/scripts/cg.js";
       }
     }
 
+    // Smooth scrolling moves the nav under the finger and mobile browsers can
+    // swallow taps while the animation runs, so only use it on pointer devices.
+    const smoothScroll =
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+    // Listen on the buttons themselves rather than capturing the click on
+    // <nav>. Capture + stopPropagation meant the button never got its own
+    // click, which touch browsers can treat as a hover-only first tap.
+    // Stopping propagation on the button still keeps the webcore Pagination
+    // listener on the <ul> from double-handling the same click.
+    buttons.forEach((button) => {
+      button.type = "button";
+      button.addEventListener("click", (event) => {
+        if (button.disabled) return;
+        event.stopPropagation();
+        showPage(currentPage + (button.dataset.page === "prev" ? -1 : 1));
+        // A stale fragment would make re-selecting the same table-of-contents link a no-op.
+        if (location.hash)
+          history.replaceState(null, "", location.pathname + location.search);
+        content.scrollIntoView({
+          behavior: smoothScroll ? "smooth" : "auto",
+          block: "start",
+        });
+      });
+    });
+
     showPage(1);
     nav.hidden = false;
     pageForHash();
     window.addEventListener("hashchange", pageForHash);
-    // Handle navigation here so fragment links and the arrows share the same page state.
-    nav.addEventListener(
-      "click",
-      (event) => {
-        const button = (event.target as Element).closest<HTMLButtonElement>(
-          "button[data-page]",
-        );
-        if (!button || button.disabled) return;
-        event.stopPropagation();
-        const current = Number(pagination.dataset.currentPage);
-        showPage(current + (button.dataset.page === "prev" ? -1 : 1));
-        // A stale fragment would make re-selecting the same table-of-contents link a no-op.
-        if (location.hash)
-          history.replaceState(null, "", location.pathname + location.search);
-        content.scrollIntoView({ behavior: "smooth", block: "start" });
-      },
-      { capture: true },
-    );
   } else if (widgets.length) {
     // No pagination: every section is visible, so mount widgets immediately.
     loadWidgetScript();
