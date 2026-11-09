@@ -30,8 +30,8 @@ export const FOOOTER_LINKS = [
     path: "https://github.com/even-zero",
   },
   {
-    title: "inversepolarity",
-    path: "https://ip.evenzero.in",
+    title: "x/twitter",
+    path: "https://x.com/zeroiseven",
   },
   {
     title: "LinkedIn",

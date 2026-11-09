@@ -5,6 +5,10 @@ dns.setDefaultResultOrder("verbatim");
 
 export default defineConfig({
   server: {
-    allowedHosts: [".trycloudflare.com", "dell5501.local"],
+    allowedHosts: [
+      ".trycloudflare.com",
+      "dell5501.local",
+      "dell5501.tailc8a024.ts.net",
+    ],
   },
 });
