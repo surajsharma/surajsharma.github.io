@@ -19,16 +19,16 @@ hh replaces the guess with a (bayesian) measurement, checkpoints every finished 
 - Saves ±40% per suite/matrix run
 
 
-<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+<div style="aspect-ratio:16/9">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/_UHDYViqr_w"
+    src="https://www.youtube-nocookie.com/embed/mrK3h0IyAk4?controls=0&disablekb=1&fs=0"
     title="hh - bayesian-optimized agentic testing"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
     loading="lazy"
-    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    style="width:100%;height:100%;border:0"
   ></iframe>
 </div>
+
+
 
 Supported runners/languages include (among others):
 | | | |
