@@ -11,6 +11,7 @@ publishDate: "1 Aug 2025"
 uncl (unified nuclear cli layer) is a terminal monoplexer - a single, toggleable, resizeable, and draggable floating term window as an accomplice to your worst terminal misdeeds, written in rust.
 
 <div style="gap: 3px; display: flex; flex-wrap: wrap;">
+<img src="https://img.shields.io/crates/v/uncl">
 <img src="https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=flat">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25?logo=gnubash&logoColor=fff&style=flat">
 <img src="https://img.shields.io/badge/Zsh-F15A24?logo=zsh&logoColor=fff&style=flat">
