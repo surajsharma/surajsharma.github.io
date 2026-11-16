@@ -1,16 +1,16 @@
 // CRT_CURVE:    Screen curvature. 0.0 = flat, 0.04 = strong bend.
-#define CRT_CURVE     0.02
+#define CRT_CURVE     0.0
 //
 // BRIGHTNESS:   Overall brightness multiplier.
 #define BRIGHTNESS    1.3
 //
 // DISTORTION:   Wobble, jitter, tracking band, frame jump, static burst.
 //               0.0 = clean signal, 1.0 = normal, 2.0 = heavy.
-#define DISTORTION    1.0
+#define DISTORTION    2.0
 //
 // TAPE_WEAR:    Grain, noise, dropout, head-switch, warm shift.
 //               0.0 = pristine tape, 1.0 = normal, 2.0 = trashed.
-#define TAPE_WEAR     0.9
+#define TAPE_WEAR     2.0
 //
 // COLOR_BLEED:  Chroma smearing. 0.0 = perfect color, 1.0 = normal, 2.0 = heavy.
 #define COLOR_BLEED   2.0
@@ -19,7 +19,7 @@
 #define VIGNETTE      0.25
 //
 // STATIC:       Persistent white static flecks. 0.0 = none, 0.5 = subtle, 1.0 = normal.
-#define STATIC        0.45
+#define STATIC        0.1
 //
 // =========================================
 
